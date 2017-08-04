@@ -1,7 +1,7 @@
 = Enabling logging
 
-By default all RainCatcher framework modules will not log any information to console.
-Framework users can enable logger by using one of the provided implementations or
+By default, all {WFM-RC-NameLong} framework modules will not log any information to the console.
+Framework users can enable logger by using one of the provided implementations or the
 custom implementation that will extend our interface.
 
 Supported implementations:
@@ -9,8 +9,8 @@ Supported implementations:
 |====
 | Implementation | Usage
 
-|BunyanLogger |Implements Bunyan Used for server side logging
-|ClientLogger |Implements LogLevel Used for client (web and mobile) logging
+|BunyanLogger |Implements Bunyan and is used for server side logging
+|ClientLogger |Implements LogLevel and is used for client (web and mobile) logging
 |====
 
 [source,typescript]
