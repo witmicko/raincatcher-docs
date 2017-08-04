@@ -2,8 +2,8 @@
 = Logging Module
 
 The {WFM-RC-NameLong} Logger Module is a logging facade for node.js based applications and it is used by all {WFM-RC-NameLong} modules.
-The {WFM-RC-NameLong} Logger Module is is contained in the `raincatcher-core` module. Users can
-use there own loggers by wrapping them into provided interface. See link:TODOtypedoclink[typedoc] for more information on interface structure.
+The {WFM-RC-NameLong} Logger Module is contained in the `raincatcher-core` module. Users can
+use there own loggers by wrapping them into provided interfaces. See link:TODOtypedoclink[typedoc] for more information on interface structure.
 
  <TODO> generate typedoc and link to documentation.
 
