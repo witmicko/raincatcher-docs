@@ -1,0 +1,27 @@
+== Enabling logging
+
+By default all RainCatcher framework modules will not log any information to console.
+Framework users can enable logger by using one of the provided implementations or
+custom implementation that will extend our interface.
+
+Supported implementations:
+
+|====
+| Implementation | Usage
+
+|BunyanLogger |Implements Bunyan Used for server side logging
+|ClientLogger |Implements LogLevel Used for client (web and mobile) logging
+|====
+
+[source,typescript]
+----
+  // Setup logger in your application
+  import {BunyanLogger, getLogger} from '@raincatcher/logger';
+  const log = new BunyanLogger({name: 'index'});;
+  setLogger(log);
+
+  // Use logger in other modules
+  getLogger().info('This log will render with BunyanLogger');
+----
+
+See link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/master/cloud/logger/example/index.ts[./example/index.ts] for more advanced usages.
