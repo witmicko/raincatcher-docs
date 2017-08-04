@@ -1,4 +1,4 @@
-== Enabling logging
+= Enabling logging
 
 By default all RainCatcher framework modules will not log any information to console.
 Framework users can enable logger by using one of the provided implementations or

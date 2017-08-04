@@ -1,10 +1,10 @@
 include::topics/shared/attributes.adoc[]
 
 //':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
-:chapter: using-wfm-logger-and-setting-a-logging-level
+:chapter: using-wfm-logger
 
-[[using-wfm-logger-and-setting-a-logging-level]]
-= Using {WFM-RC-NameLong} Logger and Setting a Logging Level
+[[using-wfm-logger]]
+= Using {WFM-RC-NameLong} Logger
 
 include::topics/con-logging.adoc[leveloffset=+1]
 

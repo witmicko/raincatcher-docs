@@ -9,7 +9,7 @@ image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
-include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
+//include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
 
 [[preparing-the-local-development-environment]]
 == Preparing the Local Development Environment
@@ -19,7 +19,7 @@ include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
 
 [[programming-a-raincatcher-project]]
 == Programming a {WFM-RC-NameShort} Project
-include::using-wfm-logger-and-setting-a-logging-level.adoc[leveloffset=+2]
+include::using-wfm-logger.adoc[leveloffset=+2]
 
 [[testing-a-raincatcher-project]]
 == Testing a {WFM-RC-NameShort} Project
@@ -35,4 +35,4 @@ include::using-wfm-logger-and-setting-a-logging-level.adoc[leveloffset=+2]
 // **********************************
 include::topics/shared/templates/revision-info.adoc[]
 
-image::./topics/shared/images/raincatcher.svg[logo]
+
