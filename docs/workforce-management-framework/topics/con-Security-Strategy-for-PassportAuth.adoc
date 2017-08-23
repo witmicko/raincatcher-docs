@@ -1,0 +1,33 @@
+[id='Security-Strategy-Passport.js-{chapter}']
+= Security Strategy for {WFM-RC-NameShort} PassportAuth
+
+== Session Management
+Usage of persistent login sessions using `express-session`.
+Visit link:https://github.com/expressjs/session[express-session] to find more information about the available express
+session options.
+
+== Access Control
+The PassportAuth module allows role based access control. Routes are protected by role as shown in the example.
+
+[source,typescript]
+----
+app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Request, res: express.Response) => {
+  res.json({ routeName: '/testAdminEndpoint', msg: 'authorized to access admin endpoint' });
+});
+
+----
+
+== Password Storage
+Passport authentication service is using a default custom strategy that is based on Passport.js local strategy.
+Passports local strategy is agnostic about database type. // TODO WHY HOW?
+// TODO say how we can provide user source
+
+== Data state in Transit, on Disk, in Device
+Data is not saved in the cookie itself, just the session ID.
+
+== Authentication
+{WFM-RC-NameShort} uses the LocalStrategy(CHANGE THIS) for username/password authentication. Authentication is done on the cloud
+server. Routes on the cloud server are protected by username, password and role using the protect method.
+The login post route has an authenticate method that checks the userId and password
+against the stored user.json file it also checks the user role against the stored role on
+user.json.

@@ -1,0 +1,48 @@
+[]
+= Introduction to {WFM-RC-NameShort} security features
+
+Developers can choose one of the following authentication and authorisation providers
+link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
+{WFM-RC-NameShort} is build around security interface, which abstracts from any security libraries.
+Both implementations can be swapped at any time of the development without additional development effort.
+Users can also provide their own security implementation if needed.
+
+Another security measures are incorporated into our reference applications.
+Please note that all features outside WFM modules will need to use our security interfaces.
+
+// TODO introduce generic paragraph  "HOW TO apply authorization using securiy interface"
+Securing endpoints you need to import
+
+
+== Passport.js
+Passport.js is a lightweight authentication middleware for Node.js that is extremely flexible and modular.
+Passport.js offers comprehensive set of link:http://passportjs.org/docs/configure[strategies] that support authentication
+using a username and password, Facebook, Twitter, and more.
+For more information see link:http://passportjs.org/[passport.org].
+
+- Node.js based -- verify name
+- Can be bundled into application
+- Available by default when running our reference server application
+- Covers authentication and authorization
+
+== Keycloak
+Keycloak is a full identity management solution with features that extend standard authorization and authentication scope.
+Keycloak will be suggested for solutions that require more comprehensive integration with company infrastructure and
+work as identify management solution
+
+For a full feature list, see link:https://keycloak.gitbooks.io/documentation/server_admin/topics/overview/features.html[Keycloak]
+
+== Which to use?
+
+Both solutions have their benefits
+
+*Keycloak*
+
+If you are looking for a full identity management solution that can be tied into
+existing *saml/ldap/sso* solutions then Keycloak should be your choice. Keycloak is an separate
+identity management server with all the overheads involved in running a server.
+
+*Passport.js*
+
+If you are looking for a standalone nodejs based authentication solution that is ready out of the box then passport.js
+should be your choice.
