@@ -24,11 +24,12 @@ functionality required to get started. Passport.js has low overhead and setup co
 
 
 == Developer Customisation
-// TODO add link to default strategy
-The default strategy for the PassportAuth module implements the Passport.js local strategy. As a developer you may wish
-use a different security strategy with the passport.js implementation. You can override the PassportAuth.setup method to
+The link:./api/0.0.1/auth-passport/docs/modules/_src_auth_defaultstrategy_.html[default strategy] for the PassportAuth
+module implements the Passport.js local strategy. As a developer you may wish
+use a different security strategy with the passport.js implementation. You can override the
+link:./api/0.0.1/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html#setup[PassportAuth.setup] method to
 implement any strategy supported by Passport.js.
-// TODO link to method that allow sto set custom strategy
+
 
 
 == Implementation and Usage
