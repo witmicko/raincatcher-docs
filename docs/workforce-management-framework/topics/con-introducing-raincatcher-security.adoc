@@ -1,5 +1,5 @@
-[]
-= Introduction to {WFM-RC-NameShort} security features
+[id='con-introducing-raincatcher-security-{chapter}']
+= Introducing the {WFM-RC-NameShort} Security Features
 
 {WFM-RC-NameShort} server gives developers a choice one of the following authentication and authorisation providers
 link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
@@ -10,7 +10,7 @@ Users can also provide their own security implementation by implementing their o
 Another security measures are incorporated into our reference applications.
 Please note that all link:https://expressjs.com/[express] based routes outside WFM modules will also need to use these security interfaces.
 
-== How to apply authorization using security interface
+== Applying Authorization using the Security Interface
 You can choose Keycloak or Passport.js implementation but you can securing endpoints in the same way.
 You need to import link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html++[EndpointSecurity]
 interface from passportAuth. Apply either implementation initialisation to the interface.
@@ -33,7 +33,7 @@ work as identify management solution
 
 For a full feature list, see link:https://keycloak.gitbooks.io/documentation/server_admin/topics/overview/features.html[Keycloak]
 
-== Which to use?
+== Choosing Passport.js or Keycloak
 
 Both solutions have their benefits
 

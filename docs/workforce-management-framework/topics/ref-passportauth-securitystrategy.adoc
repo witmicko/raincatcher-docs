@@ -1,12 +1,22 @@
-[id='Security-Strategy-Passport.js-{chapter}']
-= Security Strategy for {WFM-RC-NameShort} PassportAuth
+[id='con-introducing-raincatcher-security-{chapter}']
+= Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth
 
-== Session Management
+This section includes:
+
+. xref:understanding-session-management-{chapter}[Understanding Session Management]
+. xref:defining-access-control-{chapter}[Defining Access Control]
+. xref:defining-password-storage-{chapter}[Defining Password Storage]
+. xref:passportauth-authentication-{chapter}[PassportAuth Authentication]
+. xref:passportauth-authorization-{chapter}[PassportAuth Authorization]
+
+[id='understanding-session-management-{chapter}']
+== Understanding Session Management
 Users sessions are stored using `express-session` module.
 Visit link:https://github.com/expressjs/session[express-session] to find more information about the available express
 session options.
 
-== Access Control
+[id='defining-access-control-{chapter}']
+== Defining Access Control
 The PassportAuth module allows role based access control. Routes are protected by role as shown in the example.
 See authService is an implementation of the
 link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html++[passportAuth]
@@ -21,15 +31,16 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
 ----
 Demo roles are defined as an array in link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/master/demo/data/src/users.json[user.json].
 
-
-== Password Storage
+[id='defining-password-storage-{chapter}']
+== Defining Password Storage
 
 Passport module has build UserRepository interface that can be used to point to user data.
 Passwords are stored in datasource that is being configured by developers (possibly external service).
 To point Passport to user datasource you need to implement the
 link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html#getuserbylogin++[user repository interface]
 
-== Authentication
+[id='passportauth-authentication-{chapter}']
+== PassportAuth Authentication
 From a development point of view {WFM-RC-NameShort} uses the Default Strategy for username/password authentication. Authentication is done on the cloud
 server. Passport authentication service is using a default custom strategy that is based on Passport.js local strategy.
 Passport's local strategy is agnostic about database type.
@@ -44,7 +55,8 @@ against the stored user.json file it also checks the user role against the store
 
 See link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[example]
 
-== Authorization
+[id='passportauth-authorization-{chapter}']
+== PassportAuth Authorization
 Authorization is being supported thanks to
 link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html#protect++[protect]
 middleware that validates user session id against session and checks permissions.
