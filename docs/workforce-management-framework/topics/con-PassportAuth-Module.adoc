@@ -4,30 +4,30 @@
 {WFM-RC-NameShort} authentication and authorisation module using link:http://passportjs.org[PassportJS].
 The Passport.js module is the default security module for {WFM-RC-NameShort}.
 
-Authentication mechanisms, known as link:http://passportjs.org/docs/configure[strategies], are packaged as individual modules.
+Passport is using "pluggable" authentication plugins called link:http://passportjs.org/docs/configure[strategies].
 Applications can choose which strategies to employ, without creating unnecessary dependencies.
 Passport.js offers comprehensive set of link:http://passportjs.org/docs/configure[strategies] that support authentication
 using a username and password, Facebook, Twitter, and more.
 This module allows the:
 
-- Authorisation
-- Authentication
+- Authorisation insures access to routes based on username, password and role.
+- Authentication the process of verifying the identity of a user using the link:++../../../api/0.0.1/auth-passport/docs/modules/_src_auth_defaultstrategy_.html++[default strategy]
 - Storing user sessions using link:https://github.com/expressjs/session[express-session]
-- Default strategy using cookies
+- Default strategy using cookies and username and password.
 
 
 == Configuration of PassportAuth module
 As the PassportAuth module is the default security module it is install as part of running the Demo App.
 No configuration is required in order to use this module. It is an out of the box security solution for
 {WFM-RC-NameShort}. Passport.js is a lightweight solution that offers all the
-functionality required to get started. Passport.js has low overhead and setup costs.
+functionality required to get started.
 
 
 == Developer Customisation
-The link:./api/0.0.1/auth-passport/docs/modules/_src_auth_defaultstrategy_.html[default strategy] for the PassportAuth
+The link:++../../../api/0.0.1/auth-passport/docs/modules/_src_auth_defaultstrategy_.html++[default strategy] for the PassportAuth
 module implements the Passport.js local strategy. As a developer you may wish
 use a different security strategy with the passport.js implementation. You can override the
-link:./api/0.0.1/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html#setup[PassportAuth.setup] method to
+link:++../../../api/0.0.1/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html#setup++[PassportAuth.setup] method to
 implement any strategy supported by Passport.js.
 
 

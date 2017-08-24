@@ -2,7 +2,7 @@
 = Security Strategy for {WFM-RC-NameShort} PassportAuth
 
 == Session Management
-Usage of persistent login sessions using `express-session`.
+Users sessions are stored using `express-session` module.
 Visit link:https://github.com/expressjs/session[express-session] to find more information about the available express
 session options.
 
@@ -16,16 +16,25 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
 });
 
 ----
+Demo roles are defined as an array in link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/master/demo/data/src/users.json[user.json].
+
 
 == Password Storage
 Passport authentication service is using a default custom strategy that is based on Passport.js local strategy.
 Passports local strategy is agnostic about database type. To do this you need to implement the
-link:http://localhost:63342/raincatcher-docs/api/0.0.1/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html#getuserbylogin[user repository interface]
+link:++../../../api/0.0.1/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html#getuserbylogin++[user repository interface]
 to apply to any data source you require.
 
 == Authentication
-{WFM-RC-NameShort} uses the Default Strategy for username/password authentication. Authentication is done on the cloud
-server. Routes on the cloud server are protected by username, password and role using the protect method.
+From a development point of view {WFM-RC-NameShort} uses the Default Strategy for username/password authentication. Authentication is done on the cloud
+server.
+
+- authenticate middleware for accepting user credentials and creates session entry that holds user
+- protect middleware that validates user session id against session and checks permissions.
+
+Routes on the cloud server are protected using the protect method.
+To access routes user need to login using their credentials. Cookie containing user session key will be used to
+authenticate and authorize user requesting server endpoint.
 The login post route has an authenticate method that checks the userId and password
 against the stored user.json file it also checks the user role against the stored role on
 user.json.

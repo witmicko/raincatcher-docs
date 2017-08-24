@@ -1,10 +1,10 @@
 []
 = Introduction to {WFM-RC-NameShort} security features
 
-Developers can choose one of the following authentication and authorisation providers
+On the cloud server developers can choose one of the following authentication and authorisation providers
 link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
 {WFM-RC-NameShort} is build around security interface, which abstracts from any security libraries.
-Both implementations can be swapped at any time of the development without additional development effort.
+Both implementations can be swapped at any time without breking internal routes of {WFM-RC-NameShort} modules.
 Users can also provide their own security implementation if needed.
 
 Another security measures are incorporated into our reference applications.
@@ -12,7 +12,7 @@ Please note that all features outside WFM modules will need to use our security 
 
 == How to apply authorization using security interface
 You can choose Keycloak or Passport.js implementation but you can securing endpoints in the same way.
-You need to import link:./api/0.0.1/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html[EndpointSecurity]
+You need to import link:++../../../api/0.0.1/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html++[EndpointSecurity]
 interface from passportAuth. Apply either implementation initialisation to the interface.
 You can then use this security interface protect method to guard routes with roles.
 
