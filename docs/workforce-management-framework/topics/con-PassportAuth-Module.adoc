@@ -34,5 +34,5 @@ implement any strategy supported by Passport.js.
 
 == Implementation and Usage
 For implementation and usage see the
-link:{WFM-RC-Github-Core}{WFM-RC-PassportAuth-Example}[example] part
+link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[example] part
 of the PassportAuth module.
