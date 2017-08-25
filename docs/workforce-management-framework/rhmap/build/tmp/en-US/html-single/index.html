@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="chrometwo"><head><title>RainCatcher</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css"/><meta name="generator" content="publican v4.3.3"/><meta name="description" content="This documentation does ABC for FeedHenry 1."/><link rel="next" href="#introducing-raincatcher" title="Chapter 1. Introducing RainCatcher"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><script type="text/javascript" src="Common_Content/scripts/jquery-1.7.1.min.js"> </script><script type="text/javascript" src="Common_Content/scripts/utils.js"> </script><script type="text/javascript" src="Common_Content/scripts/highlight.js/highlight.pack.js"> </script></head><body><div id="chrometwo"><div id="main"><div xml:lang="en-US" class="book" id="idm140138970823136"><div class="titlepage"><div><div class="producttitle"><span class="productname">FeedHenry</span> <span class="productnumber">3.x</span></div><div><h1 class="title">RainCatcher</h1></div><div><h2 class="subtitle">For Use with FeedHenry 1</h2></div><div><div xml:lang="en-US" class="authorgroup"><span class="orgname">Red Hat Customer Content Services </span></div></div><div><a href="#idm140138972388592">Legal Notice</a></div><div><div class="abstract"><p class="title"><strong>Abstract</strong></p><div class="para">
+				This documentation does ABC for FeedHenry 1.
+			</div></div></div></div><hr/></div><div class="toc"><ul class="toc"><li><span class="chapter"><a href="#introducing-raincatcher">1. Introducing RainCatcher</a></span><ul><li><span class="section"><a href="#con-introducing-raincatcher-introducing-raincatcher">1.1. Introducing RainCatcher</a></span><ul><li><span class="section"><a href="#ref-introducing-raincatcher-introducing-raincatcher">1.1.1. RainCatcher Reference Material</a></span></li></ul></li></ul></li><li><span class="chapter"><a href="#introducing-raincatcher-features">2. Introducing RainCatcher Features</a></span><ul><li><span class="section"><a href="#introducing_raincatcher_security_features">2.1. Introducing RainCatcher Security Features</a></span><ul><li><span class="section"><a href="#authorization_using_the_security_interface">2.1.1. Authorization using the Security Interface</a></span></li><li><span class="section"><a href="#con-passportauth-module-introducing-raincatcher-security-features">2.1.2. Introducing the RainCatcher Passport.js Module</a></span></li><li><span class="section"><a href="#introducing_the_raincatcher_keycloak_module">2.1.3. Introducing the RainCatcher Keycloak Module</a></span></li><li><span class="section"><a href="#choosing_passport_js_or_keycloak">2.1.4. Choosing Passport.js or Keycloak</a></span></li></ul></li></ul></li><li><span class="chapter"><a href="#getting-started">3. Getting Started with RainCatcher</a></span><ul><li><span class="section"><a href="#running-the-demo-app-running-the-demo-app">3.1. Running the Demo App</a></span><ul><li><span class="section"><a href="#pro-running-the-demo-app-running-the-demo-app">3.1.1. Introduction</a></span></li><li><span class="section"><a href="#prerequisites">3.1.2. Prerequisites</a></span></li><li><span class="section"><a href="#procedure">3.1.3. Procedure</a></span></li><li><span class="section"><a href="#ref-demo-app-running-the-demo-app">3.1.4. RainCatcher Demo Application Reference Material</a></span></li></ul></li></ul></li><li><span class="chapter"><a href="#programming-a-raincatcher-project">4. Programming a RainCatcher Project</a></span><ul><li><span class="section"><a href="#working_with_passport_js">4.1. Working With Passport.js</a></span><ul><li><span class="section"><a href="#pro-working-with-passportjs-working-with-passportjs">4.1.1. Introduction</a></span></li><li><span class="section"><a href="#prerequisites_2">4.1.2. Prerequisites</a></span></li><li><span class="section"><a href="#procedure_2">4.1.3. Procedure</a></span></li></ul></li></ul></li><li><span class="chapter"><a href="#raincatcher-security">5. RainCatcher Security</a></span><ul><li><span class="section"><a href="#ref-passportjs-securitystrategy-defining-raincatcher-security">5.1. Defining the Security Strategy for RainCatcher Passport.js</a></span><ul><li><span class="section"><a href="#understanding-session-management-defining-raincatcher-security">5.1.1. Understanding Session Management</a></span></li><li><span class="section"><a href="#defining-access-control-defining-raincatcher-security">5.1.2. Defining Access Control</a></span></li><li><span class="section"><a href="#defining-password-storage-defining-raincatcher-security">5.1.3. Defining Password Storage</a></span></li><li><span class="section"><a href="#passportauth-authentication-defining-raincatcher-security">5.1.4. PassportAuth Authentication</a></span></li><li><span class="section"><a href="#passportauth-authorization-defining-raincatcher-security">5.1.5. PassportAuth Authorization</a></span></li></ul></li></ul></li></ul></div><section class="chapter" id="introducing-raincatcher"><div class="titlepage"><div><div><h1 class="title">Chapter 1. Introducing RainCatcher</h1></div></div></div><section class="section" id="con-introducing-raincatcher-introducing-raincatcher"><div class="titlepage"><div><div><h2 class="title">1.1. Introducing RainCatcher</h2></div></div></div><p>
+				RainCatcher is a Workforce Management Platform. The latest version of RainCatcher is 1.0.
+			</p><p>
+				The primary goal of RainCatcher is to produce a set of modules for developers to integrate RainCatcher features into their applications.
+			</p><p>
+				The following features are on the RainCatcher roadmap:
+			</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+						Workflow Management
+					</li><li class="listitem">
+						Geolocation
+					</li><li class="listitem">
+						Image capture
+					</li><li class="listitem">
+						Internal Messaging and 3rd party Messaging
+					</li><li class="listitem">
+						Mobile Forms
+					</li><li class="listitem">
+						Real-time Data Access
+					</li><li class="listitem">
+						Data Synchronization
+					</li><li class="listitem">
+						Integration of sensor data
+					</li></ul></div><p>
+				Features included in RainCatcher 1.0 are:
+			</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+						RainCatcher Security
+					</li></ul></div><section class="section" id="ref-introducing-raincatcher-introducing-raincatcher"><div class="titlepage"><div><div><h3 class="title">1.1.1. RainCatcher Reference Material</h3></div></div></div><p>
+					This section includes:
+				</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+							<a class="link" href="#highlighting-raincatcher-areas-of-focus-introducing-raincatcher" title="1.1.1.1. Highlighting RainCatcher Areas of Focus">Highlighting RainCatcher Areas of Focus</a>
+						</li><li class="listitem">
+							<a class="link" href="#raincatcher-at-a-technical-level-introducing-raincatcher" title="1.1.1.2. RainCatcher at a Technical Level">RainCatcher at a Technical Level</a>
+						</li><li class="listitem">
+							<a class="link" href="#identifying-raincatcher-repositories-introducing-raincatcher" title="1.1.1.3. Identifying RainCatcher Repositories">Identifying RainCatcher Repositories</a>
+						</li><li class="listitem">
+							<a class="link" href="#differentiating-raincatcher-from-tech-preview-introducing-raincatcher" title="1.1.1.4. Differentiating RainCatcher from 'Tech Preview'">Differentiating RainCatcher from 'Tech Preview'</a>
+						</li></ol></div><section class="section" id="highlighting-raincatcher-areas-of-focus-introducing-raincatcher"><div class="titlepage"><div><div><h4 class="title">1.1.1.1. Highlighting RainCatcher Areas of Focus</h4></div></div></div><div class="table" id="idm140138969649760"><p class="title"><strong>Table 1.1. Areas of Focus</strong></p><div class="table-contents"><table class="lt-4-cols lt-7-rows"><colgroup><col style="width: 50%; " class="col_1"/><col style="width: 50%; " class="col_2"/></colgroup><thead><tr><th style="text-align: left; vertical-align: top; ">Area</th><th style="text-align: left; vertical-align: top; ">Focus</th></tr></thead><tbody><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Framework
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										A generic and developer friendly framework (set of classes) for building mobile and website Workforce Management solutions
+									</p>
+									</td></tr><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Modules
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Modules specific to RainCatcher, for example: signature-module, scheduler
+									</p>
+									</td></tr><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Integrations
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Integrations to satisfy RainCatcher needs, for example: authentication, storage, offline capabilities, server side synchronization
+									</p>
+									</td></tr><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										User Interface
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Graphical User Interfaces are implemented in AngularJS and Angular
+									</p>
+									</td></tr></tbody></table></div></div></section><section class="section" id="raincatcher-at-a-technical-level-introducing-raincatcher"><div class="titlepage"><div><div><h4 class="title">1.1.1.2. RainCatcher at a Technical Level</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+								<a class="link" href="https://nodejs.org/en/">Node.js</a> used for server side code
+							</li><li class="listitem">
+								Hybrid mobile development using <a class="link" href="https://cordova.apache.org/">Cordova</a>
+							</li><li class="listitem">
+								Object Oriented approach (classes and interfaces)
+							</li><li class="listitem">
+								Focus on module reuse and flexibility
+							</li><li class="listitem">
+								Incorporates open-source technologies, for example: MongoDb, Keycloak, Passport.js
+							</li></ul></div></section><section class="section" id="identifying-raincatcher-repositories-introducing-raincatcher"><div class="titlepage"><div><div><h4 class="title">1.1.1.3. Identifying RainCatcher Repositories</h4></div></div></div><p>
+						The RainCatcher is available in three github repositories:
+					</p><div class="table" id="idm140138971257088"><p class="title"><strong>Table 1.2. github Repositories</strong></p><div class="table-contents"><table class="lt-4-cols lt-7-rows"><colgroup><col style="width: 50%; " class="col_1"/><col style="width: 50%; " class="col_2"/></colgroup><thead><tr><th style="text-align: left; vertical-align: top; ">Repository</th><th style="text-align: left; vertical-align: top; ">Description</th></tr></thead><tbody><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										<a class="link" href="https://github.com/feedhenry-raincatcher/raincatcher-core">raincatcher-core</a>
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Contains all of the supported modules and demo server.
+									</p>
+									</td></tr><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										<a class="link" href="https://github.com/feedhenry-raincatcher/raincatcher-angularjs">raincatcher-angularjs</a>
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Contains angularJS user interface for RainCatcher
+									</p>
+									</td></tr><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										<a class="link" href="https://github.com/feedhenry-raincatcher/raincatcher-docs">raincatcher-docs</a>
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Repository contains RainCatcher documentation
+									</p>
+									</td></tr></tbody></table></div></div></section><section class="section" id="differentiating-raincatcher-from-tech-preview-introducing-raincatcher"><div class="titlepage"><div><div><h4 class="title">1.1.1.4. Differentiating RainCatcher from 'Tech Preview'</h4></div></div></div><p>
+						The RainCatcher project was originally called <span class="strong strong"><strong>Tech Preview</strong></span>. The <span class="strong strong"><strong>Tech Preview</strong></span> codebase is now deprecated and is accessible at <a class="link" href="https://github.com/feedhenry-raincatcher/raincatcher-documentation">Tech Preview Documentation</a>. The main differences between RainCatcher and <span class="strong strong"><strong>Tech Preview</strong></span> are:
+					</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+								Mediator pattern is removed from RainCatcher
+							</li><li class="listitem">
+								<span class="strong strong"><strong>Tech Preview</strong></span> is not object oriented
+							</li><li class="listitem">
+								<span class="strong strong"><strong>RainCatcher</strong></span> is written in Typescript
+							</li></ul></div></section></section></section></section><section class="chapter" id="introducing-raincatcher-features"><div class="titlepage"><div><div><h1 class="title">Chapter 2. Introducing RainCatcher Features</h1></div></div></div><section class="section" id="introducing_raincatcher_security_features"><div class="titlepage"><div><div><h2 class="title">2.1. Introducing RainCatcher Security Features</h2></div></div></div><p>
+				RainCatcher Security is built around a <span class="strong strong"><strong>Security Interface</strong></span> that abstracts itself from all RainCatcher security libraries. RainCatcher allows you to build a custom security implementation for integration with RainCatcher. RainCatcher also provides you with two security implementations, <a class="link" href="http://www.keycloak.org/">Keycloak</a> and <a class="link" href="http://passportjs.org/">Passport.js</a>.
+			</p><p>
+				<span class="strong strong"><strong>Keycloak</strong></span> and <span class="strong strong"><strong>Passport.js</strong></span> both provide authentication and authorization on the server side. <span class="strong strong"><strong>Keycloak</strong></span> and <span class="strong strong"><strong>Passport.js</strong></span> implementations can replace each other without breaking the any of the RainCatcher module’s internal api and reference applications.
+			</p><section class="section" id="authorization_using_the_security_interface"><div class="titlepage"><div><div><h3 class="title">2.1.1. Authorization using the Security Interface</h3></div></div></div><p>
+					If you build a custom security implementation, the endpoints are secured in the same way as the <span class="strong strong"><strong>Keycloak</strong></span> and <span class="strong strong"><strong>Passport.js</strong></span> implementations.
+				</p><p>
+					To do this, you will need to:
+				</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+							Import the <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html">EndpointSecurity</a> interface from passportAuth
+						</li><li class="listitem">
+							Apply either implementation initialisation to the interface(?).
+						</li><li class="listitem">
+							Once imported, the security interface protect method is used to guard routes with roles.
+						</li></ol></div><p>
+					Please note that all <a class="link" href="https://expressjs.com/">express</a> routes outside of WFM modules must implement the <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html">EndpointSecurity</a> Security Interface.
+				</p></section><section class="section" id="con-passportauth-module-introducing-raincatcher-security-features"><div class="titlepage"><div><div><h3 class="title">2.1.2. Introducing the RainCatcher Passport.js Module</h3></div></div></div><p>
+					<span class="strong strong"><strong>Passport.js</strong></span> is a lightweight authentication middleware for Node.js that is extremely flexible and modular. <span class="strong strong"><strong>Passport.js</strong></span> offers a comprehensive set of <a class="link" href="http://passportjs.org/docs/configure">strategies</a> that support authentication using a username and password, Facebook, Twitter, and more(?).
+				</p><p>
+					<span class="strong strong"><strong>Passport.js</strong></span>:
+				</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+							Can be bundled into an existing Node.js server
+						</li><li class="listitem">
+							Is available by default when running our reference server application(?)
+						</li><li class="listitem">
+							Covers authentication and authorization of <a class="link" href="https://expressjs.com/">express</a> routes
+						</li><li class="listitem">
+							Authorization insures access to routes based on a currently authenticated user and role
+						</li><li class="listitem">
+							Provides authentication of a user using the <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/modules/_src_auth_defaultstrategy_.html">default strategy</a>
+						</li><li class="listitem">
+							Stores user sessions using <a class="link" href="https://github.com/expressjs/session">express-session</a>
+						</li><li class="listitem">
+							Default strategy uses cookies and username and password.
+						</li></ul></div><p>
+					For more information see, <a class="link" href="http://passportjs.org/">passport.org</a>.
+				</p><p>
+					The security aspects of <span class="strong strong"><strong>Passport.js</strong></span> module are described in the Security Strategy and cover areas such as:
+				</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+							Session Management
+						</li><li class="listitem">
+							Access Control
+						</li><li class="listitem">
+							Password Storage
+						</li><li class="listitem">
+							Authentication
+						</li><li class="listitem">
+							Authorization
+						</li></ul></div><p>
+					For more information on the <span class="strong strong"><strong>Passport.js</strong></span> Security Strategy, see <a class="link" href="#ref-passportjs-securitystrategy-defining-raincatcher-security" title="5.1. Defining the Security Strategy for RainCatcher Passport.js">Defining the Security Strategy for RainCatcher Passport.js</a>
+				</p></section><section class="section" id="introducing_the_raincatcher_keycloak_module"><div class="titlepage"><div><div><h3 class="title">2.1.3. Introducing the RainCatcher Keycloak Module</h3></div></div></div><p>
+					<span class="strong strong"><strong>Keycloak</strong></span> is a complete identity management solution that extends standard authorization and authentication functionality and comes with all the overheads involved in running a server. <span class="strong strong"><strong>Keycloak</strong></span> is suggested for solutions that require a more comprehensive integration with company infrastructure.
+				</p><p>
+					For more information see, <a class="link" href="https://keycloak.gitbooks.io/documentation/server_admin/topics/overview/features.html">Keycloak Features</a>.
+				</p></section><section class="section" id="choosing_passport_js_or_keycloak"><div class="titlepage"><div><div><h3 class="title">2.1.4. Choosing Passport.js or Keycloak</h3></div></div></div><p>
+					<span class="strong strong"><strong>Keycloak</strong></span>:
+				</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+							If you want a full identity management solution that can be tied into existing <span class="strong strong"><strong>saml/ldap/sso</strong></span> solutions, choose <span class="strong strong"><strong>Keycloak</strong></span>.
+						</li></ul></div><p>
+					<span class="strong strong"><strong>Passport.js</strong></span>:
+				</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+							If you want a standalone Node.js based authentication solution that is ready out-of-the-box, choose <span class="strong strong"><strong>Passport.js</strong></span>
+						</li></ul></div></section></section></section><section class="chapter" id="getting-started"><div class="titlepage"><div><div><h1 class="title">Chapter 3. Getting Started with RainCatcher</h1></div></div></div><section class="section" id="running-the-demo-app-running-the-demo-app"><div class="titlepage"><div><div><h2 class="title">3.1. Running the Demo App</h2></div></div></div><p>
+				The RainCatcher demo app comprises of three applications <span class="strong strong"><strong>Mobile</strong></span>, <span class="strong strong"><strong>Portal</strong></span> and a <span class="strong strong"><strong>Node.js Server</strong></span>. For testing and demo purposes, <span class="strong strong"><strong>Mobile</strong></span> and <span class="strong strong"><strong>Portal</strong></span> are launched in the browser. <span class="strong strong"><strong>Mobile</strong></span> can be built to run on a mobile phone.
+			</p><section class="section" id="pro-running-the-demo-app-running-the-demo-app"><div class="titlepage"><div><div><h3 class="title">3.1.1. Introduction</h3></div></div></div><p>
+					This section includes:
+				</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+							<a class="link" href="#pro-cloning-the-git-repository-running-the-demo-app" title="Cloning the Git Repository">Cloning the Git Repository</a>
+						</li><li class="listitem">
+							<a class="link" href="#pro-installing-angular-dependencies-running-the-demo-app" title="Installing Repository Dependencies">Installing Angular Dependencies</a>
+						</li><li class="listitem">
+							<a class="link" href="#pro-installing-core-dependencies-running-the-demo-app" title="Installing Core Dependencies">Installing Core Dependencies</a>
+						</li><li class="listitem">
+							<a class="link" href="#pro-starting-the-core-server-running-the-demo-app" title="Starting the Core Server">Starting the Core Server</a>
+						</li><li class="listitem">
+							<a class="link" href="#pro-running-the-mobile-and-portal-demo-applications-running-the-demo-app" title="Running the Mobile and Portal Demo Applications">Running the Mobile and Portal Demo Applications</a>
+						</li></ol></div></section><section class="section" id="prerequisites"><div class="titlepage"><div><div><h3 class="title">3.1.2. Prerequisites</h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+							Node and npm installed (tested on Node 6 LTS)
+						</li><li class="listitem">
+							git installed
+						</li><li class="listitem">
+							access to <code class="literal">git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git</code>
+						</li><li class="listitem">
+							MongoDb installed
+						</li><li class="listitem">
+							Redis installed
+						</li></ul></div></section><section class="section" id="procedure"><div class="titlepage"><div><div><h3 class="title">3.1.3. Procedure</h3></div></div></div><h5 id="pro-cloning-the-git-repository-running-the-demo-app">Cloning the Git Repository</h5><pre class="programlisting language-bash">git clone git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git
+
+cd raincatcher-angularjs</pre><h5 id="pro-installing-angular-dependencies-running-the-demo-app">Installing Repository Dependencies</h5><pre class="programlisting language-bash">npm install
+npm run bootstrap</pre><h5 id="pro-installing-core-dependencies-running-the-demo-app">Installing Core Dependencies</h5><pre class="programlisting language-bash">cd ./core
+npm install
+npm run bootstrap</pre><div class="admonition note"><div class="admonition_header">Note</div><div><p>
+						The Core repository is automatically cloned by the command <code class="literal">npm run bootstrap</code>.
+					</p></div></div><h5 id="pro-starting-the-core-server-running-the-demo-app">Starting the Core Server</h5><pre class="programlisting language-bash">npm run start</pre><div class="admonition note"><div class="admonition_header">Note</div><div><p>
+						The Core server requires MongoDb and Redis to be running
+					</p></div></div><h5 id="pro-running-the-mobile-and-portal-demo-applications-running-the-demo-app">Running the Mobile and Portal Demo Applications</h5><pre class="programlisting language-bash">cd ..
+npm run start</pre><p>
+					Both the Mobile and Portal Demo open automatically in a browser.
+				</p><p>
+					For login details, refer to <a class="link" href="#credentials-for-the-demo-application-running-the-demo-app" title="3.1.4.1. Credentials for the Demo Application">Credentials for the Demo Application</a> section of <a class="link" href="#ref-demo-app-running-the-demo-app" title="3.1.4. RainCatcher Demo Application Reference Material">RainCatcher Demo Application Reference Material</a>.
+				</p><div class="admonition note"><div class="admonition_header">Note</div><div><p>
+						this procedure is for developers to install the latest master branch .
+					</p></div></div></section><section class="section" id="ref-demo-app-running-the-demo-app"><div class="titlepage"><div><div><h3 class="title">3.1.4. RainCatcher Demo Application Reference Material</h3></div></div></div><p>
+					This section includes:
+				</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+							<a class="link" href="#credentials-for-the-demo-application-running-the-demo-app" title="3.1.4.1. Credentials for the Demo Application">Credentials for the Demo Application</a>
+						</li></ol></div><section class="section" id="credentials-for-the-demo-application-running-the-demo-app"><div class="titlepage"><div><div><h4 class="title">3.1.4.1. Credentials for the Demo Application</h4></div></div></div><p>
+						Login using the following credentials:
+					</p><div class="informaltable"><table class="lt-4-cols lt-7-rows"><colgroup><col style="width: 33%; " class="col_1"/><col style="width: 33%; " class="col_2"/><col style="width: 33%; " class="col_3"/></colgroup><thead><tr><th style="text-align: left; vertical-align: top; ">Application</th><th style="text-align: left; vertical-align: top; ">Username</th><th style="text-align: left; vertical-align: top; ">Password</th></tr></thead><tbody><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Mobile
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										<code class="literal">trever</code>
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										<code class="literal">123</code>
+									</p>
+									</td></tr><tr><td style="text-align: left; vertical-align: top; ">
+									<p>
+										Portal
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										<code class="literal">max</code>
+									</p>
+									</td><td style="text-align: left; vertical-align: top; ">
+									<p>
+										<code class="literal">123</code>
+									</p>
+									</td></tr></tbody></table></div></section></section></section></section><section class="chapter" id="programming-a-raincatcher-project"><div class="titlepage"><div><div><h1 class="title">Chapter 4. Programming a RainCatcher Project</h1></div></div></div><section class="section" id="working_with_passport_js"><div class="titlepage"><div><div><h2 class="title">4.1. Working With Passport.js</h2></div></div></div><p>
+				This section describes how to implement Passport.js.
+			</p><p>
+				For more general information on the <span class="strong strong"><strong>Passport.js</strong></span>, see <a class="link" href="#con-passportauth-module-introducing-raincatcher-security-features" title="2.1.2. Introducing the RainCatcher Passport.js Module">Introducing the RainCatcher Passport.js Module</a>
+			</p><section class="section" id="pro-working-with-passportjs-working-with-passportjs"><div class="titlepage"><div><div><h3 class="title">4.1.1. Introduction</h3></div></div></div><p>
+					This section includes:
+				</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+							<a class="link" href="#pro-configuring-passportjs-working-with-passportjs" title="Configuring Passport.js">Configuring Passport.js</a>
+						</li><li class="listitem">
+							<a class="link" href="#pro-implementing-the-userrepository-working-with-passportjs" title="Implementing the UserRepository">Implementing the UserRepository</a>
+						</li><li class="listitem">
+							<a class="link" href="#pro-modifying-a-strategy-working-with-passportjs" title="Modifying a Strategy">Modifying a Strategy</a>
+						</li></ol></div></section><section class="section" id="prerequisites_2"><div class="titlepage"><div><div><h3 class="title">4.1.2. Prerequisites</h3></div></div></div><p>
+					(?)
+				</p></section><section class="section" id="procedure_2"><div class="titlepage"><div><div><h3 class="title">4.1.3. Procedure</h3></div></div></div><h5 id="pro-configuring-passportjs-working-with-passportjs">Configuring Passport.js</h5><p>
+					As the PassportAuth module is the default security module it is install as part of running the Demo App. Demo application starts with Passport module enabled by default. It is an out of the box security solution for Default integration using static json files as user source. To use different source please follow guide bellow. RainCatcher. Passport.js is a lightweight solution that offers all the functionality required to get started.
+				</p><h5 id="pro-implementing-the-userrepository-working-with-passportjs">Implementing the UserRepository</h5><p>
+					Passport.js requires developers to implement <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html">UserRepository</a> that will be used by framework to fetch user data. UserRepository requires that users data will contain at least username and passwordHash.
+				</p><p>
+					For end to end implementation of UserRepository please follow our example app: <a class="link" href="{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}">example</a>
+				</p><h5 id="pro-modifying-a-strategy-working-with-passportjs">Modifying a Strategy</h5><p>
+					The <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/modules/_src_auth_defaultstrategy_.html">default strategy</a> for the PassportAuth module implements the Passport.js local strategy. As a developer you may wish use a different security strategy with the passport.js implementation. You can override the <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html#setup">PassportAuth.setup</a> method to implement any strategy supported by Passport.js.
+				</p><p>
+					For more information on the <span class="strong strong"><strong>Passport.js</strong></span> Security Strategy, see <a class="link" href="#ref-passportjs-securitystrategy-defining-raincatcher-security" title="5.1. Defining the Security Strategy for RainCatcher Passport.js">Defining the Security Strategy for RainCatcher Passport.js</a>
+				</p></section></section></section><section class="chapter" id="raincatcher-security"><div class="titlepage"><div><div><h1 class="title">Chapter 5. RainCatcher Security</h1></div></div></div><section class="section" id="ref-passportjs-securitystrategy-defining-raincatcher-security"><div class="titlepage"><div><div><h2 class="title">5.1. Defining the Security Strategy for RainCatcher Passport.js</h2></div></div></div><p>
+				This section includes:
+			</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+						<a class="link" href="#understanding-session-management-defining-raincatcher-security" title="5.1.1. Understanding Session Management">Understanding Session Management</a>
+					</li><li class="listitem">
+						<a class="link" href="#defining-access-control-defining-raincatcher-security" title="5.1.2. Defining Access Control">Defining Access Control</a>
+					</li><li class="listitem">
+						<a class="link" href="#defining-password-storage-defining-raincatcher-security" title="5.1.3. Defining Password Storage">Defining Password Storage</a>
+					</li><li class="listitem">
+						<a class="link" href="#passportauth-authentication-defining-raincatcher-security" title="5.1.4. PassportAuth Authentication">PassportAuth Authentication</a>
+					</li><li class="listitem">
+						<a class="link" href="#passportauth-authorization-defining-raincatcher-security" title="5.1.5. PassportAuth Authorization">PassportAuth Authorization</a>
+					</li></ol></div><section class="section" id="understanding-session-management-defining-raincatcher-security"><div class="titlepage"><div><div><h3 class="title">5.1.1. Understanding Session Management</h3></div></div></div><p>
+					Users sessions are stored using <code class="literal">express-session</code> module. Visit <a class="link" href="https://github.com/expressjs/session">express-session</a> to find more information about the available express session options.
+				</p></section><section class="section" id="defining-access-control-defining-raincatcher-security"><div class="titlepage"><div><div><h3 class="title">5.1.2. Defining Access Control</h3></div></div></div><p>
+					The PassportAuth module allows role based access control. Routes are protected by role as shown in the example. See authService is an implementation of the <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html">passportAuth</a> in the reference application.
+				</p><pre class="programlisting language-typescript">app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Request, res: express.Response) =&gt; {
+  res.json({ routeName: '/testAdminEndpoint', msg: 'authorized to access admin endpoint' });
+});</pre><p>
+					Demo roles are defined as an array in <a class="link" href="https://github.com/feedhenry-raincatcher/raincatcher-core/blob/master/demo/data/src/users.json">user.json</a>.
+				</p></section><section class="section" id="defining-password-storage-defining-raincatcher-security"><div class="titlepage"><div><div><h3 class="title">5.1.3. Defining Password Storage</h3></div></div></div><p>
+					Passport module has build UserRepository interface that can be used to point to user data. Passwords are stored in datasource that is being configured by developers (possibly external service). To point Passport to user datasource you need to implement the <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html#getuserbylogin">user repository interface</a>
+				</p></section><section class="section" id="passportauth-authentication-defining-raincatcher-security"><div class="titlepage"><div><div><h3 class="title">5.1.4. PassportAuth Authentication</h3></div></div></div><p>
+					From a development point of view RainCatcher uses the Default Strategy for username/password authentication. Authentication is done on the cloud server. Passport authentication service is using a default custom strategy that is based on Passport.js local strategy. Passport’s local strategy is agnostic about database type.
+				</p><p>
+					Passports using <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html#authenticate">authenticate</a> middleware for accepting user credentials and creates session entry that holds user. To access routes user need to login using their credentials. Cookie containing user session key will be used to authenticate and authorize user requesting server endpoint.
+				</p><div class="admonition note"><div class="admonition_header">Note</div><div><p>
+						For demo the login post route has an authenticate method that checks the userId and password against the stored user.json file it also checks the user role against the stored role on user.json.
+					</p></div></div><p>
+					See <a class="link" href="{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}">example</a>
+				</p></section><section class="section" id="passportauth-authorization-defining-raincatcher-security"><div class="titlepage"><div><div><h3 class="title">5.1.5. PassportAuth Authorization</h3></div></div></div><p>
+					Authorization is being supported thanks to <a class="link" href="../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html#protect">protect</a> middleware that validates user session id against session and checks permissions.
+				</p><p>
+					<span class="emphasis"><em>Revised on 2017-08-25 14:25:08 IST</em></span>
+				</p></section></section></section><div><div xml:lang="en-US" class="legalnotice" id="idm140138972388592"><h1 class="legalnotice">Legal Notice</h1><div class="para">
+		Copyright <span class="trademark"/>© 2017 Red Hat, Inc.
+	</div><div class="para">
+		The text of and illustrations in this document are licensed by Red Hat under a Creative Commons Attribution–Share Alike 3.0 Unported license ("CC-BY-SA"). An explanation of CC-BY-SA is available at <a class="uri" href="http://creativecommons.org/licenses/by-sa/3.0/">http://creativecommons.org/licenses/by-sa/3.0/</a>. In accordance with CC-BY-SA, if you distribute this document or an adaptation of it, you must provide the URL for the original version.
+	</div><div class="para">
+		Red Hat, as the licensor of this document, waives the right to enforce, and agrees not to assert, Section 4d of CC-BY-SA to the fullest extent permitted by applicable law.
+	</div><div class="para">
+		Red Hat, Red Hat Enterprise Linux, the Shadowman logo, JBoss, OpenShift, Fedora, the Infinity logo, and RHCE are trademarks of Red Hat, Inc., registered in the United States and other countries.
+	</div><div class="para">
+		<span class="trademark">Linux</span>® is the registered trademark of Linus Torvalds in the United States and other countries.
+	</div><div class="para">
+		<span class="trademark">Java</span>® is a registered trademark of Oracle and/or its affiliates.
+	</div><div class="para">
+		<span class="trademark">XFS</span>® is a trademark of Silicon Graphics International Corp. or its subsidiaries in the United States and/or other countries.
+	</div><div class="para">
+		<span class="trademark">MySQL</span>® is a registered trademark of MySQL AB in the United States, the European Union and other countries.
+	</div><div class="para">
+		<span class="trademark">Node.js</span>® is an official trademark of Joyent. Red Hat Software Collections is not formally related to or endorsed by the official Joyent Node.js open source or commercial project.
+	</div><div class="para">
+		The <span class="trademark">OpenStack</span>® Word Mark and OpenStack logo are either registered trademarks/service marks or trademarks/service marks of the OpenStack Foundation, in the United States and other countries and are used with the OpenStack Foundation's permission. We are not affiliated with, endorsed or sponsored by the OpenStack Foundation, or the OpenStack community.
+	</div><div class="para">
+		All other trademarks are the property of their respective owners.
+	</div></div></div></div></div></div><script type="text/javascript">
+                        jQuery(document).ready(function() {
+                            initSwitchery();
+                            jQuery('pre[class*="language-"]').each(function(i, block){hljs.highlightBlock(block);});
+                        });
+                    </script></body></html>

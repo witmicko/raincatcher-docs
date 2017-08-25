@@ -1,0 +1,53 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: introducing-raincatcher-security-features
+
+//Concepts
+= Introducing {WFM-RC-NameShort} Security Features
+
+{WFM-RC-NameShort} Security is built around a *Security Interface* that abstracts itself from all {WFM-RC-NameShort} security libraries.
+{WFM-RC-NameShort} allows you to build a custom security implementation for integration with {WFM-RC-NameShort}.
+{WFM-RC-NameShort} also provides you with two security implementations, link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
+
+*Keycloak* and *Passport.js* both provide authentication and authorization on the server side.
+*Keycloak* and *Passport.js* implementations can replace each other without breaking the any of the {WFM-RC-NameShort} module's internal api and reference applications.
+
+== Authorization using the Security Interface
+If you build a custom security implementation, the endpoints are secured in the same way as the *Keycloak* and *Passport.js* implementations.
+
+To do this, you will need to:
+
+ . Import the link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html++[EndpointSecurity] interface from passportAuth
+ . Apply either implementation initialisation to the interface(?).
+ . Once imported, the security interface protect method is used to guard routes with roles.
+
+Please note that all link:https://expressjs.com/[express] routes outside of WFM modules must implement the link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html++[EndpointSecurity] Security Interface.
+
+//Pasport.js
+include::topics/con-passportjs-module.adoc[leveloffset=+1]
+
+The security aspects of *Passport.js* module are described in the Security Strategy and cover areas such as:
+
+* Session Management
+* Access Control
+* Password Storage
+* Authentication
+* Authorization
+
+For more information on the *Passport.js* Security Strategy, see xref:ref-passportjs-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} Passport.js]
+
+== Introducing the {WFM-RC-NameShort} Keycloak Module
+*Keycloak* is a complete identity management solution that extends standard authorization and authentication functionality and comes with all the overheads involved in running a server.
+*Keycloak* is suggested for solutions that require a more comprehensive integration with company infrastructure.
+
+For more information see, link:https://keycloak.gitbooks.io/documentation/server_admin/topics/overview/features.html[Keycloak Features].
+
+== Choosing Passport.js or Keycloak
+*Keycloak*:
+
+* If you want a full identity management solution that can be tied into existing *saml/ldap/sso* solutions, choose *Keycloak*.
+
+*Passport.js*:
+
+* If you want a standalone Node.js based authentication solution that is ready out-of-the-box, choose *Passport.js*
