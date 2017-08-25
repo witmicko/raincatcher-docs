@@ -1,0 +1,17 @@
+[id='con-passportauth-module-{chapter}']
+= Introducing the {WFM-RC-NameShort} Passport.js Module
+
+*Passport.js* is a lightweight authentication middleware for Node.js that is extremely flexible and modular.
+*Passport.js* offers a comprehensive set of link:http://passportjs.org/docs/configure[strategies] that support authentication using a username and password, Facebook, Twitter, and more(?).
+
+*Passport.js*:
+
+* Can be bundled into an existing Node.js server
+* Is available by default when running our reference server application(?)
+* Covers authentication and authorization of link:https://expressjs.com/[express] routes
+* Authorization insures access to routes based on a currently authenticated user and role
+* Provides authentication of a user using the link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/modules/_src_auth_defaultstrategy_.html++[default strategy]
+* Stores user sessions using link:https://github.com/expressjs/session[express-session]
+* Default strategy uses cookies and username and password.
+
+For more information see, link:http://passportjs.org/[passport.org].

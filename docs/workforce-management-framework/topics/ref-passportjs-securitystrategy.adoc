@@ -1,5 +1,5 @@
-[id='con-introducing-raincatcher-security-{chapter}']
-= Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth
+[id='ref-passportjs-securitystrategy-{chapter}']
+= Defining the Security Strategy for {WFM-RC-NameShort} Passport.js
 
 This section includes:
 

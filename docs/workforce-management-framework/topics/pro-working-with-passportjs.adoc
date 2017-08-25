@@ -1,32 +1,29 @@
-[id='con-passportauth-module-{chapter}']
-= Introducing the {WFM-RC-NameShort} Passport.js Integration Module
+[id='pro-working-with-passportjs-{chapter}']
+= Introduction
 
-Link to
-link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/passportauth[passportAuth] module.
+This section includes:
 
-{WFM-RC-NameShort} authentication and authorisation module using link:http://passportjs.org[PassportJS].
-The Passport.js module is the default security module for {WFM-RC-NameShort}.
+. xref:pro-configuring-passportjs-{chapter}[Configuring Passport.js]
+. xref:pro-implementing-the-userrepository-{chapter}[Implementing the UserRepository]
+. xref:pro-modifying-a-strategy-{chapter}[Modifying a Strategy]
 
-Passport is using "pluggable" authentication plugins called link:http://passportjs.org/docs/configure[strategies].
-Applications can choose which strategies to employ, without creating unnecessary dependencies.
-Passport.js offers comprehensive set of link:http://passportjs.org/docs/configure[strategies] that support authentication
-using a username and password, Facebook, Twitter, and more.
-This module allows the:
+= Prerequisites
+(?)
 
-- Authorisation insures access to routes based on currently authenticated user and role.
-- Authentication the process of verifying the identity of a user using the link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/modules/_src_auth_defaultstrategy_.html++[default strategy]
-- Storing user sessions using link:https://github.com/expressjs/session[express-session]
-- Default strategy using cookies and username and password.
+= Procedure
 
-
-== Configuring PassportAuth
+[id='pro-configuring-passportjs-{chapter}']
+[discrete]
+== Configuring Passport.js
 As the PassportAuth module is the default security module it is install as part of running the Demo App.
 Demo application starts with Passport module enabled by default. It is an out of the box security solution for
 Default integration using static json files as user source. To use different source please follow guide bellow.
 {WFM-RC-NameShort}. Passport.js is a lightweight solution that offers all the
 functionality required to get started.
 
-== Implementing UserRepository
+[id='pro-implementing-the-userrepository-{chapter}']
+[discrete]
+== Implementing the UserRepository
 
 Passport.js requires developers to implement link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html++[UserRepository] that will be used by framework to
 fetch user data. UserRepository requires that users data will contain at least username and passwordHash.
@@ -34,6 +31,8 @@ fetch user data. UserRepository requires that users data will contain at least u
 For end to end implementation of UserRepository please follow our example app:
 link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[example]
 
+[id='pro-modifying-a-strategy-{chapter}']
+[discrete]
 == Modifying a Strategy
 The link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/modules/_src_auth_defaultstrategy_.html++[default strategy] for the PassportAuth
 module implements the Passport.js local strategy. As a developer you may wish

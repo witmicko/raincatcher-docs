@@ -1,0 +1,17 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: working-with-passportjs
+
+= Working With Passport.js
+
+This section describes how to implement Passport.js.
+
+//Concepts
+For more general information on the *Passport.js*, see xref:con-passportauth-module-introducing-raincatcher-security-features[Introducing the {WFM-RC-NameShort} Passport.js Module]
+
+//Procedures
+include::topics/pro-working-with-passportjs.adoc[leveloffset=+1]
+
+// Related Information
+For more information on the *Passport.js* Security Strategy, see xref:ref-passportjs-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} Passport.js]
