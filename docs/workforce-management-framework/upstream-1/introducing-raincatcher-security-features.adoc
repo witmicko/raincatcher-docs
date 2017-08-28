@@ -39,7 +39,7 @@ For more information on the *Passport.js* Security Strategy, see xref:ref-passpo
 
 == Introducing the {WFM-RC-NameShort} Keycloak Module
 The *Keycloak* module is a complete identity management solution that extends standard authorization and authentication functionality and comes with all the overheads involved in running a server.
-Redhat recommends using *Keycloak* in production to avail of the many features available for enterprise security including:
+Red Hat recommends using *Keycloak* in production to avail of the many features available for enterprise security including:
 
 * link:https://keycloak.gitbooks.io/documentation/server_admin/topics/sso-protocols.html[Single-Sign On]
 * link:https://keycloak.gitbooks.io/documentation/content/server_admin/topics/user-federation.html[User Federation]
