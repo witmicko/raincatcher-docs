@@ -3,37 +3,40 @@
 
 This section includes:
 
-. xref:pro-configuring-passportjs-{chapter}[Configuring Passport.js]
-. xref:pro-implementing-the-userrepository-{chapter}[Implementing the UserRepository]
-. xref:pro-modifying-a-strategy-{chapter}[Modifying a Strategy]
+. xref:pro-disabling-passportjs-{chapter}[Disabling Passport.js]
+. xref:pro-enabling-passportjs-{chapter}[Enabling Passport.js]
+. xref:pro-pointing-passportjs-to-a-datasource-{chapter}[Pointing Passport.js to a Datasource]
 
 = Prerequisites
-(?)
+
+You must have completed:
+
+. xref:getting-started[Getting Started]
 
 = Procedure
 
-[id='pro-configuring-passportjs-{chapter}']
+[id='pro-disabling-passportjs-{chapter}']
 [discrete]
-== Configuring Passport.js
-Passport.js module is currently integrated with the Demo applications and is enabled by default.
-It is an out of the box security solution for default integration using static json files as user source.
-To use different source please follow guide bellow.
-{WFM-RC-NameShort}. Passport.js is a lightweight solution that offers all the functionality required to get started.
+== Disabling Passport.js
 
-[id='pro-implementing-the-userrepository-{chapter}']
+<***TODO***>
+[source,bash]
+----
+<***TODO***>
+----
+
+[id='pro-enabling-passportjs-{chapter}']
 [discrete]
-== Implementing the UserRepository
-Passport.js requires developers to implement link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html++[UserRepository] that will be used by framework to fetch user data.
-UserRepository requires that users data will contain at least username and passwordHash.
+== Enabling Passport.js
 
-For end to end implementation of UserRepository please follow our example app:
-link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[example]
+<***TODO***>
+[source,bash]
+----
+<***TODO***>
+----
 
-[id='pro-modifying-a-strategy-{chapter}']
+[id='pro-pointing-passportjs-to-a-datasource-{chapter}']
 [discrete]
-== Modifying a Strategy
-The link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/modules/_src_auth_defaultstrategy_.html++[default strategy] for the PassportAuth
-module implements the Passport.js local strategy. As a developer you may wish
-use a different security strategy with the passport.js implementation. You can override the
-link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html#setup++[PassportAuth.setup] method to
-implement any strategy supported by Passport.js.
+== Pointing Passport.js to a Datasource
+
+. Implement the link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html#getuserbylogin++[User Repository Interface].

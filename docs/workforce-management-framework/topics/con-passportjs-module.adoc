@@ -8,11 +8,11 @@ link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/{WFM-RC-Bran
 *Passport.js*:
 
 * Can be bundled into an existing Node.js server
-* Is available by default when running our reference server application(?)
+* Is available by default when running the default {WFM-RC-NameShort} solution
 * Covers authentication of link:https://expressjs.com/[Express] routes
 ** Provides authentication using the link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/modules/_src_auth_defaultstrategy_.html++[default strategy]
 ** Default strategy uses cookies, and username and password
-** Authorization insures access to routes based on a currently authenticated user and role
+* Authorization insures access to routes based on a currently authenticated user and role
 * Stores user sessions using link:https://github.com/expressjs/session[express-session]
 
 For more information see, link:http://passportjs.org/[passport.org].

@@ -5,7 +5,7 @@ include::topics/shared/attributes.adoc[]
 
 = Working With Passport.js
 
-This section describes how to implement Passport.js.
+This section describes how to modify aspects of *Passport.js*.
 
 //Concepts
 For more general information on the *Passport.js*, see xref:con-passportauth-module-introducing-raincatcher-security-features[Introducing the {WFM-RC-NameShort} Passport.js Module]
@@ -13,5 +13,5 @@ For more general information on the *Passport.js*, see xref:con-passportauth-mod
 //Procedures
 include::topics/pro-working-with-passportjs.adoc[leveloffset=+1]
 
-// Related Information
-For more information on the *Passport.js* Security Strategy, see xref:ref-passportjs-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} Passport.js]
+== Passport.js Reference Material
+For more information, see xref:ref-passportjs-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} Passport.js]
