@@ -39,9 +39,15 @@ For more information on the *Passport.js* Security Strategy, see xref:ref-passpo
 
 == Introducing the {WFM-RC-NameShort} Keycloak Module
 *Keycloak* is a complete identity management solution that extends standard authorization and authentication functionality and comes with all the overheads involved in running a server.
-*Keycloak* is suggested for solutions that require a more comprehensive integration with company infrastructure.
+Redhat recommends using *Keycloak* in production to avail of the many features available for Enterprise Security including:
 
-For more information see, link:https://keycloak.gitbooks.io/documentation/server_admin/topics/overview/features.html[Keycloak Features].
+* link:https://keycloak.gitbooks.io/documentation/server_admin/topics/sso-protocols.html[Single-Sign On]
+* link:https://keycloak.gitbooks.io/documentation/content/server_admin/topics/user-federation.html[User Federation]
+* link:https://keycloak.gitbooks.io/documentation/content/server_admin/topics/authentication/x509.html[Client Cert Authentication]
+* link:https://keycloak.gitbooks.io/documentation/content/server_admin/topics/authentication/otp-policies.html[2FA with OTP]
+* link:https://keycloak.gitbooks.io/documentation/content/server_admin/topics/sessions/administering.html[User Session Management]
+* link:https://keycloak.gitbooks.io/documentation/server_admin/topics/events.html[Auditing]
+* link:https://keycloak.gitbooks.io/documentation/content/server_admin/topics/threat/brute-force.html[Brute Force Detection]
 
 == Choosing Passport.js or Keycloak
 *Keycloak*:
