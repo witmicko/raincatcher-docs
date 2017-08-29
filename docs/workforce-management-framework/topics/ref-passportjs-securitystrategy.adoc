@@ -41,9 +41,8 @@ To point *Passport.js* to a datasource, you must implement the User Repository I
 The *Passport.js* authentication service uses a default custom strategy that is based on the local *Passport.js* strategy.
 The *Passport.js* local strategy is database agnostic.
 
-*Passport.js* uses link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] 
-middleware for accepting user credentials and creates a session entry that holds user[authenticate] middleware for accepting user credentials and creates session entry that holds user.
-To access routes, a user must logon using their credentials. A cookie containing a user session key will be used to authenticate and authorize users who request server endpoint.
+*Passport.js* uses link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] middleware for accepting user credentials and creates a session entry for a user.
+To access _express_ routes, a user must login using their credentials. A cookie containing a user session key is used to authenticate and authorize a user who is requesting a server endpoint.
 
 NOTE: For demonstration purposes, the login post route has an authenticate method that checks the _userId_ and _password_
 against the stored _user.json_ file. It also checks the user's role against the role on _user.json_.
