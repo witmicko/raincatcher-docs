@@ -1,14 +1,15 @@
 [id='logging-module-{chapter}']
 = Logging Module
 
-The {WFM-RC-NameLong} Logger Module is a logging facade for node.js based applications and it is used by all {WFM-RC-NameLong} modules.
-The {WFM-RC-NameLong} Logger Module is contained in the `raincatcher-core` module. Users can
-use there own loggers by wrapping them into provided interfaces. See link:TODOtypedoclink[typedoc] for more information on interface structure.
+The {WFM-RC-NameLong} Logger Module is a logging facade for Node.js based applications and it is used by all {WFM-RC-NameLong} modules.
 
-The {WFM-RC-NameLong} Logger Module is contained in link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/logger[raincatcher-core].
-Developers can use there own loggers by wrapping them into provided interface. See link:TODOtypedoclink[typedoc] for more information on interface structure.
+== Developer usage
+
+The {WFM-RC-NameLong} Logger Module is contained in the `{WFM-RC-NameLong}-core` module. Developers can
+use there own loggers by wrapping them into provided interfaces. See link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/logger/src/Logger.ts[Logger.ts] for more information on interface structure.
+There are two implementations of the logger interface within the logger module for use with our Demo application.
+For usage of these implementation see the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/logger/example/index.ts[example]
 
 
- <TODO> generate typedoc and link to documentation.
 
 

@@ -19,7 +19,7 @@ image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/
 
 [[programming-a-raincatcher-project]]
 == Programming a {WFM-RC-NameShort} Project
-include::using-wfm-logger.adoc[leveloffset=+2]
+include::../topics/con-logging.adoc[leveloffset=+2]
 
 [[testing-a-raincatcher-project]]
 == Testing a {WFM-RC-NameShort} Project
