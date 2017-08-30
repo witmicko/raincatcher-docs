@@ -4,6 +4,7 @@ include::topics/shared/attributes.adoc[]
 
 [id='running-the-demo-app-{chapter}']
 = Running the Demo App
+//Concepts
 The {WFM-RC-NameShort} demo app comprises of three applications *Mobile*, *Portal* and a *Node.js Server*.
 For testing and demo purposes, *Mobile* and *Portal* are launched in the browser.
 *Mobile* can be built to run on a mobile phone.

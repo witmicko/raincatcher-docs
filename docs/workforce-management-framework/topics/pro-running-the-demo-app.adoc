@@ -53,7 +53,6 @@ npm run bootstrap
 
 NOTE: The Core repository is automatically cloned by the command `npm run bootstrap`.
 
-
 [id='pro-starting-the-core-server-{chapter}']
 [discrete]
 == Starting the Core Server

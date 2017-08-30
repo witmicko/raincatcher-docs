@@ -1,16 +1,20 @@
 include::topics/shared/attributes.adoc[]
 
-:sectnums:
-:toc: left
-:toclevels: 5
-:last-update-label!:
-
-image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/logo-blue.png[logo]
+[[WFM-RC-NameLong]]
+= {WFM-RC-NameLong}
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
 include::introducing-raincatcher.adoc[leveloffset=+2]
 
+<<<<<<< HEAD
+//[[preparing-the-local-development-environment]]
+//== Preparing the Local Development Environment
+
+[[getting-started]]
+== Getting Started with {WFM-RC-NameLong}
+include::running-the-demo-app.adoc[leveloffset=+2]
+=======
 [[introducing-raincatcher-features]]
 == Introducing {WFM-RC-NameLong} Features
 include::introducing-raincatcher-security-features.adoc[leveloffset=+2]
@@ -29,6 +33,7 @@ include::working-with-passportjs.adoc[leveloffset=+2]
 [[raincatcher-security]]
 == {WFM-RC-NameShort} Security
 include::defining-raincatcher-security.adoc[leveloffset=+2]
+>>>>>>> 88c2df182fcca9154e238f7cc1d4793bbdaab73a
 
 // **********************************
 // * Appendix: Revision Information *
