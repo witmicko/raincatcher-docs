@@ -4,4 +4,4 @@ include::topics/shared/attributes.adoc[]
 :chapter: defining-raincatcher-security
 
 //References
-include::topics/ref-passportjs-securitystrategy.adoc[leveloffset=+0]
+include::topics/ref-passportauth-securitystrategy.adoc[leveloffset=+0]

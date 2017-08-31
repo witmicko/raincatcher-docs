@@ -1,0 +1,10 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: introducing-features-and-modules
+
+= {WFM-RC-NameLong} Features
+include::topics/con-introducing-securityfeatures.adoc[leveloffset=+1]
+
+= {WFM-RC-NameLong} Modules
+include::topics/con-passportauth-module.adoc[leveloffset=+1]

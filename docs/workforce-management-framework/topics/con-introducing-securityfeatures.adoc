@@ -1,9 +1,4 @@
-include::topics/shared/attributes.adoc[]
-
-//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
-:chapter: introducing-raincatcher-security-features
-
-//Concepts
+[id='con-introducing-securityfeatures-{chapter}']
 = Introducing {WFM-RC-NameShort} Security Features
 
 {WFM-RC-NameShort} Security is built around a *Security Interface* which abstracts itself from all {WFM-RC-NameShort} security libraries.
@@ -25,19 +20,16 @@ If you choose to build a custom security implementation, you will need to:
 NOTE: All link:https://expressjs.com/[express] routes outside of WFM modules must implement the link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html++[EndpointSecurity] Security Interface.
 
 //Pasport.js
-include::topics/con-passportjs-module.adoc[leveloffset=+1]
+== Introducing Passport.js
 
-The security aspects of *Passport.js* module are described in the Security Strategy and cover areas such as:
+*Passport.js* is a lightweight authentication middleware solution for Node.js and Can be bundled into existing Node.js server.
+*Passport.js* offers a comprehensive set of link:http://passportjs.org/docs/configure[strategies] that support authentication using a username and password, Facebook logon, Twitter logon, and more.
 
-* Understanding Session Management
-* Defining Access Control
-* Defining Password Storage
-* Passport.js Authentication
-* Passport.js Authorization
+For more information, see link:http://passportjs.org/[passportjs.org].
 
-For more information on the *Passport.js* Security Strategy, see xref:ref-passportjs-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} Passport.js]
+The link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/{WFM-RC-Branch}/cloud/passportauth[PassportAuth] module is {WFM-RC-NameShort}'s implementation of *Passport.js* and is the default authentication and authorization module for {WFM-RC-NameShort}.
 
-== Introducing the {WFM-RC-NameShort} Keycloak Module
+== Introducing Keycloak
 The *Keycloak* module is a complete identity management solution that extends standard authorization and authentication functionality and comes with all the overheads involved in running a server.
 Red Hat recommends using *Keycloak* in production to avail of the many features available for enterprise security including:
 
