@@ -18,7 +18,8 @@
 :WFM-RC-NameShort: RainCatcher
 :WFM-RC-Version: 1.0
 :WFM-RC-NodeVersion: 6 LTS
-
+:WFM-RC-MongoDBVersion: <latest version>
+:WFM-RC-RedisVersion: <latest version>
 
 :WFM-RC-KeycloakName: Keycloak
 :WFM-RC-Branch: master
@@ -27,6 +28,7 @@
 :WFM-RC-AngularJsURL: https://github.com/feedhenry-raincatcher/raincatcher-angularjs/blob/
 :WFM-RC-CoreURL: https://github.com/feedhenry-raincatcher/raincatcher-core/blob/
 :WFM-RC-KeycloakDockerURL: https://github.com/feedhenry-raincatcher/raincatcher-keycloak/blob/
+//***NEW END***
 //***NEW END***
 
 // Component Names
