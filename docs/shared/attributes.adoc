@@ -18,6 +18,8 @@
 :WFM-RC-NameShort: RainCatcher
 :WFM-RC-Version: 1.0
 :WFM-RC-NodeVersion: 6 LTS
+:WFM-RC-MongoDBVersion: <latest version>
+:WFM-RC-RedisVersion: <latest version>
 //***NEW END***
 
 // Component Names
