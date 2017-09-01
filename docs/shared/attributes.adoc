@@ -28,6 +28,9 @@
 :WFM-RC-Api-User-Repository: /auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html
 :WFM-RC-Api-Endpoint-Security: /auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html
 
+// git url
+:WFM-RC-CoreTreeURL: https://github.com/feedhenry-raincatcher/raincatcher-core/tree/
+:WFM-RC-CoreURL: https://github.com/feedhenry-raincatcher/raincatcher-core/blob/
 
 //***NEW END***
 

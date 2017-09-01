@@ -1,13 +1,12 @@
 [id='con-passportauth-module-{chapter}']
 = Introducing the {WFM-RC-NameShort} PassportAuth Module
 
-The link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/{WFM-RC-Branch}/cloud/passportauth[PassportAuth] module is {WFM-RC-NameShort}'s implementation of *Passport.js* and is the default authentication and authorization module for {WFM-RC-NameShort}.
+The link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth] module is {WFM-RC-NameShort}'s implementation of *Passport.js* and is the default authentication and authorization module for {WFM-RC-NameShort}.
 *PassportAuth* provides pluggable authentication using link:http://passportjs.org/docs/configure[strategies].
 *PassportAuth* offers a comprehensive set of strategies that support authentication using a username and password, Facebook logon, Twitter logon, and more.
 
 *PassportAuth* provides:
 
 * Access Control of Express routes
-* Authorization of routes accessibility based on currently authenticated user and roles
 * Authentication using the link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Default-Strategy}[default strategy]
 * Express session middleware using link:https://github.com/expressjs/session[express-session]

@@ -20,7 +20,7 @@ For more information, see link:https://github.com/expressjs/session[express-sess
 [id='defining-access-control-{chapter}']
 == Defining Access Control
 *PassportAuth* provides role based access control and _routes_ are protected by these roles.
-_authService_ is an an implementation of link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html++[PassportAuth].
+_authService_ is an an implementation of link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth].
 For more information, see the following code snippet:
 
 [source,typescript]
@@ -30,35 +30,39 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
 });
 ----
 
-NOTE: Demo roles are defined as an array in link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/{WFM-RC-Branch}/demo/data/src/users.json[user.json].
+NOTE: Demo roles are defined as an array in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/data/src/users.json[user.json].
 
 [id='defining-password-storage-{chapter}']
 == Defining Password Storage
-The link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html#getuserbylogin++[User Repository Interface] is used to store *PassportAuth* user data.
+The link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}#getuserbylogin[User Repository Interface] 
+is used to store *PassportAuth* user data.
 To point *PassportAuth* to a datasource, you must implement the User Repository Interface.
 
 [id='passportauth-authentication-{chapter}']
 == PassportAuth Authentication
-{WFM-RC-NameShort} uses the Default Strategy for username/password authentication, and authentication happens on the cloud server.
-The *PassportAuth* authentication service uses a default custom strategy that is based on the local *PassportAuth* strategy.
-The *PassportAuth* local strategy is database agnostic.
+{WFM-RC-NameShort} uses the Default Strategy for username/password authentication, and authentication happens on 
+the cloud server. The *PassportAuth* authentication service uses a default custom strategy that is based on the 
+local *Passport.js* strategy.The *PassportAuth* local strategy is database agnostic.
 
-*PassportAuth* uses link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] middleware for accepting user credentials and creates a session entry for a user.
-To access _express_ routes, a user must login using their credentials. A cookie containing a user session key is used to authenticate and authorize a user who is requesting a server endpoint.
+*PassportAuth* uses link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] 
+middleware for cookie based authentication.To access _express_ routes, 
+a user must login using their credentials. A cookie containing a user session key is used to authenticate and 
+authorize a user who is requesting a server endpoint.
 
-NOTE: For demonstration purposes, the login post route has an authenticate method that checks the _userId_ and _password_
-against the stored _user.json_ file. It also checks the user's role against the role on _user.json_.
+NOTE: In the demonstration application, the login post route has an authenticate() method that checks user credentials
+against the stored credentials in the _user.json_ file. It also checks the user's role against the role on _user.json_.
 
 For more information, see the link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[PassportAuth example].
 
 [id='passportauth-authorization-{chapter}']
 == PassportAuth Authorization
-Authorization is supported by link:++../../../api/{WFM-RC-Api-Version}/auth-passport/docs/interfaces/_src_auth_passportauth_.endpointsecurity.html#protect++[protect middleware] that validates a _user session id_ against session.
+Authorization is supported by link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}[protect middleware] that validates a _user session id_ against session.
 
 [id='customizing-a-strategy-{chapter}']
 == Customizing a Strategy
-The default strategy for the *PassportAuth* module implements the *Passport.js* local strategy.
-To use a different security strategy that is supported by {WFM-RC-NameShort}, override the link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth.setup] method.
+The link:default strategy for the *PassportAuth* module implements the *Passport.js* local strategy.
+To use a different security strategy that is supported by {WFM-RC-NameShort}, override the 
+link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth.setup] method.
 
 [id='passportAuth-demo-users-and-access-roles-{chapter}']
 == PassportAuth Demo Users and Access Roles

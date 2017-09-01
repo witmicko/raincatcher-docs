@@ -34,12 +34,19 @@ You must have completed:
 //----
 //<***TODO***>
 //----
+== Configuration of PassportAuth module
+
+As the PassportAuth module is the default provider of authentication and authorisation, it is already integrated 
+with the Demo applications. It is an out of the box security solution for default integration using static 
+JSON files as user source. The sample users and access roles are defined in a JSON file for Demo purposes in the 
+link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/data/src/users.json[Demo Data] To use different source please follow guide bellow. RainCatcher PassportAuth is a lightweight solution 
+that offers all the functionality required to get started.
 
 [id='pro-pointing-passportauth-to-a-datasource-{chapter}']
 [discrete]
 == Pointing PassportAuth to a Datasource
 
-NOTE: _UserRepository_ requires existing user data ( username and password) to work.
+NOTE: _UserRepository_ requires user data containing a minimum of username and password to work.
 
 . Implement the link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[UserRepository].
 
