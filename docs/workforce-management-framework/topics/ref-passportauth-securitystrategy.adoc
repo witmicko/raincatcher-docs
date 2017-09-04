@@ -66,4 +66,4 @@ link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[Pa
 
 [id='passportAuth-demo-users-and-access-roles-{chapter}']
 == PassportAuth Demo Users and Access Roles
-*PassportAuth* is by default integrated with the Demo application and contains sample users and access roles which are defined in the link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/{WFM-RC-Branch}/demo/data/src/users.json[Demo Data] JSON file.
+*PassportAuth* is by default integrated with the Demo application and contains sample users and access roles which are defined in the link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[Demo Data] JSON file.
