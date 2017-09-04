@@ -30,7 +30,7 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
 });
 ----
 
-NOTE: Demo roles are defined as an array in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/data/src/users.json[user.json].
+NOTE: Demo roles are defined as an array in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[user.json].
 
 [id='defining-password-storage-{chapter}']
 == Defining Password Storage
@@ -44,7 +44,7 @@ To point *PassportAuth* to a datasource, you must implement the User Repository 
 the cloud server. The *PassportAuth* authentication service uses a default custom strategy that is based on the 
 local *Passport.js* strategy.The *PassportAuth* local strategy is database agnostic.
 
-*PassportAuth* uses link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] 
+*PassportAuth* uses link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] 
 middleware for cookie based authentication.To access _express_ routes, 
 a user must login using their credentials. A cookie containing a user session key is used to authenticate and 
 authorize a user who is requesting a server endpoint.
@@ -56,13 +56,13 @@ For more information, see the link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-Pa
 
 [id='passportauth-authorization-{chapter}']
 == PassportAuth Authorization
-Authorization is supported by link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}[protect middleware] that validates a _user session id_ against session.
+Authorization is supported by link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}[protect middleware] that validates a _user session id_ against session.
 
 [id='customizing-a-strategy-{chapter}']
 == Customizing a Strategy
 The link:default strategy for the *PassportAuth* module implements the *Passport.js* local strategy.
 To use a different security strategy that is supported by {WFM-RC-NameShort}, override the 
-link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth.setup] method.
+link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth.setup] method.
 
 [id='passportAuth-demo-users-and-access-roles-{chapter}']
 == PassportAuth Demo Users and Access Roles
