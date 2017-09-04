@@ -48,6 +48,6 @@ that offers all the functionality required to get started.
 
 NOTE: _UserRepository_ requires user data containing a minimum of username and password to work.
 
-. Implement the link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[UserRepository].
+. Implement the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[UserRepository].
 
 For an end to end implementation of the _UserRepository_ interface, see link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[PassportAuth-Example].
