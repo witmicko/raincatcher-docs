@@ -1,7 +1,7 @@
 include::topics/shared/attributes.adoc[]
 
+[[WFM-RC-NameLong]]
 = {WFM-RC-NameLong}
-Reference Documentation for {WFM-RC-NameLong}
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
