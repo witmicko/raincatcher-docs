@@ -56,6 +56,13 @@ npm run bootstrap
 
 NOTE: The Core repository is automatically cloned by the command `npm run bootstrap`.
 
+[id='pro-starting-mongodb-and-redis-{chapter}']
+[discrete]
+== Starting MongoDB and Redis
+
+Start MongoDB. For more information, see link:https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-processes[Start MongoDB Processes].
+
+Start Redis. For more information, see link:https://redis.io/topics/quickstart#starting-redis[Starting Redis].
 
 [id='pro-starting-the-core-server-{chapter}']
 [discrete]
@@ -66,7 +73,7 @@ NOTE: The Core repository is automatically cloned by the command `npm run bootst
 npm run start
 ----
 
-NOTE: The Core server requires MongoDb and Redis to be running
+NOTE: The terminal is out of use while the Core Server is running. Open a new terminal to run additional commands.
 
 [id='pro-running-the-mobile-and-portal-demo-applications-{chapter}']
 [discrete]
@@ -81,5 +88,3 @@ npm run start
 Both the Mobile and Portal Demo open automatically in a browser.
 
 For login details, refer to xref:credentials-for-the-demo-application-{chapter}[Credentials for the Demo Application] section of xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo Application Reference Material].
-
-NOTE: this procedure is for developers to install the latest master branch .

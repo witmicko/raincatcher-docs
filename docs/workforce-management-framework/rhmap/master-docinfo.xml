@@ -4,7 +4,7 @@
 <release>{DocInfoProductNumber}</release>
 <subtitle>For Use with {ProductName} {ProductRelease}</subtitle>
 <abstract>
-    <para>This document contains detailed instructions for upgrading an {ProductShortName} 4.4 installation to {ProductShortName} 4.5.</para>
+    <para>{ProductName} {ProductRelease} Documentation</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>
