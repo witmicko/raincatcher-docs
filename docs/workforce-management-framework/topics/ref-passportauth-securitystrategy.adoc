@@ -19,9 +19,9 @@ For more information, see link:https://github.com/expressjs/session[express-sess
 
 [id='defining-access-control-{chapter}']
 == Defining Access Control
-*PassportAuth* provides role based access control and _routes_ are protected by these roles.
-_authService_ is an an implementation of link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth].
-For more information, see the following code snippet:
+_Routes_ are protected by *PassportAuth* provided role based access control.
+_AuthService_ is an an implementation of link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth].
+For more information, see the following example:
 
 [source,typescript]
 ----
@@ -30,19 +30,17 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
 });
 ----
 
-NOTE: Demo roles are defined as an array in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[user.json].
+NOTE: Demo roles are defined in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[user.json].
 
 [id='defining-password-storage-{chapter}']
 == Defining Password Storage
-The link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}#getuserbylogin[User Repository Interface] 
-is used to store *PassportAuth* user data.
-To point *PassportAuth* to a datasource, you must implement the User Repository Interface.
+The *PassportAuth* user data is stored in link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}#getuserbylogin[User Repository Interface].
+User Repository Interface must be implemented in order to point *PassportAuth* to a datasource,
 
 [id='passportauth-authentication-{chapter}']
 == PassportAuth Authentication
-{WFM-RC-NameShort} uses the Default Strategy for username/password authentication, and authentication happens on 
-the cloud server. The *PassportAuth* authentication service uses a default custom strategy that is based on the 
-local *Passport.js* strategy.The *PassportAuth* local strategy is database agnostic.
+{WFM-RC-NameShort} uses username/password as the default authentication strategy, credentials are authenticated on the cloud server.
+ The *PassportAuth* is using _local_ *Passport.js* based strategy.
 
 *PassportAuth* uses link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] 
 middleware for cookie based authentication.To access _express_ routes, 

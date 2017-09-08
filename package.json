@@ -6,6 +6,7 @@
   "scripts": {
     "buildAsciiDocs": "node ./website/cli.js asciidocs-build",
     "buildApiDocs": "node ./website/cli.js apidocs-build",
+    "buildall": "npm run buildAsciiDocs && npm run buildApiDocs",
     "publishPage": "node ./website/cli.js publish"
   },
   "dependencies": {

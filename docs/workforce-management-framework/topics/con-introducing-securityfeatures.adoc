@@ -2,11 +2,11 @@
 = Introducing {WFM-RC-NameShort} Security Features
 
 {WFM-RC-NameShort} Security is built around a *Security Interface* which abstracts itself from all {WFM-RC-NameShort} security libraries.
-{WFM-RC-NameShort} allows you to build a custom security solution for integration with {WFM-RC-NameShort}.
-{WFM-RC-NameShort} also provides two security implementations out-of-the-box and are called link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
+{WFM-RC-NameShort} allows you to integrate custom security solution.
+{WFM-RC-NameShort} also provides two out-of-the-box security implementations: link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
 
-*Keycloak* and *Passport.js* both provide authentication and authorization on the server side.
-*Keycloak* and *Passport.js* implementations can replace each other without breaking the internal api belonging to all {WFM-RC-NameShort} module's and also any of the reference applications.
+*Keycloak* and *Passport.js* both provide server side authentication and authorization.
+*Keycloak* and *Passport.js* implementations can replace each other without breaking the internal {WFM-RC-NameShort} api, modules and also any of the reference applications.
 
 == Authorization using the Security Interface
 If you build a custom security implementation, the endpoints are secured in the same way as the *Keycloak* and *Passport.js* implementations.
@@ -22,7 +22,7 @@ NOTE: All link:https://expressjs.com/[express] routes outside of WFM modules mus
 //Pasport.js
 == Introducing Passport.js
 
-*Passport.js* is a lightweight authentication middleware solution for Node.js and Can be bundled into existing Node.js server.
+*Passport.js* is a lightweight authentication middleware solution for Node.js and can be bundled into existing Node.js server.
 *Passport.js* offers a comprehensive set of link:http://passportjs.org/docs/configure[strategies] that support authentication using a username and password, Facebook logon, Twitter logon, and more.
 
 For more information, see link:http://passportjs.org/[passportjs.org].
@@ -30,7 +30,7 @@ For more information, see link:http://passportjs.org/[passportjs.org].
 The link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth] module is {WFM-RC-NameShort}'s implementation of *Passport.js* and is the default authentication and authorization module for {WFM-RC-NameShort}.
 
 == Introducing Keycloak
-The *Keycloak* module is a complete identity management solution that extends standard authorization and authentication functionality and comes with all the overheads involved in running a server.
+The *Keycloak* module is a complete identity management solution. It extends standard authorization and authentication functionality and comes with all the overheads involved in running a server.
 Red Hat recommends using *Keycloak* in production to avail of the many features available for enterprise security including:
 
 * link:https://keycloak.gitbooks.io/documentation/server_admin/topics/sso-protocols.html[Single-Sign On]
