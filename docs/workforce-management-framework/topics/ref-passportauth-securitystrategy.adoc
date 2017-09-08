@@ -19,7 +19,7 @@ For more information, see link:https://github.com/expressjs/session[express-sess
 
 [id='defining-access-control-{chapter}']
 == Defining Access Control
-_Routes_ are protected by *PassportAuth* provided role based access control.
+_Routes_ are protected by *PassportAuth* which provides role based access control.
 _AuthService_ is an an implementation of link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth].
 For more information, see the following example:
 
@@ -35,7 +35,7 @@ NOTE: Demo roles are defined in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server
 [id='defining-password-storage-{chapter}']
 == Defining Password Storage
 The *PassportAuth* user data is stored in link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}#getuserbylogin[User Repository Interface].
-User Repository Interface must be implemented in order to point *PassportAuth* to a datasource,
+Make sure that the _User Repository Interface_ is implemented in order to point *PassportAuth* to a datasource.
 
 [id='passportauth-authentication-{chapter}']
 == PassportAuth Authentication

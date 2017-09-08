@@ -2,8 +2,8 @@
 = Introducing {WFM-RC-NameShort} Security Features
 
 {WFM-RC-NameShort} Security is built around a *Security Interface* which abstracts itself from all {WFM-RC-NameShort} security libraries.
-{WFM-RC-NameShort} allows you to integrate custom security solution.
-{WFM-RC-NameShort} also provides two out-of-the-box security implementations: link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
+{WFM-RC-NameShort} allows you to integrate a custom security solution.
+{WFM-RC-NameShort} also provides two out-of-the-box security implementations called link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
 
 *Keycloak* and *Passport.js* both provide server side authentication and authorization.
 *Keycloak* and *Passport.js* implementations can replace each other without breaking the internal {WFM-RC-NameShort} api, modules and also any of the reference applications.
@@ -22,7 +22,7 @@ NOTE: All link:https://expressjs.com/[express] routes outside of WFM modules mus
 //Pasport.js
 == Introducing Passport.js
 
-*Passport.js* is a lightweight authentication middleware solution for Node.js and can be bundled into existing Node.js server.
+*Passport.js* is a lightweight authentication middleware solution for Node.js and can be bundled into an existing Node.js server.
 *Passport.js* offers a comprehensive set of link:http://passportjs.org/docs/configure[strategies] that support authentication using a username and password, Facebook logon, Twitter logon, and more.
 
 For more information, see link:http://passportjs.org/[passportjs.org].

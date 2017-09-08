@@ -35,10 +35,10 @@ You must have completed:
 //<***TODO***>
 //----
 == Configuration of PassportAuth module
-The module is an out of the box security solution for default integration. It is using JSON files
-as user data source. The sample users and access roles are defined in the JSON file for Demo purposes in the
-link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[Demo Data]. To use different source please follow guide bellow. RainCatcher PassportAuth is a lightweight solution
-that offers all the functionality required to get started.
+The module is an out of the box security solution for default integration. PassportAuth uses JSON files that contain user data.
+This user data contains sample users and access roles for demo purposes in the
+link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[Demo Data].
+The following procedure describes how to use a different user data source.
 
 [id='pro-pointing-passportauth-to-a-datasource-{chapter}']
 [discrete]
