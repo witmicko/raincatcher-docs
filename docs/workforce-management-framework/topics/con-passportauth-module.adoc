@@ -1,0 +1,14 @@
+[id='con-passportauth-module-{chapter}']
+= Introducing the {WFM-RC-NameShort} PassportAuth Module
+
+The link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth] module is {WFM-RC-NameShort}'s implementation of *Passport.js*.
+It is the default authentication and authorization module for {WFM-RC-NameShort}.
+
+*PassportAuth* provides pluggable authentication using link:http://passportjs.org/docs/configure[strategies].
+*PassportAuth* offers a comprehensive set of strategies that support authentication using a username and password, Facebook logon, Twitter logon, and more.
+
+*PassportAuth* provides:
+
+* Access Control of Express routes
+* Authentication using the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Default-Strategy}[default strategy]
+* Express session middleware using link:https://github.com/expressjs/session[express-session]

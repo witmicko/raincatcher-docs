@@ -1,9 +1,10 @@
-<title>Workforce Management Framework</title>
+<title>{WFM-RC-NameLong} Framework</title>
 <productname>{ProductName}</productname>
 <productnumber>{DocInfoProductNumber}</productnumber>
+<release>{DocInfoProductNumber}</release>
 <subtitle>For Use with {ProductName} {ProductRelease}</subtitle>
 <abstract>
-    <para>This documentation does ABC for {ProductName} {ProductRelease}.</para>
+    <para>{ProductName} {ProductRelease} Documentation</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

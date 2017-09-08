@@ -18,4 +18,6 @@ The following features are on the {WFM-RC-NameShort} roadmap:
 * Data Synchronization
 * Integration of sensor data
 
-//Features included in {WFM-RC-NameShort} {WFM-RC-Version} are:
+{WFM-RC-NameShort} {WFM-RC-Version} features:
+
+* {WFM-RC-NameShort} Security
