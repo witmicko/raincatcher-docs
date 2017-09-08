@@ -39,8 +39,9 @@ User Repository Interface must be implemented in order to point *PassportAuth* t
 
 [id='passportauth-authentication-{chapter}']
 == PassportAuth Authentication
-{WFM-RC-NameShort} uses username/password as the default authentication strategy, credentials are authenticated on the cloud server.
- The *PassportAuth* is using _local_ *Passport.js* based strategy.
+{WFM-RC-NameShort} authentication is handled by the coud server using users unique username and password combination.
+The *PassportAuth* service is a default authentication strategy as based on the local Passport.js implementation.
+
 
 *PassportAuth* uses link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] 
 middleware for cookie based authentication.To access _express_ routes, 
