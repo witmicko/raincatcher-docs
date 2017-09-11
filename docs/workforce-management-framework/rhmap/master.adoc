@@ -7,12 +7,24 @@ include::topics/shared/attributes.adoc[]
 == Introducing {WFM-RC-NameLong}
 include::introducing-raincatcher.adoc[leveloffset=+2]
 
+[[introducing-raincatcher-features]]
+== Introducing {WFM-RC-NameLong} Features and Modules
+include::introducing-features-and-modules.adoc[leveloffset=+2]
+
 //[[preparing-the-local-development-environment]]
 //== Preparing the Local Development Environment
 
 [[getting-started]]
 == Getting Started with {WFM-RC-NameLong}
 include::running-the-demo-app.adoc[leveloffset=+2]
+
+[[programming-a-raincatcher-project]]
+== Programming a {WFM-RC-NameShort} Project
+include::working-with-passportauth.adoc[leveloffset=+2]
+
+[[raincatcher-security]]
+== {WFM-RC-NameShort} Security
+include::defining-raincatcher-security.adoc[leveloffset=+2]
 
 // **********************************
 // * Appendix: Revision Information *

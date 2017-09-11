@@ -16,24 +16,24 @@ This is a fully-customizable Git repository and it was forked from https://githu
 ----
 ├── README.adoc
 ├── docs
-│   ├── workforce-management-framework
-│   │   ├── rhmap
-│   │   │   ├── master-docinfo.xml
-│   │   │   ├── master.adoc
-│   │   │   └── topics -> ../topics
-│   │   ├── topics
-│   │   │   ├── shared -> ../../shared
-│   │   │   ├── topic-1.adoc
-│   │   └── upstream-1
-│   │       ├── master-docinfo.xml
-│   │       ├── master.adoc
-│   │       └── topics -> ../topics
-│   └── shared
-│       ├── attributes.adoc
-│       ├── images
-│       ├── templates
-│       ├── attributes.adoc
-│       ├── topic-shared-1.adoc
+│   ├── workforce-management-framework
+│   │   ├── rhmap
+│   │   │   ├── master-docinfo.xml
+│   │   │   ├── master.adoc
+│   │   │   └── topics -> ../topics
+│   │   ├── topics
+│   │   │   ├── shared -> ../../shared
+│   │   │   ├── topic-1.adoc
+│   │   └── upstream-1
+│   │       ├── master-docinfo.xml
+│   │       ├── master.adoc
+│   │       └── topics -> ../topics
+│   └── shared
+│       ├── attributes.adoc
+│       ├── images
+│       ├── templates
+│       ├── attributes.adoc
+│       ├── topic-shared-1.adoc
 └── resources
 │   ├── asciidoc-writing-guide.adoc
 │   └── scripts

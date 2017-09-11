@@ -1,0 +1,51 @@
+[id='pro-working-with-passportauth-{chapter}']
+= Introduction
+
+This section includes:
+
+//. xref:pro-disabling-passportauth-{chapter}[Disabling PassportAuth]
+//. xref:pro-enabling-passportauth-{chapter}[Enabling PassportAuth]
+. xref:pro-pointing-passportauth-to-a-datasource-{chapter}[Pointing PassportAuth to a Datasource]
+
+= Prerequisites
+
+You must have completed:
+
+. xref:getting-started[Getting Started]
+
+= Procedure
+
+//[id='pro-disabling-passportauth-{chapter}']
+//[discrete]
+//== Disabling PassportAuth
+
+//<***TODO***>
+//[source,bash]
+//----
+//<***TODO***>
+//----
+
+//[id='pro-enabling-passportauth-{chapter}']
+//[discrete]
+//== Enabling PassportAuth
+
+//<***TODO***>
+//[source,bash]
+//----
+//<***TODO***>
+//----
+== Configuration of PassportAuth module
+The module is an out of the box security solution for default integration. PassportAuth uses JSON files that contain user data.
+This user data contains sample users and access roles for demo purposes in the
+link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[Demo Data].
+The following procedure describes how to use a different user data source.
+
+[id='pro-pointing-passportauth-to-a-datasource-{chapter}']
+[discrete]
+== Pointing PassportAuth to a Datasource
+
+NOTE: _UserRepository_ requires user data containing a minimum of username and password to work.
+
+. Implement the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[UserRepository].
+
+For an end to end implementation of the _UserRepository_ interface, see link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[PassportAuth-Example].

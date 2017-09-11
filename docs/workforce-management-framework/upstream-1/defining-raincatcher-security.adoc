@@ -1,0 +1,7 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: defining-raincatcher-security
+
+//References
+include::topics/ref-passportauth-securitystrategy.adoc[leveloffset=+0]
