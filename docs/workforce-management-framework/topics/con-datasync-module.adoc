@@ -29,7 +29,7 @@ To view an example, see the *Datasync Cloud App* link:{WFM-RC-CoreUrl}{WFM-RC-Br
 == Datasync Client App
 The *Datasync Client App* is based on the link:https://github.com/feedhenry/fh-sync-js[sync.js client].
 In order to work, the *Datasync Client App* requires the *Datasync Cloud App* to be running on an _Express_ web server.
-The _Data Synchonization Library_ can be used for offline storage of mobile applications data.
+The _Data Synchonization Library_ can be used for offline storage of the Client App's data.
 
 For instructions on how to implement the *Datasync Client App*, see the *Datasync Client App* link:{WFM-RC-CoreURL}{WFM-RC-Branch}/client/datasync-client/README.md[README.MD]
 
