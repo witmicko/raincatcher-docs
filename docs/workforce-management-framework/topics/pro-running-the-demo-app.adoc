@@ -60,9 +60,9 @@ NOTE: The Core repository is automatically cloned by the command `npm run bootst
 [discrete]
 == Starting MongoDB and Redis
 
-Start MongoDB. For more information, see link:https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-processes[Start MongoDB Processes].
+. Start MongoDB. For more information, see link:https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-processes[Start MongoDB Processes].
 
-Start Redis. For more information, see link:https://redis.io/topics/quickstart#starting-redis[Starting Redis].
+. Start Redis. For more information, see link:https://redis.io/topics/quickstart#starting-redis[Starting Redis].
 
 [id='pro-starting-the-core-server-{chapter}']
 [discrete]
@@ -79,9 +79,10 @@ NOTE: The terminal is out of use while the Core Server is running. Open a new te
 [discrete]
 == Running the Mobile and Portal Demo Applications
 
+Open a new terminal and navigate to the folder containing _raincatcher-angularjs_, and execute:
+
 [source,bash]
 ----
-cd ..
 npm run start
 ----
 
