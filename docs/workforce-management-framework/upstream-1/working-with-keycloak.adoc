@@ -1,0 +1,28 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: working-with-keycloak
+
+= Working With {WFM-RC-KeycloakName}
+
+//Concepts
+The {WFM-RC-NameShort} Demo Application allows for authentication and access management using link:http://www.keycloak.org/index.html[{WFM-RC-KeycloakName}]
+however, {WFM-RC-KeycloakName} is not the default authorization and authentication module for {WFM-RC-NameShort}.
+{WFM-RC-KeycloakName} integration is configured within the Demo Application.
+
+NOTE: To configure your own instance of {WFM-RC-KeycloakName}, see the link:{WFM-RC-KeycloakURL}getting_started/topics/first-boot.html[{WFM-RC-KeycloakName} Getting Started Guide].
+
+//Procedures
+include::topics/pro-keycloak-implementation.adoc[leveloffset=+1]
+include::topics/pro-keycloak-enablement.adoc[leveloffset=+1]
+
+== {WFM-RC-KeycloakName} Reference Material
+The security aspects of *{WFM-RC-KeycloakName}* are described in the Security Strategy and cover areas such as:
+
+* Understanding {WFM-RC-KeycloakName} Session Management
+* Defining {WFM-RC-KeycloakName} Access Control
+* Defining {WFM-RC-KeycloakName} Password Storage
+* {WFM-RC-KeycloakName} Authentication
+* {WFM-RC-KeycloakName} Authorization
+
+For more information, see xref:ref-keycloak-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} {WFM-RC-KeycloakName}].

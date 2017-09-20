@@ -26,6 +26,7 @@ include::running-the-demo-app.adoc[leveloffset=+2]
 [[programming-a-raincatcher-project]]
 == Programming a {WFM-RC-NameShort} Project
 include::working-with-passportauth.adoc[leveloffset=+2]
+include::working-with-keycloak.adoc[leveloffset=+2]
 
 [[raincatcher-security]]
 == {WFM-RC-NameShort} Security

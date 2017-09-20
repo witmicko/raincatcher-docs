@@ -5,3 +5,4 @@ include::topics/shared/attributes.adoc[]
 
 //References
 include::topics/ref-passportauth-securitystrategy.adoc[leveloffset=+0]
+include::topics/ref-keycloak-securitystrategy.adoc[leveloffset=+0]

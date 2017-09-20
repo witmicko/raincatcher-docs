@@ -1,0 +1,102 @@
+[id='pro-keycloak-enablement-{chapter}']
+= Enabling {WFM-RC-KeycloakName}
+
+This section includes:
+
+NOTE: Steps 3 and 4 are valid for any instance of *{WFM-RC-KeycloakName}* provided you implement the _Realm settings_.
+
+. xref:pro-run-keycloak-docker-image-{chapter}[Running the {WFM-RC-KeycloakName} Docker Image]
+. xref:pro-adding-keycloak-configuration-{chapter}[Importing the {WFM-RC-KeycloakName} Realm Settings]
+. xref:pro-adding-keycloak-configuration-{chapter}[Adding {WFM-RC-KeycloakName} Configuration]
+. xref:pro-enabling-keycloak-on-the-demo-server-{chapter}[Enabling {WFM-RC-KeycloakName} on the Demo Server]
+
+IMPORTANT: Enabling *{WFM-RC-KeycloakName}* requires the disabling of *PassportAuth*.
+
+== Prerequisites
+
+. Ensure you have completed xref:getting-started[Getting Started]
+. Docker (tested with version: {WFM-RC-DockerVersion})
+
+[id='pro-run-keycloak-docker-image-{chapter}']
+[discrete]
+=== Running the {WFM-RC-KeycloakName} Docker Image
+
+. Open a terminal and run the *{WFM-RC-KeycloakName}* Docker image
+
+[source,bash]
+----
+docker run -p 8080:8080 feedhenry/raincatcher-keycloak
+----
+
+For more information about the *{WFM-RC-KeycloakName}* Docker Image, see the *{WFM-RC-KeycloakName}* link:{WFM-RC-KeycloakDockerURL}{WFM-RC-Branch}/README.md[README.md].
+
+[id=pro-adding-keycloak-configuration-{chapter}]
+[discrete]
+=== Adding {WFM-RC-KeycloakName} Configuration
+
+. Choose which _configuration file_ to edit:
++
+.*{WFM-RC-KeycloakName}* Configuration File
+|===
+|Area |File Name | File Location
+
+|Development
+|link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/config-dev.json[config-dev.json]
+|/demo/server/config-dev.json
+
+|Production
+|link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/config-prod.json[config-prod.json]
+|/demo/server/config-prod.json
+
+|===
++
+. Open the _configuration file_, create a new field called `keycloakConfig` and add the following data to `keycloakConfig`:
++
+NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/config-prod.json[config-prod.json].
++
+[source,javascript]
+----
+"keycloakConfig":{
+                    "realm": "raincatcher",
+                    "bearer-only": true,
+                    "auth-server-url": "http://localhost:8080/auth",
+                    "ssl-required": "external",
+                    "resource": "raincatcher-cloud",
+                    "use-resource-role-mappings": true
+                  }
+----
+
+
+[id=pro-enabling-keycloak-on-the-demo-server-{chapter}]
+[discrete]
+=== Enabling {WFM-RC-KeycloakName} on the Demo Server
+
+. Open the file link:{WFM-RC-AngularJsURL}{WFM-RC-Branch}/demo/mobile/src/app/app.js[app.js] in location _/demo/mobile/src/app/_ and change the contents to:
++
+[source,javascript]
+----
+    // Comment to disable passport auth
+    require('@raincatcher/demo-auth-passport')('wfm-mobile'),
+    // Uncomment to enable Keycloak
+    // require('../keycloak');
+----
++
+. Open the file link:{WFM-RC-AngularJsURL}{WFM-RC-Branch}/demo/portal/src/app/main.js[main.js] in location _/demo/portal/src/app/_ and change the contents to:
++
+[source,javascript]
+----
+    // Comment to disable passport auth
+    require('@raincatcher/demo-auth-passport')('app'),
+    // Uncomment to enable Keycloak
+    // require('./keycloak');
+----
++
+. At this point, the _Routes_ are protected by *{WFM-RC-KeycloakName}*.
+
+<ENG: NOT SURE ABOUT THE NEXT TEXT APPEARING HERE>
+== Reference {WFM-RC-KeycloakName}
+
+To login into *{WFM-RC-KeycloakName}* Admin Console, navigate to http://localhost:8080/auth/ and login as the admin user using the following credentials:
+
+    Username: admin
+    Password: admin
