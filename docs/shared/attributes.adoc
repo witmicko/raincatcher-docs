@@ -20,11 +20,9 @@
 :WFM-RC-NodeVersion: 6 LTS
 :WFM-RC-MongoDBVersion: <latest version>
 :WFM-RC-RedisVersion: <latest version>
-:WFM-RC-DockerVersion: <latest version>
 :WFM-RC-Github-Core: https://github.com/feedhenry-raincatcher/raincatcher-core/tree/
 :WFM-RC-Branch: master
 :WFM-RC-PassportAuth-Example: /cloud/passportauth/example
-:WFM-RC-KeycloakName: Keycloak
 //api url
 :WFM-RC-Api-Version: 0.0.1
 :WFM-RC-Api-Default-Strategy: /auth-passport/docs/modules/_src_auth_defaultstrategy_.html

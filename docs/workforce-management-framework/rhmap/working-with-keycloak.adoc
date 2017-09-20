@@ -1,1 +1,0 @@
-../upstream-1/working-with-keycloak.adoc
