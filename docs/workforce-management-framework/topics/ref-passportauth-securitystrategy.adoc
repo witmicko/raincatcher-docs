@@ -3,22 +3,22 @@
 
 This section includes:
 
-. xref:understanding-session-management-{chapter}[Understanding Session Management]
-. xref:defining-access-control-{chapter}[Defining Access Control]
-. xref:defining-password-storage-{chapter}[Defining Password Storage]
+. xref:understanding-passportauth-session-management-{chapter}[Understanding PassportAuth Session Management]
+. xref:defining-passportauth-access-control-{chapter}[Defining PassportAuth Access Control]
+. xref:defining-passportauth-password-storage-{chapter}[Defining PassportAuth Password Storage]
 . xref:passportauth-authentication-{chapter}[PassportAuth Authentication]
 . xref:passportauth-authorization-{chapter}[PassportAuth Authorization]
 . xref:customizing-a-strategy-{chapter}[Customizing a Strategy]
 . xref:passportAuth-demo-users-and-access-roles-{chapter}[PassportAuth Demo Users and Access Roles]
 
-[id='understanding-session-management-{chapter}']
-== Understanding Session Management
+[id='understanding-passportauth-session-management-{chapter}']
+== Understanding PassportAuth Session Management
 
 The _express-session_ module provides session management functionality for *PassportAuth*.
 For more information, see link:https://github.com/expressjs/session[express-session].
 
-[id='defining-access-control-{chapter}']
-== Defining Access Control
+[id='defining-passportauth-access-control-{chapter}']
+== Defining PassportAuth Access Control
 _Routes_ are protected by *PassportAuth* which provides role based access control.
 _AuthService_ is an an implementation of link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth].
 For more information, see the following example:
@@ -32,8 +32,8 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
 
 NOTE: Demo roles are defined in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[user.json].
 
-[id='defining-password-storage-{chapter}']
-== Defining Password Storage
+[id='defining-passportauth-password-storage-{chapter}']
+== Defining PassportAuth Password Storage
 The *PassportAuth* user data is stored in link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}#getuserbylogin[User Repository Interface].
 Make sure that the _User Repository Interface_ is implemented in order to point *PassportAuth* to a datasource.
 
@@ -41,7 +41,6 @@ Make sure that the _User Repository Interface_ is implemented in order to point 
 == PassportAuth Authentication
 {WFM-RC-NameShort} authentication is handled by the coud server using users unique username and password combination.
 The *PassportAuth* service is a default authentication strategy as based on the local Passport.js implementation.
-
 
 *PassportAuth* uses link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate] 
 middleware for cookie based authentication.To access _express_ routes, 

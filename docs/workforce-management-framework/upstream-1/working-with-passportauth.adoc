@@ -5,8 +5,6 @@ include::topics/shared/attributes.adoc[]
 
 = Working With PassportAuth
 
-This section describes how to modify aspects of *PassportAuth*.
-
 //Concepts
 include::topics/con-passportauth-module.adoc[leveloffset=+1]
 
