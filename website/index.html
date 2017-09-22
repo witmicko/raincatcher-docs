@@ -27,12 +27,7 @@
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
-  <script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'FeedhenryRaincatcher/Lobby'
-    };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  
 
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -48,15 +43,17 @@
             <span class="icon-bar"></span>
           </button>
         <a class="navbar-brand" href="#">FeedHenry RainCatcher</a>
+        
       </div>
     </div>
   </nav>
   <div class="jumbotron">
     <div class="container" style="max-width: 850px;">
       <h2><img src="https://avatars2.githubusercontent.com/u/19932793?v=4&s=70"></img>RainCatcher</h2>
-      <p>RainCatcher delivers high quality mobile enabled Workforce Managment platform.</p>
 
-      RainCatcher is being shipped as set of the applications that help developers to build Workforce Management solutions. Functionality
+      <p>Mobile enabled Workforce Managment platform</p>
+
+      RainCatcher is a set of the applications that help developers to build Workforce Management solutions. Functionality
       of applications can be modified by applying various RainCatcher modules.
       <br/><br/>
       <div class="panel panel-default">
@@ -71,18 +68,25 @@
             <b>Server</b> - Node.js application based server that is being used as backend by mobile and portal applications</li>
         </ul>
       </div>
-
-      <p><a class="btn btn-primary btn-lg" href="/docs/" role="button">View Documentation &raquo;</a></p>
+      <div style='float:right'>
+        <a class="btn btn-primary " href="/docs/" role="button">Docs &raquo;</a>
+        <a class="btn btn-success " href="https://gitter.im/FeedhenryRaincatcher" role="button">Chat &raquo;</a>
+        <a class="btn btn-info " href="https://www.redhat.com/mailman/listinfo/feedhenry-raincatcher" role="button">Email &raquo;</a>
+      </div>
     </div>
   </div>
 
   <div class="container">
-    <!-- Example row of columns -->
+
     <div class="row">
       <div class="col-md-3">
+        <h2>Open Source</h2>
+        <p>RainCatcher is fully OpenSource licensed using MIT Licensed Source code is hosted on Github.</p>
+      </div>
+      <div class="col-md-3">
         <h2>Modular Architecture</h2>
-        <p>Delivered as set of npm modules allows developer to select set of functionalites they need. Modules are platform
-          independent allowing developers to reuse code for mobile, web and also node.js based server applications.</p>
+        <p>RainCathcer delivered as set of npm modules, this allows a developer to select set of functionalites. Modules are platform
+          independent allowing developers to reuse code for mobile, web and node.js based server applications.</p>
       </div>
       <div class="col-md-3">
         <h2>Hybrid mobile development</h2>
@@ -90,23 +94,32 @@
         </p>
       </div>
       <div class="col-md-3">
-        <h2>Object oriented JavaScript</h2>
+        <h2>Object oriented</h2>
         <p>Api build using TypeScript provides set of the interfaces and classes that can be referenced in separate modules.
           Focus on documentation and extendability</p>
       </div>
-      <div class="col-md-3">
-        <h2>Open Source</h2>
-        <p>RainCatcher is fully OpenSource licensed using Apache License 2.0. Source code is hosted on Github.</p>
-        <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core" data-icon="octicon-star" aria-label="Star or Fork RainCatcher on GitHub">Star</a>
-        <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/fork" data-icon="octicon-repo-forked"
-          aria-label="Fork RainCatcher on GitHub">Fork</a>
-        <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/issues" data-icon="octicon-issue-opened"
-          aria-label="Create Issue for RainCatcher on GitHub">Create issue</a>
-      </div>
     </div>
+
+    <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core" data-icon="octicon-star" aria-label="Star or Fork RainCatcher on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/fork" data-icon="octicon-repo-forked"
+      aria-label="Fork RainCatcher on GitHub">Fork</a>
+    <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/issues" data-icon="octicon-issue-opened"
+      aria-label="Create Issue for RainCatcher on GitHub">Issue</a>
+
     <hr>
     <footer>
-      <p>&copy; RedHat Inc 2016</p>
+      <div class="container">
+        <div class="row">
+          <p id="copyright" class="col-md-7 mb-0">
+            <span>© FeedHenry 2016 • Project sponsored by </span>
+            <a id="redhat" href="http://community.redhat.com/software/"></img></a>
+          </p>
+          <p class="col-md-5 text-md-right mb-0">
+            <a href="https://www.redhat.com/en/about/privacy-policy">Privacy Policy</a>
+          
+          </p>
+        </div>
+      </div>
     </footer>
   </div>
   <!-- /container -->
