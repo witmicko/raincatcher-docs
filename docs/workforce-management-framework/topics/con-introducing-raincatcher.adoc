@@ -4,6 +4,9 @@
 
 {WFM-RC-NameLong} is a Workforce Management Platform.
 
+{WFM-RC-NameShort} connects a business’ back-office with its fleet of mobilized employees.
+{WFM-RC-NameShort} leverages commoditized mobile hardware, making use of each employee’s mobile phone.
+
 The primary goal of {WFM-RC-NameShort} is to ease mobile enablement efforts.
 It achieves that by providing set of modules that can be integrated into existing applications additionally
 {WFM-RC-NameShort} allows developers to leverage existing demo-solution by extending it to suit their business needs.
@@ -15,6 +18,7 @@ Main features in the latest {WFM-RC-Version}:
 * Data Synchronization
 
 Roadmap:
+* Pluggable authentication
 * Image capture
 * Geolocation
 * Internal Messaging and 3rd party Messaging
