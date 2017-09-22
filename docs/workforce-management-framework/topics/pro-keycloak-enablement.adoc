@@ -1,15 +1,15 @@
-[id='pro-keycloak-enablement-{chapter}']
+[id='{context}-pro-keycloak-enablement']
 = Enabling {WFM-RC-KeycloakName}
 
 This section includes:
 
 NOTE: Steps 3 and 4 are valid for any instance of *{WFM-RC-KeycloakName}* provided you implement the _Realm settings_.
 
-. xref:pro-run-keycloak-docker-image-{chapter}[Running the {WFM-RC-KeycloakName} Docker Image]
-. xref:pro-adding-keycloak-configuration-{chapter}[Importing the {WFM-RC-KeycloakName} Realm Settings]
-. xref:pro-adding-keycloak-configuration-{chapter}[Adding {WFM-RC-KeycloakName} Configuration]
-. xref:pro-enabling-keycloak-on-the-demo-server-{chapter}[Enabling {WFM-RC-KeycloakName} on the Demo Server]
-. xref:pro-logging-in-to-the-keycloak-admin-console-{chapter}[Logging in to the {WFM-RC-KeycloakName} Admin Console]
+. xref:{context}-run-keycloak-docker-image[Running the {WFM-RC-KeycloakName} Docker Image]
+. xref:{context}-adding-keycloak-configuration[Importing the {WFM-RC-KeycloakName} Realm Settings]
+. xref:{context}-adding-keycloak-configuration[Adding {WFM-RC-KeycloakName} Configuration]
+. xref:{context}-enabling-keycloak-on-the-demo-server[Enabling {WFM-RC-KeycloakName} on the Demo Server]
+. xref:{context}-accessing-the-keycloak-admin-console[Accessing the {WFM-RC-KeycloakName} Admin Console]
 
 IMPORTANT: Enabling *{WFM-RC-KeycloakName}* requires the disabling of *PassportAuth*.
 
@@ -18,9 +18,9 @@ IMPORTANT: Enabling *{WFM-RC-KeycloakName}* requires the disabling of *PassportA
 . Ensure you have completed xref:getting-started[Getting Started]
 . Docker (tested with version: {WFM-RC-DockerVersion})
 
-[id='pro-run-keycloak-docker-image-{chapter}']
+[id='{context}-run-keycloak-docker-image']
 [discrete]
-=== Running the {WFM-RC-KeycloakName} Docker Image
+== Running the {WFM-RC-KeycloakName} Docker Image
 
 . Open a terminal and run the *{WFM-RC-KeycloakName}* Docker image
 
@@ -31,9 +31,9 @@ docker run -p 8080:8080 feedhenry/raincatcher-keycloak
 
 For more information about the *{WFM-RC-KeycloakName}* Docker Image, see the *{WFM-RC-KeycloakName}* link:{WFM-RC-KeycloakDockerURL}{WFM-RC-Branch}/README.md[README.md].
 
-[id=pro-adding-keycloak-configuration-{chapter}]
+[id={context}-adding-keycloak-configuration]
 [discrete]
-=== Adding {WFM-RC-KeycloakName} Configuration
+== Adding {WFM-RC-KeycloakName} Configuration
 
 . Choose which _configuration file_ to edit:
 +
@@ -51,9 +51,9 @@ For more information about the *{WFM-RC-KeycloakName}* Docker Image, see the *{W
 
 |===
 +
-. Open the _configuration file_, create a new field called `keycloakConfig` and add the following data to `keycloakConfig`:
-+
 NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/config-prod.json[config-prod.json].
++
+. Open the _configuration file_, create a new field called `keycloakConfig` and add the following data to `keycloakConfig`:
 +
 [source,javascript]
 ----
@@ -68,9 +68,9 @@ NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreUR
 ----
 
 
-[id=pro-enabling-keycloak-on-the-demo-server-{chapter}]
+[id={context}-enabling-keycloak-on-the-demo-server]
 [discrete]
-=== Enabling {WFM-RC-KeycloakName} on the Demo Server
+== Enabling {WFM-RC-KeycloakName} on the Demo Server
 
 . Open the file link:{WFM-RC-AngularJsURL}{WFM-RC-Branch}/demo/mobile/src/app/app.js[app.js] in location _/demo/mobile/src/app/_ and change the contents to:
 +
@@ -94,20 +94,8 @@ NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreUR
 +
 . At this point, the _Routes_ are protected by *{WFM-RC-KeycloakName}*.
 
-
-[id=pro-logging-in-to-the-keycloak-admin-console-{chapter}]
+[id={context}-accessing-the-keycloak-admin-console]
 [discrete]
-=== Logging in to the {WFM-RC-KeycloakName} Admin Console
+== Accessing the {WFM-RC-KeycloakName} Admin Console
 
-. Navigate to _http://localhost:8080/auth/_
-
-. Login as the _admin_ user using the following credentials:
-+
-.{WFM-RC-KeycloakName} Login Credentials
-|===
-|Username |Password
-
-|admin
-|admin
-
-|===
+. To access the _{WFM-RC-KeycloakName} Admin Console_, navigate to _http://localhost:8080/auth/_

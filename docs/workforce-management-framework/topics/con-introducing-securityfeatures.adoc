@@ -1,23 +1,23 @@
-[id='con-introducing-securityfeatures-{chapter}']
+[id='{context}-con-introducing-securityfeatures']
 = Introducing {WFM-RC-NameShort} Security Features
 
-{WFM-RC-NameShort} Security is built around a *Security Interface* which abstracts itself from all {WFM-RC-NameShort} security libraries.
-{WFM-RC-NameShort} allows you to integrate a custom security solution.
-{WFM-RC-NameShort} also provides two out-of-the-box security implementations called link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
+*{WFM-RC-NameShort}* Security is built around a *Security Interface* which abstracts itself from all *{WFM-RC-NameShort}* security libraries.
+*{WFM-RC-NameShort}* allows you to integrate a custom security solution.
+*{WFM-RC-NameShort}* also provides two out-of-the-box security implementations called link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
 
 *Keycloak* and *Passport.js* both provide server side authentication and authorization.
-*Keycloak* and *Passport.js* implementations can replace each other without breaking the internal {WFM-RC-NameShort} api, modules and also any of the reference applications.
+*Keycloak* and *Passport.js* implementations can replace each other without breaking the internal *{WFM-RC-NameShort}* api, modules and also any of the reference applications.
 
 == Authorization using the Security Interface
 If you build a custom security implementation, the endpoints are secured in the same way as the *Keycloak* and *Passport.js* implementations.
 
 If you choose to build a custom security implementation, you will need to:
 
- . Import the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[EndpointSecurity] interface from Passport.js
+ . Import the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[EndpointSecurity] interface from *Passport.js*
  . Implement the interface in the custom security implementation
  . Use the _protect_ method to guard routes (the security permissions being role based)
 
-NOTE: All link:https://expressjs.com/[express] routes outside of WFM modules must implement the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[EndpointSecurity] Security Interface.
+NOTE: All link:https://expressjs.com/[express] routes outside of {WFM-RC-NameShort} modules must implement the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[EndpointSecurity] Security Interface.
 
 //Pasport.js
 == Introducing Passport.js
@@ -27,10 +27,11 @@ NOTE: All link:https://expressjs.com/[express] routes outside of WFM modules mus
 
 For more information, see link:http://passportjs.org/[passportjs.org].
 
-The link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth] module is {WFM-RC-NameShort}'s implementation of *Passport.js* and is the default authentication and authorization module for {WFM-RC-NameShort}.
+The *link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth Module]* is *{WFM-RC-NameShort}'s* implementation of *Passport.js* and is the default authentication and authorization module for *{WFM-RC-NameShort}*.
 
 == Introducing Keycloak
-The *Keycloak* module is a complete identity management solution. It extends standard authorization and authentication functionality and comes with all the overheads involved in running a server.
+
+*Keycloak* is a complete identity management solution. It extends standard authorization and authentication functionality, and comes with all the overheads involved in running a server.
 Red Hat recommends using *Keycloak* in production to avail of the many features available for enterprise security including:
 
 * link:https://keycloak.gitbooks.io/documentation/server_admin/topics/sso-protocols.html[Single-Sign On]
@@ -41,12 +42,12 @@ Red Hat recommends using *Keycloak* in production to avail of the many features 
 * link:https://keycloak.gitbooks.io/documentation/server_admin/topics/events.html[Auditing]
 * link:https://keycloak.gitbooks.io/documentation/content/server_admin/topics/threat/brute-force.html[Brute Force Detection]
 
-NOTE: *Keycloak* is _not_ available by default when running the default {WFM-RC-NameShort} solution
+NOTE: *Keycloak* is _not_ available by default when running the default {WFM-RC-NameShort} solution.
 
 == Choosing Passport.js or Keycloak
 *Passport.js*:
 
-* If you want a standalone Node.js based authentication solution that is ready out-of-the-box, choose *Passport.js*
+* If you want a standalone Node.js based authentication solution that is ready out-of-the-box, choose *Passport.js*.
 
 *Keycloak*:
 

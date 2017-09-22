@@ -1,0 +1,12 @@
+[id='{context}-con-passportauth-securitystrategy']
+= Introducing the Security Strategy for PassportAuth
+
+The *{WFM-RC-NameShort} PassportAuth* Security Strategy describe the security aspects for *PassportAuth* and cover areas such as:
+
+* Understanding Session Management
+* Defining Access Control
+* Defining Password Storage
+* *PassportAuth* Authentication
+* *PassportAuth* Authorization
+* Customizing a Strategy
+* PassportAuth Demo Users and Access Roles

@@ -1,0 +1,23 @@
+[id='{context}-ref-demo-app']
+= {WFM-RC-KeycloakName} Reference Material
+
+This section includes:
+
+. xref:{context}-credentials-for-the-demo-application[Credentials for the {WFM-RC-KeycloakName} Admin Console]
+. xref:{context}-con-keycloak-securitystrategy[Introducing the Security Strategy for Keycloak]
+
+[id='{context}-credentials-for-the-demo-application']
+== Credentials for the {WFM-RC-KeycloakName} Admin Console
+
+. Login as the _admin_ user using the following credentials:
+
+.{WFM-RC-KeycloakName} Admin Console Credentials
+|===
+|Username |Password
+
+|admin
+|admin
+
+|===
+
+include::con-keycloak-securitystrategy.adoc[leveloffset=+1]

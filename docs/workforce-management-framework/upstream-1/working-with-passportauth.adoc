@@ -1,7 +1,7 @@
 include::topics/shared/attributes.adoc[]
 
-//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
-:chapter: working-with-passportjs
+//':context:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:context: working-with-passportauth
 
 = Working With PassportAuth
 
@@ -9,17 +9,9 @@ include::topics/shared/attributes.adoc[]
 include::topics/con-passportauth-module.adoc[leveloffset=+1]
 
 //Procedures
-include::topics/pro-working-with-passportauth.adoc[leveloffset=+1]
+include::topics/pro-passportauth-pointing-to-a-datasource.adoc[leveloffset=+1]
 
+//Reference Material
 == PassportAuth Reference Material
-The security aspects of *PassportAuth* module are described in the Security Strategy and cover areas such as:
-
-* Understanding Session Management
-* Defining Access Control
-* Defining Password Storage
-* *PassportAuth* Authentication
-* *PassportAuth* Authorization
-* Customizing a Strategy
-* PassportAuth Demo Users and Access Roles
-
-For more information, see xref:ref-passportauth-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth].
+include::topics/con-passportauth-securitystrategy.adoc[leveloffset=+2]
+For more information, see xref:defining-raincatcher-security-ref-passportauth-securitystrategy[Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth].

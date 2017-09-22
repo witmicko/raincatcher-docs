@@ -2,9 +2,9 @@
 <productname>{ProductName}</productname>
 <productnumber>{DocInfoProductNumber}</productnumber>
 <release>{DocInfoProductNumber}</release>
-<subtitle>For Use with {ProductName} {ProductRelease}</subtitle>
+<subtitle>Documentation for use with {ProductName} {WFM-RC-NameLong} - Version {ProductRelease}</subtitle>
 <abstract>
-    <para>{ProductName} {ProductRelease} Documentation</para>
+    <para>This documentation covers technical aspects of {ProductName} {WFM-RC-NameLong} - Version {ProductRelease}.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

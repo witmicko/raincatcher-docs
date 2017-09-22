@@ -1,0 +1,10 @@
+[id='{context}-con-keycloak-securitystrategy']
+= Introducing the Security Strategy for {WFM-RC-KeycloakName}
+
+The *{WFM-RC-NameShort} {WFM-RC-KeycloakName}* Security Strategy describe the security aspects for *{WFM-RC-KeycloakName}* and cover areas such as:
+
+* Understanding {WFM-RC-KeycloakName} Session Management
+* Defining {WFM-RC-KeycloakName} Access Control
+* Defining {WFM-RC-KeycloakName} Password Storage
+* {WFM-RC-KeycloakName} Authentication
+* {WFM-RC-KeycloakName} Authorization

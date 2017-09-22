@@ -1,14 +1,14 @@
-[id='ref-introducing-raincatcher-{chapter}']
+[id='{context}-ref-introducing-raincatcher']
 = {WFM-RC-NameShort} Reference Material
 
 This section includes:
 
-. xref:highlighting-raincatcher-areas-of-focus-{chapter}[Highlighting {WFM-RC-NameShort} Areas of Focus]
-. xref:raincatcher-at-a-technical-level-{chapter}[{WFM-RC-NameShort} at a Technical Level]
-. xref:identifying-raincatcher-repositories-{chapter}[Identifying {WFM-RC-NameShort} Repositories]
-. xref:differentiating-raincatcher-from-tech-preview-{chapter}[Differentiating {WFM-RC-NameShort} from 'Tech Preview']
+. xref:{context}-highlighting-raincatcher-areas-of-focus[Highlighting {WFM-RC-NameShort} Areas of Focus]
+. xref:{context}-raincatcher-at-a-technical-level[{WFM-RC-NameShort} at a Technical Level]
+. xref:{context}-identifying-raincatcher-repositories[Identifying {WFM-RC-NameShort} Repositories]
+. xref:{context}-differentiating-raincatcher-from-tech-preview[Differentiating {WFM-RC-NameShort} from 'Tech Preview']
 
-[id='highlighting-raincatcher-areas-of-focus-{chapter}']
+[id='{context}-highlighting-raincatcher-areas-of-focus']
 == Highlighting {WFM-RC-NameShort} Areas of Focus
 
 .Areas of Focus
@@ -28,7 +28,7 @@ This section includes:
 |Graphical User Interfaces are implemented in AngularJS and Angular
 |===
 
-[id='raincatcher-at-a-technical-level-{chapter}']
+[id='{context}-raincatcher-at-a-technical-level']
 == {WFM-RC-NameShort} at a Technical Level
 
 * link:https://nodejs.org/en/[Node.js] used for server side code
@@ -37,12 +37,12 @@ This section includes:
 * Focus on module reuse and flexibility
 * Incorporates open-source technologies, for example: MongoDb, Keycloak, Passport.js
 
-[id='identifying-raincatcher-repositories-{chapter}']
+[id='{context}-identifying-raincatcher-repositories']
 == Identifying {WFM-RC-NameShort} Repositories
- 
-The {WFM-RC-NameShort} is available in three github repositories:
 
-.github Repositories
+{WFM-RC-NameShort} is available in three github repositories:
+
+.{WFM-RC-NameShort} Repositories
 |===
 |Repository |Description
 
@@ -50,19 +50,19 @@ The {WFM-RC-NameShort} is available in three github repositories:
 |Contains all of the supported modules and demo server.
 
 |link:https://github.com/feedhenry-raincatcher/raincatcher-angularjs[raincatcher-angularjs]
-|Contains angularJS user interface for {WFM-RC-NameShort}
+|Contains angularJS user interface for *{WFM-RC-NameShort}*
 
 |link:https://github.com/feedhenry-raincatcher/raincatcher-docs[raincatcher-docs]
-|Repository contains {WFM-RC-NameShort} documentation
+|Repository contains *{WFM-RC-NameShort}* documentation
 |===
 
-[id='differentiating-raincatcher-from-tech-preview-{chapter}']
+[id='{context}-differentiating-raincatcher-from-tech-preview']
 == Differentiating {WFM-RC-NameShort} from 'Tech Preview'
 
-The {WFM-RC-NameShort} project was originally called *Tech Preview*.
+The *{WFM-RC-NameShort}* project was originally called *Tech Preview*.
 The *Tech Preview* codebase is now deprecated and is accessible at link:https://github.com/feedhenry-raincatcher/raincatcher-documentation[Tech Preview Documentation].
-The main differences between {WFM-RC-NameShort} and *Tech Preview* are:
+The main differences between *{WFM-RC-NameShort}* and *Tech Preview* are:
 
-* Mediator pattern is removed from {WFM-RC-NameShort}
+* Mediator pattern is removed from *{WFM-RC-NameShort}*
 * *Tech Preview* is not object oriented
 * *{WFM-RC-NameShort}* is written in Typescript

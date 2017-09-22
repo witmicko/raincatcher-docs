@@ -1,0 +1,11 @@
+[id='{context}-con-keycloak']
+= Introducing {WFM-RC-KeycloakName} within {WFM-RC-NameShort}
+
+*{WFM-RC-KeycloakName}* is a complete identity management solution.
+
+The *{WFM-RC-NameShort}* demo application allows for authentication and access management using link:http://www.keycloak.org/index.html[*{WFM-RC-KeycloakName}*]
+however, *{WFM-RC-KeycloakName}* is not the default authorization and authentication module for *{WFM-RC-NameShort}*.
+
+The configuration for *{WFM-RC-KeycloakName}'s* integration is found within the demo application.
+
+NOTE: To configure your own instance of *{WFM-RC-KeycloakName}*, see the link:{WFM-RC-KeycloakURL}getting_started/topics/first-boot.html[{WFM-RC-KeycloakName} Getting Started Guide].

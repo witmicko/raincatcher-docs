@@ -1,9 +1,9 @@
-[id='pro-configuring-logging-{chapter}']
+[id='{context}-pro-configuring-logging']
 = Introduction
 
 This section includes:
 
-//. xref:pro-cloning-the-git-repository-{chapter}[Cloning the Git Repository]
+//. xref:{context}-cloning-the-git-repository[Cloning the Git Repository]
 
 = Prerequisites
 

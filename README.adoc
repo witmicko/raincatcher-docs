@@ -2,7 +2,7 @@
 :RepoTemplateCodeName: Raincatcher
 :ProductName: Raincatcher
 
-= {RepoTemplateCodeName}  version {RepoTemplateVersion} 
+= {RepoTemplateCodeName}  version {RepoTemplateVersion}
 
 This repository contains source code of the {ProductName} documentation.
 Documentation is available on: http://raincatcher.feedhenry.io
@@ -61,11 +61,11 @@ Setup required packages (Node.js/npm required)
 
     npm install
 
-Publishing 
+Publishing
 
     npm run buildAsciiDocs
     npm run buildApiDocs
-    npm run publish   
+    npm run publish
 
 NOTE: _ascidoctor_ needs to be installed on machine. To install asciidoctor run _gem install asciidoctor_
 
@@ -78,20 +78,20 @@ See link:http://asciidoctor.org/docs/user-manual/#include-multiple[Including Mul
 
 ==== Dynamic Anchors and Hard-Coded xref
 
-There are occasions when a dynamic xref (for example: xref:ref-logging-{chapter}) will have to be hard coded (for example: xref:ref-logging-user-_story-a_)
+There are occasions when a dynamic xref (for example: xref:{context}-ref-logging) will have to be hard coded (for example: xref:ref-logging-user-_story-a_)
 
 This happens when:
 
-* the value inserted at build time for "{chapter}" is set in *User Story A* - the value for "{chapter}" being (:chapter: user-story-_a_)
-* *User Story B* includes the module which contains the anchor "[id='ref-logging-{chapter}']" that the xref points to, and the "{chapter}" value being (:chapter: user-story-_b_)
+* the value inserted at build time for "{context}" is set in *User Story A* - the value for "{context}" being (:chapter: user-story-_a_)
+* *User Story B* includes the module which contains the anchor "[id='{context}-ref-logging']" that the xref points to, and the "{context}" value being (:chapter: user-story-_b_)
 * when *master.adoc* is built, "xref:ref-logging-user-story-_a_" _does not exist_ however "xref:ref-logging-user-story-_b_" _does exist_
- 
+
 The solution is a hard-coded xref:
 
-* for the "xref:ref-logging-{chapter}" being set in *User Story A*
+* for the "xref:{context}-ref-logging" being set in *User Story A*
 * hard code the xref, that is, "xref:ref-logging-user-story-_b_"
 * when *master.adoc* is built, "xref:ref-logging-user-story-_b_" _does exist_
- 
+
 NOTE: If an xref is used to point to an anchor in a module, and the module itself is not built as part of *master.adoc* - this will cause an error.
 
 == Contributing Documentation Content

@@ -1,15 +1,16 @@
-[id='ref-demo-app-{chapter}']
+[id='{context}-ref-demo-app']
 = {WFM-RC-NameShort} Demo Application Reference Material
 
 This section includes:
 
-. xref:credentials-for-the-demo-application-{chapter}[Credentials for the Demo Application]
+. xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application]
 
-[id='credentials-for-the-demo-application-{chapter}']
-== Credentials for the Demo Application
+[id='{context}-credentials-for-the-mobile-and-portal-demo-application']
+== Credentials for the Mobile and Portal Demo Application
 
 Login using the following credentials:
 
+.Credentials for the _Mobile_ and _Portal_ Demo Application
 |===
 |Application |Username |Password
 
