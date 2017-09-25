@@ -69,6 +69,12 @@ Publishing
 
 NOTE: _ascidoctor_ needs to be installed on machine. To install asciidoctor run _gem install asciidoctor_
 
+==== Watching for changes
+
+The `npm run watch` command will execute the previous build commands and run a local server for viewing the generated documentation website.
+
+This is intended to help with a faster development workflow for documentation writers.
+
 === Creating Anchors and xrefs
 
 ==== Dynamic Anchor and Dynamic xref
