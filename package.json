@@ -7,6 +7,7 @@
     "buildAsciiDocs": "node ./website/cli.js asciidocs-build",
     "buildApiDocs": "node ./website/cli.js apidocs-build",
     "buildall": "npm run buildAsciiDocs && npm run buildApiDocs",
+    "watch": "nodemon -e adoc,xml,png,svg,js,css -w docs/ -w api/ -w resources/ --exec 'npm run buildall && http-server website/'",
     "publishPage": "node ./website/cli.js publish"
   },
   "dependencies": {
@@ -14,5 +15,9 @@
     "gh-pages": "^1.0.0",
     "moment": "^2.18.1",
     "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "nodemon": "^1.12.1"
   }
 }
