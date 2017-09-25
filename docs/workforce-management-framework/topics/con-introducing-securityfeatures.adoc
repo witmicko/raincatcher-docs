@@ -19,7 +19,9 @@ If you choose to build a custom security implementation, you will need to:
 
 NOTE: All link:https://expressjs.com/[express] routes outside of {WFM-RC-NameShort} modules must implement the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[EndpointSecurity] Security Interface.
 
-//Pasport.js
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Introducing Passport.js
 
 *Passport.js* is a lightweight authentication middleware solution for Node.js and can be bundled into an existing Node.js server.
@@ -29,6 +31,9 @@ For more information, see link:http://passportjs.org/[passportjs.org].
 
 The *link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth Module]* is *{WFM-RC-NameShort}'s* implementation of *Passport.js* and is the default authentication and authorization module for *{WFM-RC-NameShort}*.
 
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Introducing Keycloak
 
 *Keycloak* is a complete identity management solution. It extends standard authorization and authentication functionality, and comes with all the overheads involved in running a server.
@@ -44,6 +49,10 @@ Red Hat recommends using *Keycloak* in production to avail of the many features 
 
 NOTE: *Keycloak* is _not_ available by default when running the default {WFM-RC-NameShort} solution.
 
+
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Choosing Passport.js or Keycloak
 *Passport.js*:
 

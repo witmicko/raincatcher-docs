@@ -7,6 +7,9 @@ This section includes:
 . xref:{context}-con-keycloak-securitystrategy[Introducing the Security Strategy for Keycloak]
 
 [id='{context}-credentials-for-the-demo-application']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Credentials for the {WFM-RC-KeycloakName} Admin Console
 
 . Login as the _admin_ user using the following credentials:

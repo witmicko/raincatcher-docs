@@ -12,12 +12,18 @@ This section includes:
 . xref:{context}-passportAuth-demo-users-and-access-roles[PassportAuth Demo Users and Access Roles]
 
 [id='{context}-understanding-passportauth-session-management']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Understanding PassportAuth Session Management
 
 The _express-session_ module provides session management functionality for *PassportAuth*.
 For more information, see link:https://github.com/expressjs/session[express-session].
 
 [id='{context}-defining-passportauth-access-control']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Defining PassportAuth Access Control
 _Routes_ are protected by *PassportAuth* which provides role based access control.
 _AuthService_ is an an implementation of link:../../../raincatcher-docs/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth].
@@ -33,11 +39,17 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
 NOTE: Demo roles are defined in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[user.json].
 
 [id='{context}-defining-passportauth-password-storage']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Defining PassportAuth Password Storage
 The *PassportAuth* user data is stored in link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}#getuserbylogin[User Repository Interface].
 Make sure that the _User Repository Interface_ is implemented in order to point *PassportAuth* to a datasource.
 
 [id='{context}-passportauth-authentication']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == PassportAuth Authentication
 {WFM-RC-NameShort} authentication is handled by the cloud server using users unique username and password combination.
 The *PassportAuth* service is a default authentication strategy as based on the local *Passport.js* implementation.
@@ -53,10 +65,16 @@ against the stored credentials in the _user.json_ file. It also checks the user'
 For more information, see the link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-PassportAuth-Example}[PassportAuth example].
 
 [id='{context}-passportauth-authorization']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == PassportAuth Authorization
 Authorization is supported by link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}[protect middleware] that validates a _user session id_ against session.
 
 [id='{context}-customizing-a-strategy']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Customizing a Strategy
 The link:default strategy for the *PassportAuth* module implements the *Passport.js* local strategy.
 To use a different security strategy that is supported by {WFM-RC-NameShort}, override the

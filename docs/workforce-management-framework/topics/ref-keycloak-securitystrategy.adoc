@@ -10,12 +10,18 @@ This section includes:
 . xref:{context}-keycloak-authorization[{WFM-RC-KeycloakName} Authorization]
 
 [id='{context}-understanding-keycloak-session-management']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Understanding {WFM-RC-KeycloakName} Session Management
 The _express-session_ module provides session management functionality and
 the management of sessions is performed on the link:{WFM-RC-KeycloakURL}server_admin/topics/sessions/administering.html[*{WFM-RC-KeycloakName}* server]
 For more information on _express-session_, see link:https://github.com/expressjs/session[express-session].
 
 [id='{context}-defining-keycloak-access-control']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Defining {WFM-RC-KeycloakName} Access Control
 *{WFM-RC-KeycloakName}* provides role based access control and is configured on the *{WFM-RC-KeycloakName}* server.
 For more information about role based access control, see link:{WFM-RC-KeycloakURL}server_admin/topics/roles.html[*{WFM-RC-KeycloakName}* Roles].
@@ -23,6 +29,9 @@ For more information about role based access control, see link:{WFM-RC-KeycloakU
 For more information on how roles are protected, see the *{WFM-RC-KeycloakName}* link:./pro-Keycloak-implementaion.adoc[documentation].
 
 [id='{context}-defining-keycloak-password-storage']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Defining {WFM-RC-KeycloakName} Password Storage
 *{WFM-RC-KeycloakName}* uses the link:https://en.wikipedia.org/wiki/PBKDF2[BKDF2 algorithm] for password hashing by default.
 *{WFM-RC-KeycloakName}* also provides enforced link:{WFM-RC-KeycloakURL}server_admin/topics/authentication/password-policies.html[password policies] from the server.
@@ -30,9 +39,15 @@ For more information on how roles are protected, see the *{WFM-RC-KeycloakName}*
 For more information on server administration topics, see link:{WFM-RC-KeycloakURL}server_admin/topics/identity-broker.html[identity-broker] and link:{WFM-RC-KeycloakURL}server_admin/topics/user-federation.html[user federation].
 
 [id='{context}-keycloak-authentication']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == *{WFM-RC-KeycloakName}* Authentication
 *{WFM-RC-KeycloakName}* has a wide variety of authentication mechanisms available. For more information, see the link:{WFM-RC-KeycloakURL}server_admin/topics/authentication.html[*{WFM-RC-KeycloakName}* Authentication Documentation].
 
 [id='{context}-keycloak-authorization']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == *{WFM-RC-KeycloakName}* Authorization
 Authorization is fully documented in the link:{WFM-RC-KeycloakURL}authorization_services/index.html[*{WFM-RC-KeycloakName}* Authorization Documentation].

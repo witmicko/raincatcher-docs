@@ -19,11 +19,13 @@ It achieves that by providing set of modules that can be integrated into existin
 {WFM-RC-NameShort} allows developers to leverage existing demo-solution by extending it to suit their business needs.
 
 Main features in the latest {WFM-RC-Version}:
+
 * Workflow Management
 * Real-time Data Access
 * Data Synchronization
 
 Roadmap:
+
 * Plugable authentication
 * Image capture
 * Geolocation

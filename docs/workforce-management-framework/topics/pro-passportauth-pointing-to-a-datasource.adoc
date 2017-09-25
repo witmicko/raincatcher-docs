@@ -12,13 +12,15 @@ This section includes:
 //. xref:{context}-enabling-passportauth[Enabling PassportAuth]
 . xref:{context}-pointing-passportauth-to-a-datasource[Pointing PassportAuth to a Datasource]
 
+
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Prerequisites
 
 Ensure you have completed:
 
 . xref:getting-started[Getting Started]
-
-== Procedure
 
 //[id='{context}-disabling-passportauth']
 //[discrete]

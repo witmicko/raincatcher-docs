@@ -1,6 +1,6 @@
 = {WFM-RC-NameLong} Supported Modules
 
-An up to date list of modules can be found at https://www.npmjs.com/org/raincatcher/. The core list 
+An up to date list of modules can be found at https://www.npmjs.com/org/raincatcher/. The core list
 
 == link:../../../api/{WFM-RC-Api-Version}/express-auth/docs/index.html[@raincatcher/express-auth]
 The {WFM-RC-NameShort} security interface used to apply authentication and authorisation, used in conjunction whatever security provider you choose.
@@ -18,7 +18,7 @@ The {WFM-RC-NameShort} client implemnetion of fh-sync used in conjunction with @
 The {WFM-RC-NameShort} Work Flow Management module which allows developers to map a business process into an organised set of tasks to suit business needs.
 
 == link:../../../api/{WFM-RC-Api-Version}/wfm-rest-api/docs/index.html[@raincatcher/wfm-rest-api]
-The {WFM-RC-NameShort} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects. 
+The {WFM-RC-NameShort} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects.
 
 == link:../../../api/{WFM-RC-Api-Version}/wfm-user/docs/index.html[@raincatcher/wfm-user]
 The {WFM-RC-NameShort} Aggregates all user operations for WFM modules

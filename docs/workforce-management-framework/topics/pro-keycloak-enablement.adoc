@@ -13,6 +13,9 @@ NOTE: Steps 3 and 4 are valid for any instance of *{WFM-RC-KeycloakName}* provid
 
 IMPORTANT: Enabling *{WFM-RC-KeycloakName}* requires the disabling of *PassportAuth*.
 
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Prerequisites
 
 . Ensure you have completed xref:getting-started[Getting Started]

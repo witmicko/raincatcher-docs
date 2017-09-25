@@ -12,6 +12,9 @@ This section includes:
 . xref:{context}-starting-the-core-server[Starting the Core Server]
 . xref:{context}-running-the-mobile-and-portal-demo-applications[Running the Mobile and Portal Demo Applications]
 
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Prerequisites
 
 Ensure you have:

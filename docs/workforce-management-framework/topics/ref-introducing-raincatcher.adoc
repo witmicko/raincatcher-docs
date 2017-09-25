@@ -9,6 +9,9 @@ This section includes:
 . xref:{context}-differentiating-raincatcher-from-tech-preview[Differentiating {WFM-RC-NameShort} from 'Tech Preview']
 
 [id='{context}-highlighting-raincatcher-areas-of-focus']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Highlighting {WFM-RC-NameShort} Areas of Focus
 
 .Areas of Focus
@@ -29,6 +32,9 @@ This section includes:
 |===
 
 [id='{context}-raincatcher-at-a-technical-level']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == {WFM-RC-NameShort} at a Technical Level
 
 * link:https://nodejs.org/en/[Node.js] used for server side code
@@ -38,6 +44,9 @@ This section includes:
 * Incorporates open-source technologies, for example: MongoDb, Keycloak, Passport.js
 
 [id='{context}-identifying-raincatcher-repositories']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Identifying {WFM-RC-NameShort} Repositories
 
 {WFM-RC-NameShort} is available in three github repositories:
@@ -57,6 +66,9 @@ This section includes:
 |===
 
 [id='{context}-differentiating-raincatcher-from-tech-preview']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 == Differentiating {WFM-RC-NameShort} from 'Tech Preview'
 
 The *{WFM-RC-NameShort}* project was originally called *Tech Preview*.
