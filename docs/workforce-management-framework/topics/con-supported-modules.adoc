@@ -1,27 +1,34 @@
-= {WFM-RC-NameLong} Supported Modules
+= {WFM-RC-NameShort} Supported Modules
 
-An up to date list of modules can be found at https://www.npmjs.com/org/raincatcher/. The core list
+This section describes *{WFM-RC-NameShort}'s* _core_ list of modules.
+The latest list of modules is found at link:https://www.npmjs.com/org/raincatcher/[{WFM-RC-NameShort} Modules].
 
-== link:../../../api/{WFM-RC-Api-Version}/express-auth/docs/index.html[@raincatcher/express-auth]
-The {WFM-RC-NameShort} security interface used to apply authentication and authorisation, used in conjunction whatever security provider you choose.
+.{WFM-RC-NameShort} Supported Modules
+|===
+|Module |Description
 
-== link:../../../api/{WFM-RC-Api-Version}/auth-passport/docs/index.html[@raincatcher/auth-passport]
-The {WFM-RC-NameShort} implementaion of Pasport.js and is the default security module for mobile and portal application.
+|link:../../../api/{WFM-RC-Api-Version}/express-auth/docs/index.html[@raincatcher/express-auth]
+|The {WFM-RC-NameShort} Security Interface is used to apply authentication and authorization, used in conjunction with a security provider chosen by you.
 
-== link:../../../api/{WFM-RC-Api-Version}/datasync-cloud/docs/index.html[@raincatcher/datasync-cloud]
-The {WFM-RC-NameShort} cloud implemention of fh-sync used in conjunction with @raincatcher/datasync-client, used to sync data between cloud and mobile applications.
+|link:../../../api/{WFM-RC-Api-Version}/auth-passport/docs/index.html[@raincatcher/auth-passport]
+|The {WFM-RC-NameShort} implementation of Passport.js which is the default security module for Mobile and Portal applications.
 
-== link:../../../api/{WFM-RC-Api-Version}/datasync-client/docs/index.html[@raincatcher/datasync-client]
-The {WFM-RC-NameShort} client implemnetion of fh-sync used in conjunction with @raincathcer/datasync-cloud , used to sync data between cloud and mobile application.
+|link:../../../api/{WFM-RC-Api-Version}/datasync-cloud/docs/index.html[@raincatcher/datasync-cloud]
+|The {WFM-RC-NameShort} Cloud implementation of fh-sync used in conjunction with @raincatcher/datasync-client. This is used to sync data between the Cloud and Mobile applications.
 
-== link:../../../api/{WFM-RC-Api-Version}/wfm/docs/index.html[@raincatcher/wfm]
-The {WFM-RC-NameShort} Work Flow Management module which allows developers to map a business process into an organised set of tasks to suit business needs.
+|link:../../../api/{WFM-RC-Api-Version}/datasync-client/docs/index.html[@raincatcher/datasync-client]
+|The {WFM-RC-NameShort} Client implementation of fh-sync used in conjunction with @raincathcer/datasync-cloud. This is used to sync data between the Cloud and Mobile applications.
 
-== link:../../../api/{WFM-RC-Api-Version}/wfm-rest-api/docs/index.html[@raincatcher/wfm-rest-api]
-The {WFM-RC-NameShort} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects.
+|link:../../../api/{WFM-RC-Api-Version}/wfm/docs/index.html[@raincatcher/wfm]
+|The {WFM-RC-NameShort} Work Flow Management module which allows developers to map a business process into an organized set of tasks to suit a businesses needs.
 
-== link:../../../api/{WFM-RC-Api-Version}/wfm-user/docs/index.html[@raincatcher/wfm-user]
-The {WFM-RC-NameShort} Aggregates all user operations for WFM modules
+|link:../../../api/{WFM-RC-Api-Version}/wfm-rest-api/docs/index.html[@raincatcher/wfm-rest-api]
+|The {WFM-RC-NameShort} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects.
 
-== link:../../../api/{WFM-RC-Api-Version}/wfm-demo-data/docs/index.html[@raincatcher/wfm-demo-data]
-This is a sample module containing static data definitions to seed an example {WFM-RC-NameShort} demo project.
+|link:../../../api/{WFM-RC-Api-Version}/wfm-user/docs/index.html[@raincatcher/wfm-user]
+|The {WFM-RC-NameShort} Aggregates all user operations for {WFM-RC-NameShort} modules.
+
+|link:../../../api/{WFM-RC-Api-Version}/wfm-demo-data/docs/index.html[@raincatcher/wfm-demo-data]
+|This is a sample module containing static data definitions and when running, it allows the user to see the {WFM-RC-NameShort} demo project example.
+
+|===
