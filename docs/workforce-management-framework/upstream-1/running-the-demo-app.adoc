@@ -5,7 +5,7 @@ include::topics/shared/attributes.adoc[]
 
 = Running the Demo App
 //Concepts
-The *{WFM-RC-NameShort}* demo app comprises of three applications:
+The *{Feature}* demo app comprises of three applications:
 
 * _Mobile_
 * _Portal_
@@ -16,7 +16,7 @@ _Mobile_ can be built to run on a mobile phone.
 
 // Procedure
 include::topics/pro-running-the-demo-app.adoc[leveloffset=+1]
-For login details, refer to the xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application] section of xref:{context}-ref-demo-app[{WFM-RC-NameShort} Demo Application Reference Material].
+For login details, refer to the xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application] section of xref:{context}-ref-demo-app[{Feature} Demo Application Reference Material].
 
 // Related Information
 include::topics/ref-demo-app.adoc[leveloffset=+1]

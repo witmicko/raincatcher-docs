@@ -14,8 +14,7 @@
 :ProductVersion: 1.0
 
 //***NEW START***
-:WFM-RC-NameLong: RainCatcher
-:WFM-RC-NameShort: RainCatcher
+:Feature: RainCatcher
 :WFM-RC-Version: 1.0
 :WFM-RC-NodeVersion: 6 LTS
 :WFM-RC-MongoDBVersion: <latest version>
@@ -24,7 +23,7 @@
 :WFM-RC-Github-Core: https://github.com/feedhenry-raincatcher/raincatcher-core/tree/
 :WFM-RC-Branch: master
 :WFM-RC-PassportAuth-Example: /cloud/passportauth/example
-:WFM-RC-KeycloakName: Keycloak
+:Keycloak: Keycloak
 //api url
 :WFM-RC-Api-Version: 0.0.1
 :WFM-RC-Api-Default-Strategy: /auth-passport/docs/modules/_src_auth_defaultstrategy_.html
@@ -51,12 +50,12 @@
 :DocInfoProductName: Red Hat Mobile Application Platform
 :DocInfoProductNumber: 3.x
 //
-// Book Names: 
-//     Defining the book names in document attributes instead of hard-coding them in 
-//     the master.adoc files and in link references. This makes it easy to change the 
-//     book name if necessary. 
-//     Using the pattern ending in 'BookName' makes it easy to grep for occurrences 
-//     throughout the topics 
+// Book Names:
+//     Defining the book names in document attributes instead of hard-coding them in
+//     the master.adoc files and in link references. This makes it easy to change the
+//     book name if necessary.
+//     Using the pattern ending in 'BookName' makes it easy to grep for occurrences
+//     throughout the topics
 
 // -- TOOLING METADATA: DO NOT CHANGE ANYTHING BELOW THIS LINE! --
 :RepoTemplateVersion: 0.9

@@ -3,7 +3,7 @@ include::topics/shared/attributes.adoc[]
 //':context:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
 :context: introducing-features-and-modules
 
-= {WFM-RC-NameShort} Features
+= {Feature} Features
 
 include::topics/con-keycloak.adoc[leveloffset=+1]
 
@@ -13,13 +13,13 @@ endif::downstream[]
 
 include::topics/con-introducing-securityfeatures.adoc[leveloffset=+1]
 
-== Introducing {WFM-RC-NameShort} Security Strategies
+== Introducing {Feature} Security Strategies
 include::topics/con-passportauth-securitystrategy.adoc[leveloffset=+2]
-For more information, see xref:defining-raincatcher-security-ref-passportauth-securitystrategy[Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth].
+For more information, see xref:defining-raincatcher-security-ref-passportauth-securitystrategy[Defining the Security Strategy for {Feature} PassportAuth].
 
 include::topics/con-keycloak-securitystrategy.adoc[leveloffset=+2]
-For more information, see xref:defining-raincatcher-security-ref-keycloak-securitystrategy[Defining the Security Strategy for {WFM-RC-NameShort} {WFM-RC-KeycloakName}].
+For more information, see xref:defining-raincatcher-security-ref-keycloak-securitystrategy[Defining the Security Strategy for {Feature} {Keycloak}].
 
-= {WFM-RC-NameShort} Modules
+= {Feature} Modules
 include::topics/con-passportauth-module.adoc[leveloffset=+1]
 include::topics/con-datasync-module.adoc[leveloffset=+1]

@@ -1,11 +1,11 @@
 [id='{context}-con-logging']
-= Introducing {WFM-RC-NameShort} Logging
+= Introducing {Feature} Logging
 
-*{WFM-RC-NameShort} Logging* is a facade for link:https://nodejs.org[Node.js] based applications and it is used by all {WFM-RC-NameShort} modules.
-*{WFM-RC-NameShort} Logging* is contained in the `{WFM-RC-NameShort}-core` module.
+*{Feature} Logging* is a facade for link:https://nodejs.org[Node.js] based applications and it is used by all {Feature} modules.
+*{Feature} Logging* is contained in the `{Feature}-core` module.
 
 Developers can use their own loggers by wrapping their implementation into the provided _logger interfaces_.
 For more information about the _logger interface_ structure, see link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/logger/src/Logger.ts[Logger.ts]
 
-The *{WFM-RC-NameShort}* demo application contains two implementations of the _logger interface_ and are found in the `{WFM-RC-NameShort}-core` module.
+The *{Feature}* demo application contains two implementations of the _logger interface_ and are found in the `{Feature}-core` module.
 To see a logging example, see the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/logger/example/index.ts[Cloud Logger example].

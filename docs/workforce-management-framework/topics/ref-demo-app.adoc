@@ -1,14 +1,11 @@
 [id='{context}-ref-demo-app']
-= {WFM-RC-NameShort} Demo Application Reference Material
+= {Feature} Demo Application Reference Material
 
 This section includes:
 
 . xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application]
 
 [id='{context}-credentials-for-the-mobile-and-portal-demo-application']
-ifdef::upstream[]
-discrete
-endif::upstream[]
 == Credentials for the Mobile and Portal Demo Application
 
 Login using the following credentials:

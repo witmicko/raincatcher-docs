@@ -5,9 +5,6 @@ This section includes:
 
 //. xref:{context}-cloning-the-git-repository[Cloning the Git Repository]
 
-ifdef::upstream[]
-discrete
-endif::upstream[]
 = Prerequisites
 
 //* Redis (tested with version: {WFM-RC-RedisVersion})

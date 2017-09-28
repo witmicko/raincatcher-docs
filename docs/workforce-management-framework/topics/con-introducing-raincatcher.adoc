@@ -1,22 +1,24 @@
 [id='{context}-con-introducing-raincatcher']
-= Introducing {WFM-RC-NameLong}
-
 ifdef::downstream[]
-{WFM-RC-NameLong} is a Workforce Management Platform and is also referred to as {WFM-RC-NameShort}.
+= Introducing Workforce Management
+
+Workforce Management is a Workforce Management Platform and is also referred to as {Feature}.
 endif::downstream[]
 
 ifdef::upstream[]
-{WFM-RC-NameLong} is a Workforce Management Platform.
+= Introducing {Feature}
+
+{Feature} is a Workforce Management Platform.
 endif::upstream[]
 
-The latest version of {WFM-RC-NameShort} is {WFM-RC-Version}.
+The latest version of {Feature} is {WFM-RC-Version}.
 
-{WFM-RC-NameShort} connects a business’ back-office with its fleet of mobilized employees.
-{WFM-RC-NameShort} leverages commoditized mobile hardware, making use of each employee’s mobile phone.
+{Feature} connects a business’ back-office with its fleet of mobilized employees.
+{Feature} leverages commoditized mobile hardware, making use of each employee’s mobile phone.
 
-The primary goal of {WFM-RC-NameShort} is to ease mobile enablement efforts.
+The primary goal of {Feature} is to ease mobile enablement efforts.
 It achieves that by providing set of modules that can be integrated into existing applications additionally
-{WFM-RC-NameShort} allows developers to leverage existing demo-solution by extending it to suit their business needs.
+{Feature} allows developers to leverage existing demo-solution by extending it to suit their business needs.
 
 Main features in the latest {WFM-RC-Version}:
 
@@ -34,7 +36,7 @@ Roadmap:
 * Real-time Data Access
 * Integration of sensor data
 
-{WFM-RC-NameShort} {WFM-RC-Version} features:
+{Feature} {WFM-RC-Version} features:
 
 * Security
 * Logging

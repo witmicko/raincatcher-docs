@@ -1,20 +1,17 @@
 [id='{context}-ref-demo-app']
-= {WFM-RC-KeycloakName} Reference Material
+= {Keycloak} Reference Material
 
 This section includes:
 
-. xref:{context}-credentials-for-the-demo-application[Credentials for the {WFM-RC-KeycloakName} Admin Console]
+. xref:{context}-credentials-for-the-demo-application[Credentials for the {Keycloak} Admin Console]
 . xref:{context}-con-keycloak-securitystrategy[Introducing the Security Strategy for Keycloak]
 
 [id='{context}-credentials-for-the-demo-application']
-ifdef::upstream[]
-discrete
-endif::upstream[]
-== Credentials for the {WFM-RC-KeycloakName} Admin Console
+== Credentials for the {Keycloak} Admin Console
 
 . Login as the _admin_ user using the following credentials:
 
-.{WFM-RC-KeycloakName} Admin Console Credentials
+.{Keycloak} Admin Console Credentials
 |===
 |Username |Password
 

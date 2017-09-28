@@ -1,9 +1,9 @@
-<title>{WFM-RC-NameLong} Framework</title>
-<productname>{WFM-RC-NameLong} {ProductName}</productname>
+<title>{Feature} Framework</title>
+<productname>{Feature} {ProductName}</productname>
 <productnumber>{DocInfoProductNumber}</productnumber>
-<subtitle>Documentation for use with {ProductName} {WFM-RC-NameLong} - Version {ProductRelease}</subtitle>
+<subtitle>Documentation for use with {ProductName} {Feature} - Version {ProductRelease}</subtitle>
 <abstract>
-    <para>This documentation covers technical aspects of {ProductName} {WFM-RC-NameLong} - Version {ProductRelease}.</para>
+    <para>This documentation covers technical aspects of {ProductName} {Feature} - Version {ProductRelease}.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

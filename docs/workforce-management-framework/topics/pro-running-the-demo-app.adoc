@@ -13,7 +13,7 @@ This section includes:
 . xref:{context}-running-the-mobile-and-portal-demo-applications[Running the Mobile and Portal Demo Applications]
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Prerequisites
 

@@ -1,10 +1,10 @@
-<title>{WFM-RC-NameLong} Framework</title>
+<title>Workforce Management Framework</title>
 <productname>{ProductName}</productname>
 <productnumber>{DocInfoProductNumber}</productnumber>
 <release>{DocInfoProductNumber}</release>
-<subtitle>Documentation for use with {ProductName} {WFM-RC-NameLong} - Version {ProductRelease}</subtitle>
+<subtitle>Documentation for use with {ProductName} Workforce Management - Version {ProductRelease}</subtitle>
 <abstract>
-    <para>This documentation covers technical aspects of {ProductName} {WFM-RC-NameLong} - Version {ProductRelease}.</para>
+    <para>This documentation covers technical aspects of {ProductName} Workforce Management - Version {ProductRelease}.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

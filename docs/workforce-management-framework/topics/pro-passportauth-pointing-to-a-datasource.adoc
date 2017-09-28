@@ -14,7 +14,7 @@ This section includes:
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Prerequisites
 

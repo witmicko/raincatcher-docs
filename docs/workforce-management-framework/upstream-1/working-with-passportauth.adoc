@@ -14,4 +14,4 @@ include::topics/pro-passportauth-pointing-to-a-datasource.adoc[leveloffset=+1]
 //Reference Material
 == PassportAuth Reference Material
 include::topics/con-passportauth-securitystrategy.adoc[leveloffset=+2]
-For more information, see xref:defining-raincatcher-security-ref-passportauth-securitystrategy[Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth].
+For more information, see xref:defining-raincatcher-security-ref-passportauth-securitystrategy[Defining the Security Strategy for {Feature} PassportAuth].

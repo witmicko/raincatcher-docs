@@ -9,6 +9,6 @@ include::topics/con-passportauth-securitystrategy.adoc[leveloffset=+1]
 include::topics/ref-passportauth-securitystrategy.adoc[leveloffset=+1]
 
 //Topic Concept & Reference
-= {WFM-RC-KeycloakName} Security Strategy
+= {Keycloak} Security Strategy
 include::topics/con-keycloak-securitystrategy.adoc[leveloffset=+1]
 include::topics/ref-keycloak-securitystrategy.adoc[leveloffset=+1]
