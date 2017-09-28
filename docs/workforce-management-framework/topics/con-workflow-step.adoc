@@ -1,14 +1,14 @@
 [id='{context}-con-workflow-step']
 = Building your first Workflow Step by Reusing a Template
 
-A basic knowledge of Angular.js is required to build a *Workflow Step* in {WFM-RC-NameLong}.
+A basic knowledge of Angular.js is required to build a *Workflow Step* in {Feature}.
 
 == Structure of a Step
 Steps are divided into two linked categories, the `module` and the `definition`.
 
 === Module
 Modules can contain one or more Angular.js directives for rendering _Steps_ in the Portal and Mobile applications.
-{WFM-RC-NameShort} _Steps_ use Angular.js directives to build a user interface as part of workflows.
+{Feature} _Steps_ use Angular.js directives to build a user interface as part of workflows.
 Each _Step_ is divided into two directives:
 
 .A Step's Directive
