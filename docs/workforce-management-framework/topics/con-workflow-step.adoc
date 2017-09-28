@@ -1,0 +1,68 @@
+[id='{context}-con-workflow-step']
+= Building your first Workflow Step by Reusing a Template
+
+A basic knowledge of Angular.js is required to build a *Workflow Step* in {WFM-RC-NameLong}.
+
+== Structure of a Step
+Steps are divided into two linked categories, the `module` and the `definition`.
+
+=== Module
+Modules can contain one or more Angular.js directives for rendering _Steps_ in the Portal and Mobile applications.
+{WFM-RC-NameShort} _Steps_ use Angular.js directives to build a user interface as part of workflows.
+Each _Step_ is divided into two directives:
+
+.A Step's Directive
+|===
+|Directive |Description
+
+|Edit Section directive (Form)
+|The Edit Section is displayed when a workflow is executed and allows users to edit information - typically this would be a form.
+
+The Edit Section consists of the a html template and a directive.
+
+|Preview Section directive (View)
+|The Preview Section is displayed as a summary when a workflow has been completed.
+
+The Preview Section consists of a html template and a directive.
+
+|===
+
+=== Definition
+
+A Definition contains the _Step Definition_ which outlines the properties such as, the name and the description of a _Step_, for the workflow in the Portal application.
+Each _Step_ requires a *Definition* and the `definition.json` file can contain a *Definition* of a single _Step_ or an array of *Definitions* with the size corresponding to the number of _Steps_ in the _Step Package_.
+The following is an example of a *Definition*:
+
+Example:
+[source,json]
+----
+[
+    {
+        "code": "base-form",
+        "name": "Base Form",
+        "description": "base form used to for steps",
+        "templates": {
+            "form": "<base-form></base-form>",
+            "view": "<base></base>"
+        }
+    }
+]
+----
+
+The *Module* and the *Definition* are exported to be visibile when a _Step Package_ is imported.
+The following is an example of a *Module*:
+
+Example:
+[source,javascript]
+----
+module.exports = {
+  ngModule: require('./angular/base'),
+  // Definition for this step that is being used in portal
+  definition: require('./definition.json')
+};
+----
+
+== Development
+When developing a custom _Step Package_, clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and make modifications to the cloned repository or alternatively, use the link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a _Step_.
+
+For more information about modifying a _Step_ and importing a _Step_ into the Portal and Mobile applications, see the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md]
