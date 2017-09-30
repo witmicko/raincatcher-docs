@@ -1,0 +1,123 @@
+= Working with the *{Feature}* Application
+
+The *{Feature}* Application consists of three components:
+
+- A *Mobile Application* for end users
+- A *Portal Application* for administrator users and accessed through a web browser
+- A *Cloud Application* for backend server functionality (there is no user interface)
+
+An administrator can define a business process or procedure via a custom _Workflow_.
+A _Workflow_ contains one to many _Steps_.
+A _Workorder_ is an individual instance of a _Workflow_ and it (the _Workorder_) is assigned to an end user (or to many end users) as a job that they are to complete.
+An end user can view their _Workorder_ via a *Mobile Application*.
+An administrator can manage the _Workorder_ via the *Portal Application*.
+
+The *{Feature}* Application is supplied with demo users and data, and both are used to assist a User when demonstrating *{Feature}* functionality.
+
+== Working with the Portal Application
+
+The Portal Application is used by an administrator to essentially manage the _Workorder_.
+An administrator can view, edit and assign a _Workorder_ and also create a new _Workflow_.
+When an administrator logs into the Portal Application, there are two separate areas that they can access on the Portal Application: the _Workflow_ and the _Workorder_.
+
+.Available Areas on the Portal Application
+|===
+|Area |Functionality
+
+|_Workflow_
+|Create, read, update, delete and list operations can be executed against a _Workflow_.
+
+Manage _Workflows_ and add additional _Steps_ to an existing _Workflow_.
+
+|_Workorder_
+|Create, read, update, delete and list operations can be executed against a _Workorder_.
+
+Manage _Workorders_ by assigning them to individual end users.
+
+|===
+
+IMPORTANT: Once a _Workorder_ has been created, any _Workflows_ based in this _Workorder_ become unchangeable, that is, the sequence of _Steps_ that make up the _Workorder_ cannot be changed.
+
+=== Creating a Workflow
+
+. Login as an administrator to the Portal Application
+. In the navigation panel on the left, click on *Workflow*
+. To create a new _Workflow_, click on *NEW Workflow*
+.. This will bring you to the _Create Workflow screen_
+. Add a title to the _Workflow_
+. Click *CREATE Workflow* to navigate to the _Add Step screen_
++
+image::{WFM-RC-images}create-Workflow.png[creating a Workflow]
++
+. Give the _Step_ a name and then select a _Step Type_ from the list
+.. All _Steps_, default and custom, will appear in this list
+. To submit the new _Step_ to the _Workflow_, click *ADD STEP*
++
+image::{WFM-RC-images}Workflow-nextstep.png[Next Step Workflow]
+
+NOTE: Use the _Add Step screen_ to add additional steps to the _Workflow_.
+
+=== Working with a Workflow
+
+To make updates to a _Workflow_ or to delete a _Workflow_, use the the *pencil* (to update) or the *trash* (to delete) icons in the top right side of the screen.
+Updating a _Workflow_ will increment the version of the _Workflow_ however, do note that any existing _Workorders_ that are based on the original _Workflow_ will continue to use the older version of the _Workorder_.
+Naturally, a new _Workorder_ can be created and based on the incremented _Workflow_.
+
+A _Step_ can be modified or deleted.
+Use the *circle* with the plus icon to create a new _Workflow_.
+This new _Workflow_ can be used to create or update _Workorders_.
+
+Refresh the screen to see the new _Workflow_ appearing in the list in the center panel.
+You can access existing _Workflows_ by selecting them in the list in the center panel.
+The options presented for editing a _Workflow_ are the same for the creation of a _Workflow_.
+
+=== Creating a Workorder
+
+A _Workorder_ is an individual instance of a _Workflow_ and it can be assigned to an end user.
+
+. Login as an administrator to the Portal Application
+. In the navigation panel on the left, click on *Workorder*
+. To create a new _Workorder_, click on *NEW Workorder* to open a form for completion
++
+image::{WFM-RC-images}create-Workorder.png[Creating a Workorder]
++
+. Add data to the form and when complete, click `CREATE Workorder`
+.. Once the Workorder is created, it will sync with an end user's account and is now accessible on the Mobile Application
+. The page will refresh and the new _Workorder_ will appear in the list on the middle panel
+. To edit a _Workorder_ assigned to an individual end user, click on the _Workorder_ from the center panel list
++
+image::{WFM-RC-images}portal-viewWorkorder.png[view Workorder]
+
+=== Working with a Workorder
+
+To update a _Workorder's_ title, assignee or _Workflow_, use the the *pencil* icon.
+The updates will sync to the end user's Mobile Application after `UPDATE Workorder` is clicked.
+To access the _Workorder_ screen, click on the *circle with a plus* icon on the bottom right side of the screen.
+
+== Working with the Mobile Application
+
+The Mobile Application is used by an end user to interact with _Workorders_ that have been assigned to them.
+
+When an end user is logged in, they are presented with the _Workorders_ screen.
+To log out, click on the *menu* icon in the top left hand side of the screen.
+This will open a sidebar with options, one being the option to log out.
+
+=== Completing a Workorder
+
+. Log into the Mobile Application as an end user
+.. The end user will see the _Workorders_ assigned to them
+. Select a _Workorder_ to view the first _Step_ in the _Workorder_:
++
+image::{WFM-RC-images}Workorder-overview.png[overview]
++
+. To add data to the _Workorder_, click on *BEGIN Workflow* and add the necessary data
+. To move to the next _Step_, click *CONTINUE*
+. When all _Steps_ have been completed, click on *CONTINUE* on the bottom of the screen to proceed to the _Summary_ screen
++
+image::{WFM-RC-images}Workorder-summary.png[summary]
++
+. Once you are on the _Summary_ screen, the _Workorder_ has been completed
+. To return to the _Workorder_ home screen and view the updated status of the _Workorder_, click on the *Menu* icon in the top left hand side and return to the Workorders screen.
+. The _Workorder_ is now marked with a green tick which means it was successfully completed.
+
+Once the Mobile Application has synced with the Portal Application, a full summary of the completed _Workorder_ is available for viewing on the Portal Application.
