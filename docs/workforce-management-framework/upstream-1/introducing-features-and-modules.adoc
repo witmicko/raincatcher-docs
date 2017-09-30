@@ -6,11 +6,6 @@ include::topics/shared/attributes.adoc[]
 = {Feature} Features
 
 include::topics/con-keycloak.adoc[leveloffset=+1]
-
-ifdef::downstream[]
-include::topics/con-logging.adoc[leveloffset=+1]
-endif::downstream[]
-
 include::topics/con-introducing-securityfeatures.adoc[leveloffset=+1]
 
 == Introducing {Feature} Security Strategies
