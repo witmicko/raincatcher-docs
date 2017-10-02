@@ -15,4 +15,4 @@ For login details, refer to the xref:{context}-credentials-for-the-demo-applicat
 
 // Related Information
 include::topics/ref-keycloak.adoc[leveloffset=+1]
-For more information, see xref:defining-raincatcher-security-ref-keycloak-securitystrategy[Defining the Security Strategy for {Feature} {Keycloak}].
+For more information, see xref:defining-raincatcher-security-ref-keycloak-securitystrategy[Defining the Security Strategy for {PROJECT_NAME} {Keycloak}].

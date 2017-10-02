@@ -1,5 +1,5 @@
 [id='{context}-ref-passportauth-securitystrategy']
-= Defining the Security Strategy for {Feature} PassportAuth
+= Defining the Security Strategy for {PROJECT_NAME} PassportAuth
 
 This section includes:
 
@@ -39,7 +39,7 @@ Make sure that the _User Repository Interface_ is implemented in order to point 
 
 [id='{context}-passportauth-authentication']
 == PassportAuth Authentication
-{Feature} authentication is handled by the cloud server using users unique username and password combination.
+{PROJECT_NAME} authentication is handled by the cloud server using users unique username and password combination.
 The *PassportAuth* service is a default authentication strategy as based on the local *Passport.js* implementation.
 
 *PassportAuth* uses link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}#authenticate[authenticate]
@@ -59,7 +59,7 @@ Authorization is supported by link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-
 [id='{context}-customizing-a-strategy']
 == Customizing a Strategy
 The link:default strategy for the *PassportAuth* module implements the *Passport.js* local strategy.
-To use a different security strategy that is supported by {Feature}, override the
+To use a different security strategy that is supported by {PROJECT_NAME}, override the
 link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Passport-Auth}[PassportAuth.setup] method.
 
 [id='{context}-passportAuth-demo-users-and-access-roles']

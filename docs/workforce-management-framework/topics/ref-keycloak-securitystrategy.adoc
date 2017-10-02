@@ -1,5 +1,5 @@
 [id='{context}-ref-keycloak-securitystrategy']
-= Defining the Security Strategy for {Feature} {Keycloak}
+= Defining the Security Strategy for {PROJECT_NAME} {Keycloak}
 
 This section includes:
 

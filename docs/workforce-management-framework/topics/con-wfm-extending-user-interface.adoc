@@ -1,20 +1,20 @@
 [id='{context}-con-extending-the-user-interface']
 = Extending the User Interface
 
-{Feature} framework provides a set of extension points which allows a developer to modify an Angular User Interface (UI).
+{PROJECT_NAME} framework provides a set of extension points which allows a developer to modify an Angular User Interface (UI).
 All modifications are done by supplying additional modules which provide a set of the Angular.js directives and are used to extend the Mobile and Portal UI.
-The {Feature} Application is shipped with the `angularjs-extensions` example that extends the Mobile and Portal Applications:
+The {PROJECT_NAME} Application is shipped with the `angularjs-extensions` example that extends the Mobile and Portal Applications:
 
  * https://github.com/feedhenry-raincatcher/raincatcher-angularjs/tree/master/packages/angularjs-extensions
 
-This Module contains the example directives that are used for demo purposes and it can be used as a template to extend the existing {Feature} UI.
+This Module contains the example directives that are used for demo purposes and it can be used as a template to extend the existing {PROJECT_NAME} UI.
 
 == Extending Workorders
 
-By default, {Feature} provides a minimal set of defined fields for a _workorder_.
+By default, {PROJECT_NAME} provides a minimal set of defined fields for a _workorder_.
 Depending on the needs of the business, a developer can add additional data and UI elements, for example, gps location, an address or a description UI element.
 
-=== Building directives
+=== Building Directives
 To extend a _workorder_, implement two Angular Directives:
 
 .Angular Directives for Extending a _workorder_
@@ -48,10 +48,10 @@ Each change to a template will require a distribution build.
 An _Entry File_ exposes a new implementation of an Angular module and this can be mounted into a root application module.
 A new NPM module should be integrated into both the Mobile and the Portal Application, so that the User can view the data belonging to the new _workorder_.
 
-NOTE: The {Feature} Application contains the `@raincatcher-examples/angularjs-extensions` module. If you add a new custom module, remove the {Feature} Application to avoid collisions.
+NOTE: The {PROJECT_NAME} Application contains the `@raincatcher-examples/angularjs-extensions` module. If you add a new custom module, remove the {PROJECT_NAME} Application to avoid collisions.
 
 == Publishing
 
-For {Feature} to consume a module, ensure that it is published to the public or private NPM registry.
+For {PROJECT_NAME} to consume a module, ensure that it is published to the public or private NPM registry.
 When publishing a custom module, ensure that the package's name and the author's name are updated.
-If you choose not to publish a custom module, you can include all directives directly in the {Feature} application.
+If you choose not to publish a custom module, you can include all directives directly in the {PROJECT_NAME} application.

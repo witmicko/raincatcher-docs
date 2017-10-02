@@ -5,7 +5,7 @@ include::topics/shared/attributes.adoc[]
 
 = Running the Demo App
 //Concepts
-The *{Feature}* demo app comprises of three applications:
+The *{PROJECT_NAME}* demo app comprises of three applications:
 
 * _Mobile_
 * _Portal_
@@ -15,10 +15,20 @@ For testing and demo purposes, _Mobile_ and _Portal_ are launched in the browser
 _Mobile_ can be built to run on a mobile phone.
 
 // Procedure
-include::topics/pro-running-the-demo-app.adoc[leveloffset=+1]
-For login details, refer to the xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application] section of xref:{context}-ref-demo-app[{Feature} Demo Application Reference Material].
-
 include::topics/pro-working-with-templates-on-rhmap.adoc[leveloffset=+1]
+
+include::topics/pro-running-the-demo-app.adoc[leveloffset=+1]
+For login details, refer to the xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application] section of xref:{context}-ref-demo-app[{PROJECT_NAME} Demo Application Reference Material].
+
+= Working with the Application
+//Concepts
+include::topics/con-wfm.adoc[leveloffset=+1]
+// Procedure
+include::topics/pro-using-the-demo-app.adoc[leveloffset=+1]
+
+= Building Your First Workflow
+// Procedure
+include::topics/con-workflow-step.adoc[leveloffset=+1]
 
 // Related Information
 include::topics/ref-demo-app.adoc[leveloffset=+1]

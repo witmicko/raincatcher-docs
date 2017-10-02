@@ -1,15 +1,15 @@
 [id='{context}-ref-introducing-raincatcher']
-= {Feature} Reference Material
+= {PROJECT_NAME} Reference Material
 
 This section includes:
 
-. xref:{context}-highlighting-raincatcher-areas-of-focus[Highlighting {Feature} Areas of Focus]
-. xref:{context}-raincatcher-at-a-technical-level[{Feature} at a Technical Level]
-. xref:{context}-identifying-raincatcher-repositories[Identifying {Feature} Repositories]
-. xref:{context}-differentiating-raincatcher-from-tech-preview[Differentiating {Feature} from 'Tech Preview']
+. xref:{context}-highlighting-raincatcher-areas-of-focus[Highlighting {PROJECT_NAME} Areas of Focus]
+. xref:{context}-raincatcher-at-a-technical-level[{PROJECT_NAME} at a Technical Level]
+. xref:{context}-identifying-raincatcher-repositories[Identifying {PROJECT_NAME} Repositories]
+. xref:{context}-differentiating-raincatcher-from-tech-preview[Differentiating {PROJECT_NAME} from 'Tech Preview']
 
 [id='{context}-highlighting-raincatcher-areas-of-focus']
-== Highlighting {Feature} Areas of Focus
+== Highlighting {PROJECT_NAME} Areas of Focus
 
 .Areas of Focus
 |===
@@ -19,17 +19,17 @@ This section includes:
 |A generic and developer friendly framework (set of classes) for building mobile and website Workforce Management solutions
 
 |Modules
-|Modules specific to {Feature}, for example: signature-module, scheduler
+|Modules specific to {PROJECT_NAME}, for example: signature-module, scheduler
 
 |Integrations
-|Integrations to satisfy {Feature} needs, for example: authentication, storage, offline capabilities, server side synchronization
+|Integrations to satisfy {PROJECT_NAME} needs, for example: authentication, storage, offline capabilities, server side synchronization
 
 |User Interface
 |Graphical User Interfaces are implemented in AngularJS and Angular
 |===
 
 [id='{context}-raincatcher-at-a-technical-level']
-== {Feature} at a Technical Level
+== {PROJECT_NAME} at a Technical Level
 
 * link:https://nodejs.org/en/[Node.js] used for server side code
 * Hybrid mobile development using https://cordova.apache.org/[Cordova]
@@ -38,11 +38,11 @@ This section includes:
 * Incorporates open-source technologies, for example: MongoDb, Keycloak, Passport.js
 
 [id='{context}-identifying-raincatcher-repositories']
-== Identifying {Feature} Repositories
+== Identifying {PROJECT_NAME} Repositories
 
-{Feature} is available in three github repositories:
+{PROJECT_NAME} is available in three github repositories:
 
-.{Feature} Repositories
+.{PROJECT_NAME} Repositories
 |===
 |Repository |Description
 
@@ -50,19 +50,19 @@ This section includes:
 |Contains all of the supported modules and demo server.
 
 |link:https://github.com/feedhenry-raincatcher/raincatcher-angularjs[raincatcher-angularjs]
-|Contains angularJS user interface for *{Feature}*
+|Contains angularJS user interface for *{PROJECT_NAME}*
 
 |link:https://github.com/feedhenry-raincatcher/raincatcher-docs[raincatcher-docs]
-|Repository contains *{Feature}* documentation
+|Repository contains *{PROJECT_NAME}* documentation
 |===
 
 [id='{context}-differentiating-raincatcher-from-tech-preview']
-== Differentiating {Feature} from 'Tech Preview'
+== Differentiating {PROJECT_NAME} from 'Tech Preview'
 
-The *{Feature}* project was originally called *Tech Preview*.
+The *{PROJECT_NAME}* project was originally called *Tech Preview*.
 The *Tech Preview* codebase is now deprecated and is accessible at link:https://github.com/feedhenry-raincatcher/raincatcher-documentation[Tech Preview Documentation].
-The main differences between *{Feature}* and *Tech Preview* are:
+The main differences between *{PROJECT_NAME}* and *Tech Preview* are:
 
-* Mediator pattern is removed from *{Feature}*
+* Mediator pattern is removed from *{PROJECT_NAME}*
 * *Tech Preview* is not object oriented
-* *{Feature}* is written in Typescript
+* *{PROJECT_NAME}* is written in Typescript

@@ -1,5 +1,5 @@
 [id='{context}-pro-running-the-demo-app']
-= Running the Demo App
+= Running the Demo App Locally
 
 This procedure will install the latest master branch.
 

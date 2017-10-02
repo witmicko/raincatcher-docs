@@ -1,0 +1,38 @@
+[id='{context}-con-wfm']
+= Understanding the *{PROJECT_NAME}* Application
+
+The *{PROJECT_NAME}* Application consists of three components:
+
+- A *Mobile Application* for end users
+- A *Portal Application* for administrator users and accessed through a web browser
+- A *Cloud Application* for backend server functionality (there is no user interface)
+
+An administrator can define a business process or procedure via a custom _Workflow_.
+A _Workflow_ contains one to many _Steps_.
+A _Workorder_ is an individual instance of a _Workflow_ and it (the _Workorder_) is assigned to an end user (or to many end users) as a job that they are to complete.
+An end user can view their _Workorder_ via a *Mobile Application*.
+An administrator can manage the _Workorder_ via the *Portal Application*.
+
+NOTE: The *{PROJECT_NAME}* Application is supplied with demo users and data, and both are used to assist a User when demonstrating *{PROJECT_NAME}* functionality.
+
+The *Portal Application* is used by an administrator to essentially manage the _Workorder_.
+An administrator can view, edit and assign a _Workorder_ and also create a new _Workflow_.
+When an administrator logs into the *Portal Application*, there are two separate areas that they can access on the Portal Application: the _Workflow_ and the _Workorder_.
+
+.Available Areas on the Portal Application
+|===
+|Area |Functionality
+
+|_Workflow_
+|Create, read, update, delete and list operations can be executed against a _Workflow_.
+
+Manage _Workflows_ and add additional _Steps_ to an existing _Workflow_.
+
+|_Workorder_
+|Create, read, update, delete and list operations can be executed against a _Workorder_.
+
+Manage _Workorders_ by assigning them to individual end users.
+
+|===
+
+IMPORTANT: Once a _Workorder_ has been created, any _Workflows_ based in this _Workorder_ become unchangeable, that is, the sequence of _Steps_ that make up the _Workorder_ cannot be changed.

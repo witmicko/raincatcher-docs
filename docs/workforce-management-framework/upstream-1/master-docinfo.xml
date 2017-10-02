@@ -1,9 +1,9 @@
-<title>{Feature} Framework</title>
-<productname>{Feature} {ProductName}</productname>
+<title>{PROJECT_NAME} Framework</title>
+<productname>{PROJECT_NAME} {ProductName}</productname>
 <productnumber>{DocInfoProductNumber}</productnumber>
-<subtitle>Documentation for use with {ProductName} {Feature} - Version {ProductRelease}</subtitle>
+<subtitle>Documentation for use with {ProductName} {PROJECT_NAME} - Version {ProductRelease}</subtitle>
 <abstract>
-    <para>This documentation covers technical aspects of {ProductName} {Feature} - Version {ProductRelease}.</para>
+    <para>This documentation covers technical aspects of {ProductName} {PROJECT_NAME} - Version {ProductRelease}.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

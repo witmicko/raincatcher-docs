@@ -15,23 +15,23 @@ image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/
 include::introducing-raincatcher.adoc[leveloffset=+2]
 
 [[introducing-raincatcher-features]]
-== Introducing {Feature} Features and Modules
+== Introducing {PROJECT_NAME} Features and Modules
 include::introducing-features-and-modules.adoc[leveloffset=+2]
 
 //[[preparing-the-local-development-environment]]
 //== Preparing the Local Development Environment
 
 [[getting-started]]
-== Getting Started with {Feature}
+== Getting Started with {PROJECT_NAME}
 include::running-the-demo-app.adoc[leveloffset=+2]
 
 [[programming-a-raincatcher-project]]
-== Programming a {Feature} Project
+== Programming a {PROJECT_NAME} Project
 include::working-with-passportauth.adoc[leveloffset=+2]
 include::working-with-keycloak.adoc[leveloffset=+2]
 
 [[raincatcher-security]]
-== {Feature} Security
+== {PROJECT_NAME} Security
 include::defining-raincatcher-security.adoc[leveloffset=+2]
 
 // **********************************

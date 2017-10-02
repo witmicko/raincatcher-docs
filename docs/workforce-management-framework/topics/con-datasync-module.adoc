@@ -1,7 +1,7 @@
 [id='{context}-con-datasync-module']
-= Introducing the {Feature} Datasync Module
+= Introducing the {PROJECT_NAME} Datasync Module
 
-The *{Feature} Datasync* Module is an implementation of the *{Feature}* Sync Framework.
+The *{PROJECT_NAME} Datasync* Module is an implementation of the *{PROJECT_NAME}* Sync Framework.
 *Datasync* is made up of two applications, the xref:{context}-datasync-cloud-app[Cloud App] and the xref:{context}-datasync-client-app[Client App].
 The _Cloud App_ is implemented in the *Datasync* cloud module and the _Client App_ is implemented in the *Datasync* client module.
 The primary function of *Datasync* is to synchronize data, for example, a _workorder_, between the _Client Apps_ (mobile) and the _Cloud App_ (running on a backend server).
@@ -17,7 +17,7 @@ For advanced usage of the *Datasync* module, see the link:{WFM-RC-SyncFrameworkU
 
 [id='{context}-datasync-cloud-app']
 == Datasync Cloud App
-The *Datasync Cloud App* is a wrapper for the *{Feature}* link:https://github.com/feedhenry/fh-sync[Datasync server].
+The *Datasync Cloud App* is a wrapper for the *{PROJECT_NAME}* link:https://github.com/feedhenry/fh-sync[Datasync server].
 The *Datasync Cloud App* creates a server side service that allows _Client Apps_ (mobile) to synchronize offline data to a preferred back-end data store.
 By default, the server connects to a backend MongoDB database and stores all client data here.
 

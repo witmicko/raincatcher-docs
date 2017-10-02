@@ -1,7 +1,7 @@
 [id='{context}-con-keycloak-securitystrategy']
 = Introducing the Security Strategy for {Keycloak}
 
-The *{Feature} {Keycloak}* Security Strategy describe the security aspects for *{Keycloak}* and cover areas such as:
+The *{PROJECT_NAME} {Keycloak}* Security Strategy describe the security aspects for *{Keycloak}* and cover areas such as:
 
 * Understanding {Keycloak} Session Management
 * Defining {Keycloak} Access Control

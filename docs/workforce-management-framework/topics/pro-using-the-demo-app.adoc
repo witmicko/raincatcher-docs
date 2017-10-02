@@ -1,43 +1,25 @@
-= Working with the *{Feature}* Application
-
-The *{Feature}* Application consists of three components:
-
-- A *Mobile Application* for end users
-- A *Portal Application* for administrator users and accessed through a web browser
-- A *Cloud Application* for backend server functionality (there is no user interface)
-
-An administrator can define a business process or procedure via a custom _Workflow_.
-A _Workflow_ contains one to many _Steps_.
-A _Workorder_ is an individual instance of a _Workflow_ and it (the _Workorder_) is assigned to an end user (or to many end users) as a job that they are to complete.
-An end user can view their _Workorder_ via a *Mobile Application*.
-An administrator can manage the _Workorder_ via the *Portal Application*.
-
-The *{Feature}* Application is supplied with demo users and data, and both are used to assist a User when demonstrating *{Feature}* functionality.
+[id='{context}-pro-using-the-demo-app']
+= Working with the Portal Application and Mobile Application
 
 == Working with the Portal Application
 
-The Portal Application is used by an administrator to essentially manage the _Workorder_.
-An administrator can view, edit and assign a _Workorder_ and also create a new _Workflow_.
-When an administrator logs into the Portal Application, there are two separate areas that they can access on the Portal Application: the _Workflow_ and the _Workorder_.
+The *Portal Application* is used by an administrator to essentially manage the _Workorder_.
 
-.Available Areas on the Portal Application
-|===
-|Area |Functionality
+This section includes:
 
-|_Workflow_
-|Create, read, update, delete and list operations can be executed against a _Workflow_.
+. xref:{context}-importing-the-endpointsecurity-interface[Creating a Workflow]
+. xref:{context}-working-with-a-workflow[Working with a Workflow]
+. xref:{context}-creating-a-workorder[Creating a Workorder]
 
-Manage _Workflows_ and add additional _Steps_ to an existing _Workflow_.
+[discrete]
+=== Prerequisites
 
-|_Workorder_
-|Create, read, update, delete and list operations can be executed against a _Workorder_.
+Ensure you have:
 
-Manage _Workorders_ by assigning them to individual end users.
+* Access to the Portal Application
 
-|===
-
-IMPORTANT: Once a _Workorder_ has been created, any _Workflows_ based in this _Workorder_ become unchangeable, that is, the sequence of _Steps_ that make up the _Workorder_ cannot be changed.
-
+[id='{context}-importing-the-endpointsecurity-interface']
+[discrete]
 === Creating a Workflow
 
 . Login as an administrator to the Portal Application
@@ -57,6 +39,8 @@ image::{WFM-RC-images}Workflow-nextstep.png[Next Step Workflow]
 
 NOTE: Use the _Add Step screen_ to add additional steps to the _Workflow_.
 
+[id='{context}-working-with-a-workflow']
+[discrete]
 === Working with a Workflow
 
 To make updates to a _Workflow_ or to delete a _Workflow_, use the the *pencil* (to update) or the *trash* (to delete) icons in the top right side of the screen.
@@ -71,6 +55,8 @@ Refresh the screen to see the new _Workflow_ appearing in the list in the center
 You can access existing _Workflows_ by selecting them in the list in the center panel.
 The options presented for editing a _Workflow_ are the same for the creation of a _Workflow_.
 
+[id='{context}-creating-a-workorder']
+[discrete]
 === Creating a Workorder
 
 A _Workorder_ is an individual instance of a _Workflow_ and it can be assigned to an end user.
@@ -88,6 +74,8 @@ image::{WFM-RC-images}create-Workorder.png[Creating a Workorder]
 +
 image::{WFM-RC-images}portal-viewWorkorder.png[view Workorder]
 
+[id='{context}-working-with-a-workorder']
+[discrete]
 === Working with a Workorder
 
 To update a _Workorder's_ title, assignee or _Workflow_, use the the *pencil* icon.
@@ -102,6 +90,19 @@ When an end user is logged in, they are presented with the _Workorders_ screen.
 To log out, click on the *menu* icon in the top left hand side of the screen.
 This will open a sidebar with options, one being the option to log out.
 
+This section includes:
+
+. xref:{context}-completing-a-workorder[Completing a Workorder]
+
+[discrete]
+=== Prerequisites
+
+Ensure you have:
+
+* Access to the Mobile Application
+
+[id='{context}-completing-a-workorder']
+[discrete]
 === Completing a Workorder
 
 . Log into the Mobile Application as an end user

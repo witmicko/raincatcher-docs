@@ -5,6 +5,7 @@ include::topics/shared/attributes.adoc[]
 
 //Concepts
 include::topics/con-introducing-raincatcher.adoc[leveloffset=+0]
+include::topics/con-wfm.adoc[leveloffset=+0]
 
 //References
-include::topics/ref-introducing-raincatcher.adoc[leveloffset=+1]
+include::topics/ref-introducing-raincatcher.adoc[leveloffset=+0]
