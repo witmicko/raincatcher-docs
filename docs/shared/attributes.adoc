@@ -25,7 +25,7 @@
 :WFM-RC-PassportAuth-Example: /cloud/passportauth/example
 :Keycloak: Keycloak
 //api url
-:WFM-RC-Api-Version: 0.0.1
+:WFM-RC-Api-Version: 1.0.0
 :WFM-RC-Api-Default-Strategy: /auth-passport/docs/modules/_src_auth_defaultstrategy_.html
 :WFM-RC-Api-Passport-Auth: /auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html#setup
 :WFM-RC-Api-User-Repository: /auth-passport/docs/interfaces/_src_user_userrepository_.userrepository.html
