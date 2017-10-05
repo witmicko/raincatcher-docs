@@ -29,13 +29,13 @@ Ensure you have:
 . Add a title to the _Workflow_
 . Click *CREATE Workflow* to navigate to the _Add Step screen_
 +
-image::{WFM-RC-images}create-Workflow.png[creating a Workflow]
+image::{WFM-RC-images}create-workflow.png[creating a Workflow]
 +
 . Give the _Step_ a name and then select a _Step Type_ from the list
 .. All _Steps_, default and custom, will appear in this list
 . To submit the new _Step_ to the _Workflow_, click *ADD STEP*
 +
-image::{WFM-RC-images}Workflow-nextstep.png[Next Step Workflow]
+image::{WFM-RC-images}workflow-nextstep.png[Next Step Workflow]
 
 NOTE: Use the _Add Step screen_ to add additional steps to the _Workflow_.
 
@@ -65,7 +65,7 @@ A _Workorder_ is an individual instance of a _Workflow_ and it can be assigned t
 . In the navigation panel on the left, click on *Workorder*
 . To create a new _Workorder_, click on *NEW Workorder* to open a form for completion
 +
-image::{WFM-RC-images}create-Workorder.png[Creating a Workorder]
+image::{WFM-RC-images}create-workorder.png[Creating a Workorder]
 +
 . Add data to the form and when complete, click `CREATE Workorder`
 .. Once the Workorder is created, it will sync with an end user's account and is now accessible on the Mobile Application
@@ -109,13 +109,13 @@ Ensure you have:
 .. The end user will see the _Workorders_ assigned to them
 . Select a _Workorder_ to view the first _Step_ in the _Workorder_:
 +
-image::{WFM-RC-images}Workorder-overview.png[overview]
+image::{WFM-RC-images}workorder-overview.png[overview]
 +
 . To add data to the _Workorder_, click on *BEGIN Workflow* and add the necessary data
 . To move to the next _Step_, click *CONTINUE*
 . When all _Steps_ have been completed, click on *CONTINUE* on the bottom of the screen to proceed to the _Summary_ screen
 +
-image::{WFM-RC-images}Workorder-summary.png[summary]
+image::{WFM-RC-images}workorder-summary.png[summary]
 +
 . Once you are on the _Summary_ screen, the _Workorder_ has been completed
 . To return to the _Workorder_ home screen and view the updated status of the _Workorder_, click on the *Menu* icon in the top left hand side and return to the Workorders screen.
