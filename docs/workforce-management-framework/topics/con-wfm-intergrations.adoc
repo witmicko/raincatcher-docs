@@ -1,0 +1,5 @@
+An intergration is the use of existing opensource projects to solve specific needs for {PROJECT_NAME}. 
+{PROJECT_NAME} has a number of intergrations that leverage other opensource projects for there expertises in paticular fields.
+This enabled the inclusion of domain expertises in the areas of security and sync in the developement of {PROJECT_NAME}.
+
+
