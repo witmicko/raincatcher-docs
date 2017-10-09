@@ -1,18 +1,18 @@
 [id='{context}-con-extending-the-user-interface']
 = Extending the User Interface
 
-{PROJECT_NAME} framework provides a set of extension points which allows a developer to modify an Angular User Interface (UI).
-All modifications are done by supplying additional modules which provide a set of the Angular.js directives and are used to extend the Mobile and Portal UI.
+{PROJECT_NAME} framework provides a set of extension points that allows a developer to modify an Angular User Interface (UI).
+You can modify the UI by writing additional modules that provide a set of the Angular.js directives to extend the Mobile and Portal UI.
 The {PROJECT_NAME} Application is shipped with the `angularjs-extensions` example that extends the Mobile and Portal Applications:
 
  * https://github.com/feedhenry-raincatcher/raincatcher-angularjs/tree/master/packages/angularjs-extensions
 
 This Module contains the example directives that are used for demo purposes and it can be used as a template to extend the existing {PROJECT_NAME} UI.
 
-== Extending Workorders
+== Extending the Workorders UI
 
 By default, {PROJECT_NAME} provides a minimal set of defined fields for a _workorder_.
-Depending on the needs of the business, a developer can add additional data and UI elements, for example, gps location, an address or a description UI element.
+If your step results contain additional data, for example, gps location, an address or a description UI element, you probably want to extend the workorders UI to display that data.
 
 === Building Directives
 To extend a _workorder_, implement two Angular Directives:
@@ -29,29 +29,29 @@ To extend a _workorder_, implement two Angular Directives:
 
 |===
 
-NOTE: Directives are to operate (with respect to existing fields) outside of a _workorder_ to avoid naming conflicts, for example, `workorder.data.yourcustomfield`
+NOTE: Directives operate (with respect to existing fields) outside of a _workorder_ to avoid naming conflicts, for example, `workorder.data.yourcustomfield`
 
 == User Interface
 
-If the UI requires additional styles or libraries, they are included in the top level application.
-The Mobile and Portal Applications contain standard bootstrap and Angular material directives and are found in the top level of the application.
+Include any required additional styles or libraries in the top level application.
+The Mobile and Portal Applications contain standard bootstrap and Angular material directives and are located in the top level of the application.
 For more information, see the link:https://material.angularjs.org/latest/api[Latest API].
 
 == Development of a template
 
 To build a template, use `grunt wfmTemplate:build`.
 To rebuild a template after making changes to it, use `grunt wfmTemplate:watch`.
-Each change to a template will require a distribution build.
+Each change to a template requires a distribution build.
 
 == Integration
 
-An _Entry File_ exposes a new implementation of an Angular module and this can be mounted into a root application module.
-A new NPM module should be integrated into both the Mobile and the Portal Application, so that the User can view the data belonging to the new _workorder_.
+An _Entry File_ exposes a new implementation of an Angular module, mount it in a root application module.
+Integrate any new NPM modules into both the Mobile and the Portal Application, so that the User can view the data belonging to the revised _workorder_.
 
-NOTE: The {PROJECT_NAME} Application contains the `@raincatcher-examples/angularjs-extensions` module. If you add a new custom module, remove the {PROJECT_NAME} Application to avoid collisions.
+NOTE: The {PROJECT_NAME} Application contains the `@raincatcher-examples/angularjs-extensions` module. If you require a new custom module, remove the {PROJECT_NAME} Application to avoid collisions.
 
 == Publishing
 
-For {PROJECT_NAME} to consume a module, ensure that it is published to the public or private NPM registry.
+For {PROJECT_NAME} to consume a module, best practise is to ensure that the module is published to the public or private NPM registry.
 When publishing a custom module, ensure that the package's name and the author's name are updated.
 If you choose not to publish a custom module, you can include all directives directly in the {PROJECT_NAME} application.
