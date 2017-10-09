@@ -111,7 +111,7 @@ Ensure you have:
 +
 image::{WFM-RC-images}workorder-overview.png[overview]
 +
-. To add data to the _Workorder_, click on *BEGIN Workflow* and add the necessary data
+. To add data to the _Workorder_, click on *START WORKFLOW* and add the necessary data
 . To move to the next _Step_, click *CONTINUE*
 . When all _Steps_ have been completed, click on *CONTINUE* on the bottom of the screen to proceed to the _Summary_ screen
 +
