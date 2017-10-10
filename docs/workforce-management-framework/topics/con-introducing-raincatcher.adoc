@@ -11,13 +11,13 @@ ifdef::upstream[]
 {PROJECT_NAME} is a Workforce Management Platform.
 endif::upstream[]
 
-{PROJECT_NAME} allows you to move from paper based forms and processes into complete mobile enabled solution
-{PROJECT_NAME} connects a business’ back-office with its fleet of mobilized employees by providing two fully customizable applications
+{PROJECT_NAME} allows you to move from paper based forms and processes into complete mobile enabled solution.
+{PROJECT_NAME} connects an organization's back-office with its fleet of mobilized employees by providing two fully customizable applications:
 
 - Mobile worker (operator) application
-- Management Portal (Backoffice) application
+- Management Portal (back office) application
 
-Both applications are utilizing Node.js based server by utilizing restfull api.
+Both applications are utilizing Node.js based server through RESTful api.
 
 == Goals
 
@@ -41,26 +41,26 @@ It allows developers to leverage production hardened applications by extending t
 ** Server modules to be used only in server application
 * User interface modules  (@raincatcher/angularjs-*)
 * Step modules (@raincatcher/step-*)
-* Example modules (@raincatcher-examples/*)
+* Example step modules (@raincatcher-examples/*)
 * External modules build by RainCatcher users and custom code in reference applications
 
 image::{WFM-RC-images}diagrams/customSolution.png[customSolution]
 
 == Process Management
 
-{PROJECT_NAME} focuses mainly on diginalizing business process
-by including set of the modules responsible for the process managment to the user applications. Process managment framework can be seen as simplified version of the BPMn solutions.
+{PROJECT_NAME} focuses mainly on digitalizing business process
+by including set of the modules responsible for the process management to the user applications. Process management framework can be seen as simplified version of the BPMn solutions.
 
-Main features of the Process Managment modules:
+Main features of the Process Management modules:
 
 * Creation customizable processes (called workflows)
 * Creation of process instances called workorders
 * Creation workflows using steps
-* Providing customizations to the process using step definitions
+* Providing customization to the process using step definitions
 * Integrating workflows and workorders into the mobile application
 * Providing number of predefined steps that can be used for any business needs
 
-Process Managment framework can be extended by _Step Definitions_ which are responsible for wraping business processes into single reusable units. For more technical information about _Step Definitions_ please refer to the Process Managment Guide.
+Process Management framework can be extended by _Step Definitions_ which are responsible for wrapping business processes into single reusable units. For more technical information about _Step Definitions_ please refer to the Process Management Guide.
 
 image::{WFM-RC-images}diagrams/referenceflow.png[referenceFlow]
 
@@ -70,8 +70,9 @@ Developers can extend {PROJECT_NAME} solution by providing _Step Definitions_. A
 
 Portal administrators can build `workflows` which containing ordered `Steps` that each mobile operator needs to complete.
 
-`Workflows` can be instanciated as `Workorders` which will contain specific details and be assigned one of the field operators.
+`Workflows` can be instantiated as `Workorders` which will contain specific details and be assigned one of the field operators.
 Once workorder is created it will be populated in the mobile field operator application.
 
 image::{WFM-RC-images}diagrams/overview.png[overview]
+
 
