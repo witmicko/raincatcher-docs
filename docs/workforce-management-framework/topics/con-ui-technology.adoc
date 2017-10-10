@@ -3,13 +3,13 @@
 
 The User Interface of {PROJECT_NAME} consists of a series of modules made available through the public NPM registry and built as modules the link:https://angularjs.org/[AngularJS Framework]. 
 
-=== UI Frameworks
+== UI Frameworks
 
 The {PROJECT_NAME} modules are intended to be used as part of a regular AngularJS application and used by it as link:https://docs.angularjs.org/guide/module[AngularJS modules].
 
 {PROJECT_NAME} also utilizes link:https://material.angularjs.org/latest/[Angular Material] extensive as both a set of widgets and for achieving a consistent design philosophy.
 
-=== Styling
+== Styling
 
 {PROJECT_NAME} supplies link:http://sass-lang.com/[SASS] files with every module, allowing users to take advantage of its features to quickly customize the look and feel of the modules by simply defining and altering simple variables in the stylesheets.
 

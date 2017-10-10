@@ -72,6 +72,11 @@ include::topics/con-angularjs-modules.adoc[leveloffset=+1]
 [[performance]]
 = Performance 
 -
+
+[[release-notes]]
+= Release notes
+include::topics/con-release-notes[leveloffset=+1]
+
 [[Contributing]]
 = Contributing
 include::topics/pro-contribute-guide.adoc[leveloffset=+1]

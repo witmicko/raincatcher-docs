@@ -15,7 +15,7 @@
 
 //***NEW START***
 :PROJECT_NAME: RainCatcher
-:WFM-RC-Version: 1.0
+:WFM-RC-Version: 1.0.0
 :WFM-RC-NodeVersion: 6 LTS
 :WFM-RC-MongoDBVersion: <latest version>
 :WFM-RC-RedisVersion: <latest version>
