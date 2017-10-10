@@ -40,9 +40,9 @@ include::topics/con-supported-modules.adoc[leveloffset=+1]
 include::topics/con-workflow-step.adoc[leveloffset=+1]
 include::topics/con-packaged-step.adoc[leveloffset=+1]
 
-[[intergrations]]
-= {PROJECT_NAME} Intergrations
-include::topics/con-wfm-intergrations.adoc[leveloffset=+0]
+[[integrations]]
+= {PROJECT_NAME} Integrations
+include::topics/con-wfm-integrations.adoc[leveloffset=+0]
 
 == Sync
 include::topics/con-datasync-module.adoc[leveloffset=+2]
@@ -51,11 +51,10 @@ include::topics/con-datasync-module.adoc[leveloffset=+2]
 include::topics/con-introducing-securityfeatures.adoc[leveloffset=+2]
 include::topics/con-keycloak.adoc[leveloffset=+2]
 include::topics/ref-keycloak.adoc[leveloffset=+3]
-include::topics/pro-keycloak-enablement.adoc[leveloffset=+2]
-include::topics/pro-keycloak-implementation.adoc[leveloffset=+2]
 include::topics/con-keycloak-securitystrategy.adoc[leveloffset=+2]
 include::topics/ref-keycloak-securitystrategy.adoc[leveloffset=+3]
-
+include::topics/pro-keycloak-enablement.adoc[leveloffset=+2]
+include::topics/pro-keycloak-implementation.adoc[leveloffset=+2]
 
 include::topics/con-passportauth-module.adoc[leveloffset=+2]
 include::topics/con-passportauth-securitystrategy.adoc[leveloffset=+2]
