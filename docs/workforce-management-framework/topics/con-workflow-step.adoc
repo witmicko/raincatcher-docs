@@ -2,15 +2,16 @@
 = Building Your First Workflow Step
 
 Steps are internal part of the {PROJECT_NAME}.
-Guide bellow describes structure of the step and some basic priciples required build it.
+
+The following guide describes structure of the Step and some basic principles required to build one.
 A basic knowledge of AngularJS is required to build a Workflow Step.
 
 == Structure of a Step
-Steps are divided into two linked categories, the `module` and the `definition`.
+_Steps_ are divided into two linked categories, the AngularJS Module and the Step Definition.
 
 === Module
 Modules can contain one or more AngularJS directives for rendering _Steps_ in the Portal and Mobile applications.
-{PROJECT_NAME} _Steps_ use AngularJS directives to build a user interface as part of workflows.
+{PROJECT_NAME} _Steps_ use AngularJS directives to build a user interface as part of executing a Work Order.
 Each _Step_ is divided into two directives:
 
 .A Step's Directive
@@ -31,9 +32,9 @@ The Preview Section consists of a html template and a directive.
 
 === Definition
 
-A Definition contains the _Step Definition_ which outlines the properties such as, the name and the description of a _Step_, for the workflow in the Portal application.
-Each _Step_ requires a *Definition* and the `definition.json` file can contain a *Definition* of a single _Step_ or an array of *Definitions* with the size corresponding to the number of _Steps_ in the _Step Package_.
-The following is an example of a *Definition*:
+A Definition contains the _Step Definition_ which outlines the properties such as the name and the description of a _Step_, for the Work Flow in the Portal application.
+Each Step requires a Definition. and the `definition.json` file can contain a Definition of a single _Step_ or an array of Definitions with the size corresponding to the number of _Steps_ in the Step Package.
+The following is an example of a Definition:
 
 Example:
 [source,json]
@@ -51,37 +52,38 @@ Example:
 ]
 ----
 
-The *Module* and the *Definition* are exported to be visibile when a _Step Package_ is imported.
-The following is an example of a *Module*:
+The Module and the Definition are exported to be exported from the Step Package, which is a regular NodeJS package.
+The following is an example of a Step Package's main javascript file:
 
 Example:
 [source,javascript]
 ----
 module.exports = {
-  ngModule: require('./angular/base'),
+  ngModule: require('./angular-module'),
   // Definition for this step that is being used in portal
   definition: require('./definition.json')
 };
 ----
 
-== Creating new step
+== Creating new Step Package
 
-A Step can be created manually from template or by using generator.
+A Step Package can be created manually from a template or by using the {PROJECT_NAME} Step Generator.
 
-=== Generator
+=== {PROJECT_NAME} Step Generator
 
-The Generator allows to generate step automatically by answering questions.
-Generated step will contain sample UI directives that needs to be modified for users needs.
+The {PROJECT_NAME} Step Generator provides a way to generating a Step Package automatically by answering a simple set questions via a command line interface.
 
-link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a _Step_.
+The generated Step Package will contain sample UI directives that should be modified for the users' needs.
+
+It is available as the link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep NPM package].
 
 === Template
 
-Alternatively developers can use provided step template:
+Instead of utilizing the Step Generator, developers can use a provided Step Package template:
 
-When developing a custom _Step Package_, clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and make modifications to the cloned repository.
+When developing a custom Step Package, clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] sample repository and make modifications to the cloned repository.
 
 === Modifications
 
-For more information about modifying a _Step_ and importing a _Step_ into the Portal and Mobile applications, see the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md]
+For more information about modifying a _Step_ and importing a _Step_ into the Portal and Mobile applications, see the link:https://github.com/feedhenry-raincatcher/step-template[Step Template's README]
 

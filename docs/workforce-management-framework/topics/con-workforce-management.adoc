@@ -1,0 +1,35 @@
+[id='{context}-con-wfm-framework-concepts']
+= Introducing Workforce Management
+
+Workforce Management is the management of resources applied outside of the boundaries and property of the company or enterprise itself, including employees, vehicles, consumables and all other property.
+
+Tasks facilitated by Worforce Management software consist of schedule and assignment of work orders to workers, inventory control, customer acceptance of results, quality control, productivity tracking, regulatory compliance, billing, and including others.
+
+== Workforce Management Components in {PROJECT_NAME}
+
+{PROJECT_NAME} introduces the following components to compose a complete Workforce Management solution:
+
+Step::
+A _Step_ is a packaged piece of functionality that usually represents a single unit of work to be done by an entity (usualy a human worker), for example, functionality that allows the worker to capture a customer's signature, a specialized form to be filled in the field, etc.
++
+_Step Definitions_ are usually implemented by a developer with the intent of reusability in multiple _Work Flows_.
+
+Work Flow::
+A _Work Flow_ can contain one to many _Step Definitions_. It defines the order the _Step Definitions_ are executed and are exposed to administrator users as templates to define new Work Orders.
++
+_Work Flows_ are typically handled by administrator users in the Portal Application to create new _Work Orders_ for assignment to workers.
+
+Work Order::
+A _Work Order_ is an instantiation of a _Work Flow_ that handles the assignment to a worker and the actual tracking of _Steps_ executed.
++
+An administrator user using the Portal Application will usually create and assign a _Work Order_ to another user and a user using the Mobile Application will typically work with a _Work Order_.
+
+== Use Case defining how the Framework Concepts are used
+
+. A developer creates a _Step_ and packages it as part of a {WFM-RC-NameShort} library.
+. An administrator user in the Portal Application creates a _Work Flow_ and chooses what _Step Definitions_ they want to include.
+. The portal user creates a _Work Order_ based on the _Workflow_ and assigns it to a mobile user using the Mobile Application.
+. The mobile user receives the _Work Order_ on their Mobile Application and starts to complete the _Steps_.
+. Once the mobile user completes all the _Steps_, the portal user receives notification that the _Work Order_ is complete.
+
+For more information on how to build a new _Step_, see xref:{context}-con-workflow-step[Building Your First Workflow Step]
