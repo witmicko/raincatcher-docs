@@ -1,16 +1,11 @@
 [id='{context}-ref-portal']
 = {PROJECT_NAME} Portal Application
 
-The Portal Application is Angular.js based and it provides an interface for process management.
-A solution based on {PROJECT_NAME} can be extended by providing additional UI elements, themes and functionality.
+Portal AngularJS based application that provides interface for process management. Developers who base their solution on {PROJECT_NAME} can extend it by providing additional UI elements, themes and functionalities.
 
-== Local Development
+== Running on a browser
 
-To install the Portal Application, execute `npm install`.
-
-== Running on a Browser
-
-Install all project dependencies and run the following commands to test the application in a local browser:
+After installing all dependencies, run these commands to test this application on a local browser:
 
 `npm start`
 
@@ -18,8 +13,7 @@ or
 
 `grunt serve:local --url=http://localhost:8001`
 
-Ensure the `url` parameter is the root of the API server application running the API endpoints.
-For more information on how to run a server, see the xref::{context}-ref-server[server side documentation].
+The `url` parameter should be the root of the API server application running the api endpoints. See xref:{context}-ref-server[server side documentation] for information how to run server
 
 == Repository Structure
 
